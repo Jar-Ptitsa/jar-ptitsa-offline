@@ -8,7 +8,7 @@ header:
 bonus:
   title: БОНУСЫ И БЕСПЛАТНЫЕ ПРОБНЫЕ УРОКИ
   description: Почему русский язык лучше изучать в «Жар-Птице»?
-  listType: numbered
+  listType: none
   list:
     - alignImage:
         - left
@@ -24,7 +24,7 @@ bonus:
       description: Здесь базовый предмет – русский язык. Остальные занятия
         предлагаются как факультативные.
 advantages:
-  title: 'КАКИЕ ЕЩЁ ПРЕИМУЩЕСТВА У НАС'
+  title: КАКИЕ ЕЩЁ ПРЕИМУЩЕСТВА У НАС
   listType: bulleted
   list:
     - alignImage:
