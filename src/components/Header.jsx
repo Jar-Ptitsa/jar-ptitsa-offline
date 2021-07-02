@@ -12,7 +12,7 @@ const Header = ({ title, description, logo }) => {
 
   return (
     <React.Fragment>
-      <div className='columns'>
+      <div className='columns is-justify-content-center is-align-items-center'>
         <div className='column is-4'>{image}</div>
         <div className='column'>
           <h1 className='title is-2'>{title}</h1>

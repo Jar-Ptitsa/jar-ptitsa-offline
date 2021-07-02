@@ -3,6 +3,9 @@ import { Helmet } from 'react-helmet';
 import useSiteMetadata from './SiteMetadata';
 import { withPrefix } from 'gatsby';
 
+// bulma css framework
+import '../../node_modules/bulma/bulma.sass';
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   // TODO site favicon
