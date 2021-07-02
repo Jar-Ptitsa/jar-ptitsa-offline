@@ -37,8 +37,8 @@ collections:
               {label: List, name: list, widget: list, fields: [
                 {label: Image, name: image, widget: image, required: false},
                 {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"], default: ['center'], required: false },
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Title, name: title, widget: string, required: false},
+                {label: Description, name: description, widget: markdown, required: false},
               ]}
           ]}
 # advantages
@@ -51,8 +51,8 @@ collections:
               {label: List, name: list, widget: list, fields: [
                 {label: Image, name: image, widget: image, required: false},
                 {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"], default: ['center'], required: false },
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Title, name: title, widget: string, required: false},
+                {label: Description, name: description, widget: markdown, required: false},
               ]}
           ]}
 # secret
@@ -64,8 +64,8 @@ collections:
               {label: List, name: list, widget: list, fields: [
                 {label: Image, name: image, widget: image, required: false},
                 {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"], default: ['center'], required: false },
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Title, name: title, widget: string, required: false},
+                {label: Description, name: description, widget: markdown, required: false},
               ]}
           ]}
 # treasure
@@ -78,8 +78,8 @@ collections:
               {label: List, name: list, widget: list, fields: [
                 {label: Image, name: image, widget: image, required: false},
                 {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"], default: ['center'], required: false },
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
+                {label: Title, name: title, widget: string, required: false},
+                {label: Description, name: description, widget: markdown, required: false},
               ]}
           ]}
 # plans

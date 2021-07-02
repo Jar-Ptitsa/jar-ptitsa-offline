@@ -24,10 +24,10 @@ const Bonus = ({ title, description, image, alignImage, list }) => {
     if (align === 'center')
       return (
         <div className='block'>
+          {renderImage(content.image)}
           <h2 className='title is-4 has-text-weight-semibold'>
             {content.title}
           </h2>
-          {renderImage(content.image)}
           <div className='block'>
             <ReactMarkdown
               className='block m-1'
