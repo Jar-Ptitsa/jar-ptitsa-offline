@@ -3,6 +3,7 @@ import RenderContent from './RenderContent';
 
 import Image from './Image';
 import AlignContent from './AlignContent';
+import { v4 as uuidv4 } from 'uuid';
 
 const ListItem = ({ item, listType }) => {
   const align = item.alignImage;
@@ -11,7 +12,7 @@ const ListItem = ({ item, listType }) => {
   const content = (item, listType) => {
     console.log({ ...item });
     return (
-      <React.Fragment>
+      <React.Fragment key={uuidv4}>
         {listType === 'none' ? (
           <RenderContent {...item} />
         ) : (
