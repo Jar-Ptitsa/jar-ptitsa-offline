@@ -5,16 +5,10 @@ import Image from './Image';
 import List from './List';
 import RenderContent from './RenderContent';
 
-const Advantages = ({
-  title,
-  description,
-  image,
-  alignImage,
-  list,
-  listType,
-}) => {
+const Section = ({ title, description, image, alignImage, list, listType }) => {
   const content = { title, description };
   const align = (alignImage && alignImage[0]) || 'center';
+
 
   return (
     <section className='pt-6'>
@@ -34,4 +28,4 @@ const Advantages = ({
   );
 };
 
-export default Advantages;
+export default Section;

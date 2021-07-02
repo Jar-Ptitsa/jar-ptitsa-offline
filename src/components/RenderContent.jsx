@@ -7,6 +7,8 @@ const RenderContent = ({
   titleClass = '',
   descriptionClass = '',
 }) => {
+  console.log(title);
+  console.log(description);
   return (
     <div className='block'>
       {title && <h2 className={titleClass}>{title}</h2>}

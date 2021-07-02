@@ -6,7 +6,6 @@ import AlignContent from './AlignContent';
 
 const Bonus = ({ title, description, image, alignImage, list }) => {
   const content = { title, description, image, alignImage };
-  console.log(content);
   const align = (alignImage && alignImage[0]) || 'center';
 
   const renderContent = (content) => {

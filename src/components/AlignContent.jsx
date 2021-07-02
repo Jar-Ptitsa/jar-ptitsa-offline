@@ -1,7 +1,6 @@
 import React from 'react';
 
 const AlignContent = ({ align, content, image }) => {
-  console.log(image);
   if (align === 'center')
     return (
       <div className='block'>

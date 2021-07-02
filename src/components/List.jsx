@@ -2,8 +2,9 @@ import React from 'react';
 import ListItem from './ListItem';
 
 const List = ({ list, listType }) => {
-  const renderedList = (list) => {
-    return list.map((item) => <ListItem item={item} />);
+
+  const renderedList = (list, listType) => {
+    return list.map((item) => <ListItem item={item} listType={listType} />);
   };
 
   const result = (listType) => {

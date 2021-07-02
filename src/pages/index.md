@@ -25,8 +25,7 @@ advantages:
   title: КАКИЕ ЕЩЁ ПРЕИМУЩЕСТВА У НАС
   listType: bulleted
   list:
-    - alignImage:
-        - center
+    - alignImage: center
       title: Пробный заголовок
       description: "**Работаем по всем фронтам** - обучаем русскому как родному (РЯ) и
         русскому как иностранному (РКИ), даём уроки детям и подросткам, работаем
@@ -44,16 +43,14 @@ secret:
     проводим уроки английского языка. Все занятия адаптированы под каждый
     возраст ребёнка. Эти занятия очень нравятся детям.
   list:
-    - alignImage:
-        - center
+    - alignImage: center
       title: First
       description: youtube hVMSkjqfE0Q
 treasure:
   title: "И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА:"
   listType: bulleted
   list:
-    - alignImage:
-        - center
+    - alignImage: center
       title: Это наши учителя
       description: "труд которых невозможно переоценить, так велика их заслуга в
         обучении и воспитании наших детей: Оксана Комоликова, Светлана Шеянова,
@@ -62,8 +59,7 @@ treasure:
 plans:
   title: Годовые тарифы на обучение в Жар-Птице
   list:
-    - alignImage:
-        - center
+    - alignImage: center
       title: Пакет 3 часа
       description: 1000 евро в год
 freeLesson:
@@ -73,8 +69,7 @@ freeLesson:
     определиться с днём недели для учёбы и со временем занятий. Вот наши
     предложения:"
   list:
-    - alignImage:
-        - center
+    - alignImage: center
       title: Среда
       description: 9-12
 formData:
