@@ -1,10 +1,12 @@
 import React from 'react';
 
 const AlignContent = ({ align, content, image }) => {
+  const hasImage = image.props.image;
+
   if (align === 'center')
     return (
       <div className='block'>
-        {image && <div className='pb-6'>{image}</div>}
+        {hasImage && <div className='pb-6'>{image}</div>}
         {content && <div className='block'>{content}</div>}
       </div>
     );

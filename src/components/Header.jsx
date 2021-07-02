@@ -17,7 +17,7 @@ const Header = ({ title, description, logo }) => {
           <h1 className='title is-2'>{title}</h1>
         </div>
       </div>
-      <ReactMarkdown className='block' children={description} />
+      <ReactMarkdown children={description} />
     </React.Fragment>
   );
 };

@@ -3,16 +3,23 @@ import RenderContent from './RenderContent';
 
 import Image from './Image';
 import AlignContent from './AlignContent';
-import { v4 as uuidv4 } from 'uuid';
+import VideoDetail from './VideoDetail';
 
 const ListItem = ({ item, listType }) => {
   const align = item.alignImage;
-  const image = item.image && item.image;
+  const isVideo = item.description.includes('youtube');
 
-  const content = (item, listType) => {
-    console.log({ ...item });
+  const renderVideoItem = ({ title, description }) => {
+    if (isVideo) {
+      const videoId = description.split(' ')[1];
+
+      return <VideoDetail videoId={videoId} title={title} />;
+    }
+  };
+
+  const renderListItem = (item, listType) => {
     return (
-      <React.Fragment key={uuidv4}>
+      <React.Fragment>
         {listType === 'none' ? (
           <RenderContent {...item} />
         ) : (
@@ -24,14 +31,17 @@ const ListItem = ({ item, listType }) => {
     );
   };
 
-  console.log(content(item, listType));
-
   return (
-    <AlignContent
-      align={align}
-      content={content(item, listType)}
-      image={<Image image={image} />}
-    />
+    <React.Fragment>
+      {isVideo && renderVideoItem(item)}
+      {!isVideo && (
+        <AlignContent
+          align={align}
+          content={renderListItem(item, listType)}
+          image={<Image image={item.image} />}
+        />
+      )}
+    </React.Fragment>
   );
 };
 
