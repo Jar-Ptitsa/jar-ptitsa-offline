@@ -7,6 +7,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 
   if (data) {
     //   image={getAsset(data.image)}
+    console.log(data.advantages);
 
     const getImage = (name, image) => {
       if (image) {
@@ -35,6 +36,18 @@ const IndexPagePreview = ({ entry, getAsset }) => {
           secret: {
             ...data.secret,
             ...Object.assign({}, getImage('logo', data.secret.image)),
+          },
+          treasure: {
+            ...data.treasure,
+            ...Object.assign({}, getImage('logo', data.treasure.image)),
+          },
+          plans: {
+            ...data.plans,
+            ...Object.assign({}, getImage('logo', data.plans.image)),
+          },
+          freeLesson: {
+            ...data.freeLesson,
+            ...Object.assign({}, getImage('logo', data.freeLesson.image)),
           },
         }}
       />

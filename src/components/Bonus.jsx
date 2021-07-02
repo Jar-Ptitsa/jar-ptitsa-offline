@@ -2,24 +2,35 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import Img from 'gatsby-image';
 
+import AlignContent from './AlignContent';
+
 const Bonus = ({ title, description, image, alignImage, list }) => {
   const content = { title, description, image, alignImage };
-  const alignContent = (alignImage && alignImage[0]) || 'center';
+  console.log(content);
+  const align = (alignImage && alignImage[0]) || 'center';
+
+  const renderContent = (content) => {
+    return (
+      <div className='block'>
+        <h2 className='title is-4 has-text-weight-semibold'>{content.title}</h2>
+        {content.description && (
+          <ReactMarkdown className='block m-1' children={content.description} />
+        )}
+      </div>
+    );
+  };
+
+  const renderImage = (image) => {
+    if (!image) return '';
+    return !!image.childImageSharp ? (
+      <Img fluid={image.childImageSharp.fluid} alt='' />
+    ) : (
+      <img src={image.url} alt='' />
+    );
+  };
 
   const renderAlignContent = (content) => {
-    console.log(content);
     const align = (content.alignImage && content.alignImage[0]) || 'center';
-    console.log(align);
-
-    const renderImage = (image) => {
-      if (!image) return '';
-      return !!image.childImageSharp ? (
-        <Img fluid={image.childImageSharp.fluid} alt='' />
-      ) : (
-        <img src={image.url} alt='' />
-      );
-    };
-    console.log(renderImage(content.image));
 
     if (align === 'center')
       return (
@@ -30,12 +41,14 @@ const Bonus = ({ title, description, image, alignImage, list }) => {
           <h2 className='title is-4 has-text-weight-semibold'>
             {content.title}
           </h2>
-          <div className='block'>
-            <ReactMarkdown
-              className='block m-1'
-              children={content.description}
-            />
-          </div>
+          {content.description && (
+            <div className='block'>
+              <ReactMarkdown
+                className='block m-1'
+                children={content.description}
+              />
+            </div>
+          )}
         </div>
       );
 
@@ -47,12 +60,14 @@ const Bonus = ({ title, description, image, alignImage, list }) => {
               <h2 className='title is-4 has-text-weight-semibold'>
                 {content.title}
               </h2>
-              <div className='block'>
-                <ReactMarkdown
-                  className='block m-1'
-                  children={content.description}
-                />
-              </div>
+              {content.description && (
+                <div className='block'>
+                  <ReactMarkdown
+                    className='block m-1'
+                    children={content.description}
+                  />
+                </div>
+              )}
             </div>
           </div>
           <div className='column is-4'>{renderImage(content.image)}</div>
@@ -68,12 +83,14 @@ const Bonus = ({ title, description, image, alignImage, list }) => {
               <h2 className='title is-4 has-text-weight-semibold'>
                 {content.title}
               </h2>
-              <div className='block'>
-                <ReactMarkdown
-                  className='block m-1'
-                  children={content.description}
-                />
-              </div>
+              {content.description && (
+                <div className='block'>
+                  <ReactMarkdown
+                    className='block m-1'
+                    children={content.description}
+                  />
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -86,8 +103,12 @@ const Bonus = ({ title, description, image, alignImage, list }) => {
 
   return (
     <section className='pt-6'>
-      <div>{renderAlignContent(content, alignContent)}</div>
-      <div>{renderedList(list)}</div>
+      <AlignContent
+        align={align}
+        content={renderContent(content)}
+        image={renderImage(content.image)}
+      />
+      <div>{list && renderedList(list)}</div>
     </section>
   );
 };

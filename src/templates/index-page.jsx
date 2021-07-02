@@ -4,16 +4,22 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Bonus from '../components/Bonus';
+import Advantages from '../components/Advantages';
+import Section from '../components/Section';
 
 export const IndexPageTemplate = ({ data }) => {
-  const { header, bonus, advantages, secret } = data;
+  const { header, bonus, advantages, secret, treasure, plans, freeLesson } =
+    data;
 
   return (
     <React.Fragment>
       <Header {...header} />
-      <Bonus {...bonus} />
-      <Bonus {...advantages} />
+      <Section {...bonus} />
+      <Advantages {...advantages} />
       <Bonus {...secret} />
+      <Bonus {...treasure} />
+      <Bonus {...plans} />
+      <Bonus {...freeLesson} />
     </React.Fragment>
   );
 };
@@ -80,6 +86,31 @@ export const pageQuery = graphql`
           }
         }
         secret {
+          title
+          description
+          list {
+            alignImage
+            title
+            description
+          }
+        }
+        treasure {
+          title
+          list {
+            alignImage
+            title
+            description
+          }
+        }
+        plans {
+          title
+          list {
+            alignImage
+            title
+            description
+          }
+        }
+        freeLesson {
           title
           description
           list {
