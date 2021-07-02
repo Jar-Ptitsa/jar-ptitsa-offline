@@ -15,7 +15,9 @@ const ListItem = ({ item, listType }) => {
         {listType === 'none' ? (
           <RenderContent {...item} />
         ) : (
-          <RenderContent {...item} />
+          <li>
+            <RenderContent {...item} />
+          </li>
         )}
       </React.Fragment>
     );

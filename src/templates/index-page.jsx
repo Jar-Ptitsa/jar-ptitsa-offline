@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import Bonus from '../components/Bonus';
 import Section from '../components/Section';
 
 export const IndexPageTemplate = ({ data }) => {
@@ -16,9 +15,9 @@ export const IndexPageTemplate = ({ data }) => {
       <Section {...bonus} />
       <Section {...advantages} />
       <Section {...secret} />
-      <Bonus {...treasure} />
-      <Bonus {...plans} />
-      <Bonus {...freeLesson} />
+      <Section {...treasure} />
+      <Section {...plans} />
+      <Section {...freeLesson} />
     </React.Fragment>
   );
 };

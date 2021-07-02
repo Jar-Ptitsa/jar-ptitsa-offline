@@ -1,8 +1,7 @@
 import React from 'react';
 import ListItem from './ListItem';
 
-const List = ({ list, listType }) => {
-
+const List = ({ list, listType = 'none' }) => {
   const renderedList = (list, listType) => {
     return list.map((item) => <ListItem item={item} listType={listType} />);
   };
