@@ -32,6 +32,10 @@ const IndexPagePreview = ({ entry, getAsset }) => {
             ...data.advantages,
             ...Object.assign({}, getImage('logo', data.advantages.image)),
           },
+          secret: {
+            ...data.secret,
+            ...Object.assign({}, getImage('logo', data.secret.image)),
+          },
         }}
       />
     );

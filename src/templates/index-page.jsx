@@ -6,13 +6,14 @@ import Header from '../components/Header';
 import Bonus from '../components/Bonus';
 
 export const IndexPageTemplate = ({ data }) => {
-  const { header, bonus, advantages } = data;
+  const { header, bonus, advantages, secret } = data;
 
   return (
     <React.Fragment>
       <Header {...header} />
       <Bonus {...bonus} />
       <Bonus {...advantages} />
+      <Bonus {...secret} />
     </React.Fragment>
   );
 };
@@ -76,6 +77,15 @@ export const pageQuery = graphql`
             title
             description
             alignImage
+          }
+        }
+        secret {
+          title
+          description
+          list {
+            alignImage
+            title
+            description
           }
         }
       }

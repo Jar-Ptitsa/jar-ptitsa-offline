@@ -24,7 +24,9 @@ const Bonus = ({ title, description, image, alignImage, list }) => {
     if (align === 'center')
       return (
         <div className='block'>
-          {renderImage(content.image)}
+          {content.image && (
+            <div className='pb-6'>{renderImage(content.image)}</div>
+          )}
           <h2 className='title is-4 has-text-weight-semibold'>
             {content.title}
           </h2>
@@ -83,10 +85,10 @@ const Bonus = ({ title, description, image, alignImage, list }) => {
   };
 
   return (
-    <React.Fragment>
+    <section className='pt-6'>
       <div>{renderAlignContent(content, alignContent)}</div>
       <div>{renderedList(list)}</div>
-    </React.Fragment>
+    </section>
   );
 };
 
