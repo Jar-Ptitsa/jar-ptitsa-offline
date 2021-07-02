@@ -1,70 +1,93 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
-mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
-intro:
-  blurbs:
-    - image: /img/coffee.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
-main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+header:
+  title: Школа русского языка для детей-билингвов и инофонов  «Жар-Птица»
+  description:
+    'Объявляет дополнительный набор детей и подростков в билингвальные
+    группы и группы РКИ на новый учебный сезон 2021-2022. '
+  logo: /img/uploads/logo.jpg
+secret:
+  title: 'ИНТЕРЕСНО? ДЕЛИМСЯ СВОИМ СЕКРЕТОМ:'
+  description: В первой половине дня мы проводим цикл занятий по эстетическому и
+    культурному развитию и приглашаем детей в нашу творческую лабораторию*, в
+    которой мы преподаём в игровой развлекательно-познавательной манере такие
+    предметы как музыкальное развитие и история искусств, страноведение и
+    окружающий мир, занимательная математика и эксперименты, арт-ателье,
+    театральная мастерская, кулинария и этикет. В рамках этого же цикла мы
+    проводим уроки английского языка. Все занятия адаптированы под каждый
+    возраст ребёнка. Эти занятия очень нравятся детям.
+  list:
+    - alignImage:
+        - center
+      title: First
+      description: youtube hVMSkjqfE0Q
+treasure:
+  title: 'И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА:'
+  listType: bulleted
+  list:
+    - alignImage:
+        - center
+      title: Это наши учителя
+      description: 'труд которых невозможно переоценить, так велика их заслуга в
+        обучении и воспитании наших детей: Оксана Комоликова, Светлана Шеянова,
+        Ольга Тарасова, Марина Гаева, Галина Авагян, Анастасия Фомина, Анастасия
+        Пономарёва '
+plans:
+  title: Годовые тарифы на обучение в Жар-Птице
+  plans:
+    - alignImage:
+        - center
+      title: Пакет 3 часа
+      description: 1000 евро в год
+freeLesson:
+  title: ЛУЧШЕ ОДИН РАЗ УВИДЕТЬ,  чем сто раз услышать
+  description:
+    'поэтому мы предлагаем вам сначала побывать на пробном уроке,  а уж
+    потом принять решение о записи на весь учебный год  Для этого нужно
+    определиться с днём недели для учёбы и со временем занятий. Вот наши
+    предложения:'
+  content:
+    - alignImage:
+        - center
+      title: Среда
+      description: 9-12
+advantages:
+  title: 'Какие ещё преимущества у нас:'
+  listType: bulleted
+  list:
+    - alignImage:
+        - center
+      title: 'Работаем по всем фронтам '
+      description: обучаем русскому как родному (РЯ) и русскому как иностранному
+        (РКИ), даём уроки детям и подросткам, работаем со взрослыми, которым
+        предприятия оплачивают курсы
+formData:
+  title: 'ЗАПИСАТЬСЯ НА ПРОБНЫЙ УРОК / задать вопрос '
+  description: Оставить заявку/форма
+  formInputs:
+    - inputType: text
+      inputLabel: Имя
+bonus:
+  title: БОНУСЫ И БЕСПЛАТНЫЕ ПРОБНЫЕ УРОКИ
+  description: Почему русский язык лучше изучать в «Жар-Птице»?
+  listType: numbered
+  list:
+    - alignImage:
+        - center
+      title: Давно на рынке
+      description: >-
+        Мы уже 11 лет на рынке дополнительного билингвального образования во
+        Франции, за это время у  школы сформировалась своя система ценностей: 
+
+
+        * Индивидуальный подход к каждому ребёнку
+
+        * Системный подход к развитию интеллекта ребёнка
+
+        * Интенсивное погружение в лингвистическое пространство.
+    - alignImage:
+        - center
+      title: 'Профильная школа '
+      description: Здесь базовый предмет – русский язык. Остальные занятия
+        предлагаются как факультативные.
 ---
