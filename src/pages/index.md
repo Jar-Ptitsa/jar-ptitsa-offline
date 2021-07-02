@@ -102,7 +102,7 @@ secret:
   list:
     - alignImage: center
       title: First
-      description: youtube hVMSkjqfE0Q
+      description: youtube YE7VzlLtp-4
 treasure:
   title: "И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА:"
   listType: bulleted
