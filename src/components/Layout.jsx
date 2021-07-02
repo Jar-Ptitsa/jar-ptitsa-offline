@@ -49,7 +49,9 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <div className='container is-max-desktop'>{children}</div>
+      <div className='m-2'>
+        <div className='container is-max-desktop'>{children}</div>
+      </div>
     </div>
   );
 };

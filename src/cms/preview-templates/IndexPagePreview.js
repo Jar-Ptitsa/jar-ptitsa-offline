@@ -8,11 +8,26 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   if (data) {
     //   image={getAsset(data.image)}
 
+    const getImage = (name, image) => {
+      if (image) {
+        return { [name]: getAsset(image) };
+      }
+
+      return { [name]: null };
+    };
+
     return (
       <IndexPageTemplate
         data={{
           ...data,
-          header: { ...data.header, logo: getAsset(data.header.logo) },
+          header: {
+            ...data.header,
+            ...Object.assign({}, getImage('logo', data.header.logo)),
+          },
+          bonus: {
+            ...data.bonus,
+            ...Object.assign({}, getImage('logo', data.bonus.image)),
+          },
         }}
       />
     );

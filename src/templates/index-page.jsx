@@ -1,13 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Header from '../components/Header';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
+import Bonus from '../components/Bonus';
 
 export const IndexPageTemplate = ({ data }) => {
-  const { header } = data;
+  const { header, bonus } = data;
 
-  return <Header {...header} />;
+  return (
+    <React.Fragment>
+      <Header {...header} />
+      <Bonus {...bonus} />
+    </React.Fragment>
+  );
 };
 
 const IndexPage = ({ data }) => {
@@ -43,6 +49,16 @@ export const pageQuery = graphql`
                 ...GatsbyImageSharpFluid
               }
             }
+          }
+        }
+        bonus {
+          title
+          description
+          listType
+          list {
+            title
+            description
+            alignImage
           }
         }
       }

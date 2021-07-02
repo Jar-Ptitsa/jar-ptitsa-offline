@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { HTMLContent } from './Content';
+import ReactMarkdown from 'react-markdown';
 import Img from 'gatsby-image';
 
 const Header = ({ title, description, logo }) => {
@@ -14,11 +13,11 @@ const Header = ({ title, description, logo }) => {
     <React.Fragment>
       <div className='columns is-justify-content-center is-align-items-center'>
         <div className='column is-4'>{image}</div>
-        <div className='column'>
+        <div className='column has-text-centered-touch'>
           <h1 className='title is-2'>{title}</h1>
         </div>
       </div>
-      <HTMLContent className='block' content={description} />
+      <ReactMarkdown className='block' children={description} />
     </React.Fragment>
   );
 };
