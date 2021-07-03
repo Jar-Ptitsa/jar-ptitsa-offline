@@ -26,7 +26,7 @@ const Form = ({ title, description, formInputs }) => {
       />
 
       <div className='columns'>
-        <form className='column is-8 is-offset-2'>
+        <form className='column is-8 is-offset-2' name="contact" method="POST" data-netlify="true">
           {renderInputs(formInputs)}
           <div className='has-text-centered'>
             <button type='submit' className='button is-success is-large'>
