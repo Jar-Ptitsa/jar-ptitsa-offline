@@ -103,6 +103,10 @@ secret:
     - alignImage: center
       title: First
       description: youtube YE7VzlLtp-4
+    - title: Second
+      description: youtube YE7VzlLtp-4
+    - title: Third
+      description: youtube YE7VzlLtp-4
 treasure:
   title: "И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА:"
   listType: bulleted
