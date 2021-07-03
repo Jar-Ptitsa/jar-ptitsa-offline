@@ -4,7 +4,7 @@ header:
   title: Школа русского языка для детей-билингвов и инофонов  «Жар-Птица»
   description: Объявляет дополнительный набор детей и подростков в билингвальные
     группы и группы РКИ на новый учебный сезон 2021-2022.
-  logo: /img/uploads/logo.jpg
+  logo: /img/uploads/logo_cropped.jpg
 bonus:
   title: БОНУСЫ И БЕСПЛАТНЫЕ ПРОБНЫЕ УРОКИ
   description: Почему русский язык лучше изучать в «Жар-Птице»?
@@ -143,7 +143,7 @@ plans:
     - alignImage: center
       title: Пакет 6 часов
       description: "1800 евро*год "
-      image: /img/uploads/logo.jpg
+      image: /img/uploads/logo_cropped.jpg
     - alignImage: center
       title: 1 час группового занятия
       description: 15 евро*час
