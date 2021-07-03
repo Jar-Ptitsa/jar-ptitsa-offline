@@ -22,9 +22,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
             ...data.header,
             ...Object.assign({}, getImage('logo', data.header.logo)),
           },
-          bonus: {
-            ...data.bonus,
-            ...Object.assign({}, getImage('image', data.bonus.image)),
+          reasons: {
+            ...data.reasons,
           },
           advantages: {
             ...data.advantages,

@@ -9,7 +9,7 @@ import Form from '../components/Form';
 export const IndexPageTemplate = ({ data }) => {
   const {
     header,
-    bonus,
+    reasons,
     advantages,
     secret,
     treasure,
@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <Header {...header} />
-      <Section {...bonus} />
+      <Section {...reasons} />
       <Section {...advantages} />
       <Section {...secret} listContentType='video' />
       <Section {...treasure} />
@@ -67,9 +67,8 @@ export const pageQuery = graphql`
             }
           }
         }
-        bonus {
+        reasons {
           title
-          description
           listType
           list {
             title
