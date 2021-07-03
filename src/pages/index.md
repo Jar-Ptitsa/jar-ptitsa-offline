@@ -6,7 +6,7 @@ header:
     группы и группы РКИ на новый учебный сезон 2021-2022.
   logo: /img/uploads/logo_cropped.jpg
 reasons:
-  title: '7 ПРИЧИН, ПОЧЕМУ РУССКИЙ ЯЗЫК ЛУЧШЕ ИЗУЧАТЬ В "ЖАР-ПТИЦЕ"'
+  title: 7 ПРИЧИН, ПОЧЕМУ РУССКИЙ ЯЗЫК ЛУЧШЕ ИЗУЧАТЬ В "ЖАР-ПТИЦЕ"
   listType: none
   list:
     - alignImage: right
@@ -88,7 +88,7 @@ advantages:
   image: /img/uploads/teachers-wo.jpg
   alignImage: center
 secret:
-  title: "ПОЧЕМУ СРЕДА САМЫЙ ЛЮБИМЫЙ ДЕНЬ?"
+  title: ПОЧЕМУ СРЕДА САМЫЙ ЛЮБИМЫЙ ДЕНЬ?
   description: В первой половине дня мы проводим цикл занятий по эстетическому и
     культурному развитию и приглашаем детей в нашу творческую лабораторию*, в
     которой мы преподаём в игровой развлекательно-познавательной манере такие
@@ -142,12 +142,8 @@ plans:
       title: Пакет 6 часов
       description: "1800 евро*год "
       image: /img/uploads/logo_cropped.jpg
-    - alignImage: center
-      title: 1 час группового занятия
-      description: 15 евро*час
-    - alignImage: center
-      title: Индивидуальное обучение
-      description: 25 евро *час
+  afterwords: Вы также можете посещать групповые занятия (15 евро/час) или
+    заниматься индивидуально (25 евро/час).
 freeLesson:
   title: ЛУЧШЕ ОДИН РАЗ УВИДЕТЬ,  чем сто раз услышать
   description: >-
