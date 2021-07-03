@@ -141,8 +141,9 @@ plans:
       title: Пакет 3 часа
       description: 1000 евро в год
     - alignImage: center
-      title: Пакет 6 часов + 2 часа в подарок
+      title: Пакет 6 часов
       description: "1800 евро*год "
+      image: /img/uploads/logo.jpg
     - alignImage: center
       title: 1 час группового занятия
       description: 15 евро*час
