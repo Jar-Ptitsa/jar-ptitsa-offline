@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Section from '../components/Section';
+import SectionAfterwords from '../components/SectionAfterwords';
 import Form from '../components/Form';
 
 export const IndexPageTemplate = ({ data }) => {
@@ -25,7 +26,7 @@ export const IndexPageTemplate = ({ data }) => {
       <Section {...advantages} />
       <Section {...secret} listContentType='video' />
       <Section {...treasure} />
-      <Section {...plans} listContentType='card' />
+      <SectionAfterwords {...plans} listContentType='card' />
       <Section {...freeLesson} />
       <Form {...formData} />
     </React.Fragment>
@@ -124,6 +125,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          afterwords
         }
         freeLesson {
           title

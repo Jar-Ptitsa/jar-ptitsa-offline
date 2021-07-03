@@ -5,9 +5,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Школа Жар-Птица',
-    // TODO description
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Для анонса в шапке/ссылке:     Школа русского языка online & offline для билингвов и инофонов. Наша миссия - обучение, развитие и поддержка русского языка и русской культуры во Франции. Мы ведём свою деятельность offline в западном предместье Парижа под Версалем. Работаем как школа дополнительного образования по средам и субботам. Мы - профильная школа, в которой базовый предмет - русский язык. Оnline-формат не имеет территориальной привязанности, мы открыты для всех желающих!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
