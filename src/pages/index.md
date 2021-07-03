@@ -106,7 +106,7 @@ secret:
     - title: Third
       description: youtube YE7VzlLtp-4
 treasure:
-  title: "И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА"
+  title: И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА
   listType: bulleted
   list:
     - alignImage: right
@@ -115,6 +115,14 @@ treasure:
         велика их заслуга в обучении и воспитании наших детей: Оксана
         Комоликова, Светлана Шеянова, Ольга Тарасова, Марина Гаева, Галина
         Авагян, Анастасия Фомина, Анастасия Пономарёва"
+      teachers:
+        list:
+          - image: /img/uploads/1.png
+          - image: /img/uploads/2.png
+          - image: /img/uploads/3.png
+          - image: /img/uploads/4.png
+          - image: /img/uploads/5.png
+          - image: /img/uploads/6.png
     - alignImage: left
       description: >-
         **Есть ещё один** счастливый билет **в нашей школе – педагог в студии
@@ -133,7 +141,7 @@ treasure:
 
         * Победительница и финалистка международных соревнований
 plans:
-  title: 'ГОДОВЫЕ ТАРИФЫ НА ОБУЧЕНИЕ В ЖАР-ПТИЦЕ'
+  title: ГОДОВЫЕ ТАРИФЫ НА ОБУЧЕНИЕ В ЖАР-ПТИЦЕ
   list:
     - alignImage: center
       title: Пакет 3 часа
