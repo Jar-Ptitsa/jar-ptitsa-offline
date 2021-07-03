@@ -4,20 +4,30 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Section from '../components/Section';
+import Form from '../components/Form';
 
 export const IndexPageTemplate = ({ data }) => {
-  const { header, bonus, advantages, secret, treasure, plans, freeLesson } =
-    data;
+  const {
+    header,
+    bonus,
+    advantages,
+    secret,
+    treasure,
+    plans,
+    freeLesson,
+    formData,
+  } = data;
 
   return (
     <React.Fragment>
       <Header {...header} />
       <Section {...bonus} />
       <Section {...advantages} />
-      <Section {...secret} />
+      <Section {...secret} listContentType='video' />
       <Section {...treasure} />
-      <Section {...plans} />
+      <Section {...plans} listContentType='card' />
       <Section {...freeLesson} />
+      <Form {...formData} />
     </React.Fragment>
   );
 };
@@ -76,6 +86,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          alignImage
           listType
           list {
             title
@@ -106,6 +117,13 @@ export const pageQuery = graphql`
             alignImage
             title
             description
+            image {
+              childImageSharp {
+                fluid(maxWidth: 320, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
         freeLesson {
@@ -115,6 +133,14 @@ export const pageQuery = graphql`
             alignImage
             title
             description
+          }
+        }
+        formData {
+          title
+          description
+          formInputs {
+            inputType
+            inputLabel
           }
         }
       }

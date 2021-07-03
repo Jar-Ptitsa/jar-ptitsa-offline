@@ -4,11 +4,24 @@ import AlignContent from './AlignContent';
 import Image from './Image';
 import List from './List';
 import RenderContent from './RenderContent';
+import VideoList from './VideoList';
+import CardList from './CardList';
 
-const Section = ({ title, description, image, alignImage, list, listType }) => {
+const Section = ({
+  title,
+  description,
+  image,
+  alignImage,
+  list,
+  listType,
+  listContentType = 'content',
+}) => {
   const content = { title, description };
-  const align = (alignImage && alignImage[0]) || 'center';
+  const align = alignImage || 'center';
 
+  const isContent = list && listContentType === 'content';
+  const isVideo = list && listContentType === 'video';
+  const isCard = list && listContentType === 'card';
 
   return (
     <section className='pt-6'>
@@ -23,7 +36,9 @@ const Section = ({ title, description, image, alignImage, list, listType }) => {
         }
         image={<Image image={image} />}
       />
-      {list && <List list={list} listType={listType} />}
+      {isContent && <List list={list} listType={listType} />}
+      {isVideo && <VideoList list={list} />}
+      {isCard && <CardList list={list} />}
     </section>
   );
 };

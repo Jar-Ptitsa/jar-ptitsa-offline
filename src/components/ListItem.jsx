@@ -3,24 +3,15 @@ import RenderContent from './RenderContent';
 
 import Image from './Image';
 import AlignContent from './AlignContent';
-import VideoDetail from './VideoDetail';
 
 const ListItem = ({ item, listType }) => {
   const align = item.alignImage;
-  const isVideo = item.description.includes('youtube');
-
-  const renderVideoItem = ({ title, description }) => {
-    if (isVideo) {
-      const videoId = description.split(' ')[1];
-
-      return <VideoDetail videoId={videoId} title={title} />;
-    }
-  };
+  const isNone = listType === 'none';
 
   const renderListItem = (item, listType) => {
     return (
       <React.Fragment>
-        {listType === 'none' ? (
+        {isNone ? (
           <RenderContent {...item} />
         ) : (
           <li>
@@ -32,16 +23,11 @@ const ListItem = ({ item, listType }) => {
   };
 
   return (
-    <React.Fragment>
-      {isVideo && renderVideoItem(item)}
-      {!isVideo && (
-        <AlignContent
-          align={align}
-          content={renderListItem(item, listType)}
-          image={<Image image={item.image} />}
-        />
-      )}
-    </React.Fragment>
+    <AlignContent
+      align={align}
+      content={renderListItem(item, listType)}
+      image={<Image image={item.image} />}
+    />
   );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AlignContent = ({ align, content, image }) => {
-  const hasImage = image.props.image;
+  const hasImage = image && image.props.image;
 
   if (align === 'center')
     return (
@@ -13,7 +13,7 @@ const AlignContent = ({ align, content, image }) => {
 
   if (align === 'right')
     return (
-      <div className='columns'>
+      <div className='columns is-align-items-center'>
         <div className='column'>
           {content && <div className='block'>{content}</div>}
         </div>
@@ -23,7 +23,7 @@ const AlignContent = ({ align, content, image }) => {
 
   if (align === 'left')
     return (
-      <div className='columns'>
+      <div className='columns is-align-items-center'>
         {image && <div className='column is-4'>{image}</div>}
         <div className='column'>
           <div className='block'>

@@ -8,7 +8,6 @@ import '../../node_modules/bulma/bulma.sass';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  // TODO site favicon
   return (
     <div>
       <Helmet>
@@ -33,6 +32,8 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/favicon-16x16.png`}
           sizes='16x16'
         />
+
+        <link rel='manifest' href={`${withPrefix('/')}img/site.webmanifest`} />
 
         <link
           rel='mask-icon'

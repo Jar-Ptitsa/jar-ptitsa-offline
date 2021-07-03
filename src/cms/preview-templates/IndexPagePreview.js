@@ -6,9 +6,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
-    //   image={getAsset(data.image)}
-    console.log(data.advantages);
-
     const getImage = (name, image) => {
       if (image) {
         return { [name]: getAsset(image) };
@@ -27,27 +24,30 @@ const IndexPagePreview = ({ entry, getAsset }) => {
           },
           bonus: {
             ...data.bonus,
-            ...Object.assign({}, getImage('logo', data.bonus.image)),
+            ...Object.assign({}, getImage('image', data.bonus.image)),
           },
           advantages: {
             ...data.advantages,
-            ...Object.assign({}, getImage('logo', data.advantages.image)),
+            ...Object.assign({}, getImage('image', data.advantages.image)),
           },
           secret: {
             ...data.secret,
-            ...Object.assign({}, getImage('logo', data.secret.image)),
+            ...Object.assign({}, getImage('image', data.secret.image)),
           },
           treasure: {
             ...data.treasure,
-            ...Object.assign({}, getImage('logo', data.treasure.image)),
+            ...Object.assign({}, getImage('image', data.treasure.image)),
           },
           plans: {
             ...data.plans,
-            ...Object.assign({}, getImage('logo', data.plans.image)),
+            ...Object.assign({}, getImage('image', data.plans.image)),
           },
           freeLesson: {
             ...data.freeLesson,
-            ...Object.assign({}, getImage('logo', data.freeLesson.image)),
+            ...Object.assign({}, getImage('image', data.freeLesson.image)),
+          },
+          formData: {
+            ...data.formData,
           },
         }}
       />

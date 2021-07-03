@@ -1,8 +1,8 @@
 import React from 'react';
 
-const VideoDetail = ({ video: videoId, title }) => {
+const VideoDetail = ({ videoId, title }) => {
   return (
-    <div className='card'>
+    <div className='card m-2'>
       <div className='card-image'>
         <iframe
           src={`https://www.youtube.com/embed/${videoId}`}
@@ -10,11 +10,7 @@ const VideoDetail = ({ video: videoId, title }) => {
           frameBorder='0'
         />
       </div>
-      <div className='card-content'>
-        <div className='card-header'>
-          <p className='card-header-title'>{title}</p>
-        </div>
-      </div>
+      <p className='card-header-title'>{title}</p>
     </div>
   );
 };
