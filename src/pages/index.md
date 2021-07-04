@@ -14,7 +14,6 @@ reasons:
         **Мы уже 11 лет на рынке** дополнительного билингвального образования во
         Франции, за это время у  школы сформировалась своя система ценностей:  
 
-
         * Индивидуальный подход к каждому ребёнку
 
         * Системный подход к развитию интеллекта ребёнка 
@@ -109,12 +108,12 @@ treasure:
       Комоликова, Светлана Шеянова, Ольга Тарасова, Марина Гаева, Галина
       Авагян, Анастасия Фомина, Анастасия Пономарёва"
     list:
-        - image: /img/uploads/1.png
-        - image: /img/uploads/2.png
-        - image: /img/uploads/3.png
-        - image: /img/uploads/4.png
-        - image: /img/uploads/5.png
-        - image: /img/uploads/6.png
+      - image: /img/uploads/2.png
+      - image: /img/uploads/3.png
+      - image: /img/uploads/4.png
+      - image: /img/uploads/1.png
+      - image: /img/uploads/5.png
+      - image: /img/uploads/6.png
   dance:
     description: >-
       **Есть ещё один** счастливый билет **в нашей школе – педагог в студии
@@ -134,33 +133,29 @@ treasure:
     video: YE7VzlLtp-4
 testimonials:
   title: А ВОТ ЧТО ГОВОРЯТ О НАС РОДИТЕЛИ УЧЕНИКОВ
+  description: Дети и родители довольны
   list:
     - author: Елена
       quote: Как хорошо, что у нас есть такая школа! Спасибо большое!
       image: /img/uploads/2.png
-      alignImage: left
     - author: Ольга
       quote: Нам сильно повезло, что школа существует и наши детки могут не забывать
         русский язык и культуру. Спасибо за отличную идею 11 лет назад и всегда
         гибкую организацию!
       image: /img/uploads/5.png
-      alignImage: left
-    - alignImage: left
-      image: /img/uploads/4.png
-      author: Ирина
+    - author: Ирина
       quote: Живи и процветай, наша удивительная школа. Пусть в твоих стенах всегда
         царит семейная атмосфера уюта, но вместе с тем атмосфера знаний,
         творчества, и креативности. Пусть всегда слышен детский смех и рабость.
         Радость от того, что вы вместе растем и развиваемся! Долгих тебе лет,
         Жар Птица и наши учителя, удачи и процветания!
+      image: /img/uploads/4.png
 plans:
   title: ГОДОВЫЕ ТАРИФЫ НА ОБУЧЕНИЕ В ЖАР-ПТИЦЕ
   list:
-    - alignImage: center
-      title: Пакет 3 часа
+    - title: Пакет 3 часа
       description: 1000 евро в год
-    - alignImage: center
-      title: Пакет 6 часов
+    - title: Пакет 6 часов
       description: "1800 евро*год "
       image: /img/uploads/logo_cropped.jpg
   afterwords: Вы также можете посещать групповые занятия (15 евро/час) или

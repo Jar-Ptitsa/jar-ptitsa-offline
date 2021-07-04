@@ -68,26 +68,20 @@ collections:
           ]}
 # testimonials
           - {label: Testimonials, name: testimonials, widget: object, collapsed: true, fields: [
-              {label: Image, name: image, widget: image, required: false},
-              {label: "Align Image",  name: alignImage,  widget: "select",   options: ["left", "center", "right"],  required: false },
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: markdown, required: false},
               {label: List, name: list, widget: list, fields: [
                 {label: Image, name: image, widget: image, required: false},
-                {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"],  required: false },
                 {label: Author, name: author, widget: string},
                 {label: Quote, name: quote, widget: markdown},
               ]}
           ]}
 # plans
           - {label: Plans, name: plans, widget: object, collapsed: true, fields: [
-              {label: Image, name: image, widget: image, required: false},
-              {label: "Align Image",  name: alignImage,  widget: "select",   options: ["left", "center", "right"],  required: false },
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: markdown, required: false},
               {label: Plans, name: list, widget: list, fields: [
                 {label: Image, name: image, widget: image, required: false},
-                {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"],  required: false },
                 {label: Title, name: title, widget: string},
                 {label: Description, name: description, widget: markdown},
               ]},
