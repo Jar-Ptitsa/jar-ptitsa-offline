@@ -55,19 +55,16 @@ collections:
 # treasure
           - {label: Treasure, name: treasure, widget: object, collapsed: true, fields: [
               {label: Title, name: title, widget: string},
-              {label: Description, name: description, widget: markdown, required: false},
-              {label: "Type of list",  name: "listType",  widget: "select",   options: ["numbered", "bulleted","none"], default: ['bulleted'] },
-              {label: List, name: list, widget: list, fields: [
-                {label: Image, name: image, widget: image, required: false},
-                {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"],  required: false },
-                {label: Title, name: title, widget: string, required: false},
-                {label: Description, name: description, widget: markdown, required: false},
-                {label: Teachers, name: teachers, widget: object, fields: [
-                  {label: List, name: list, widget: list, fields: [
+              {label: Teachers, name: teachers, widget: object, collapsed: true, fields: [
+                 {label: Description, name: description, widget: markdown, required: false},
+                 {label: List, name: list, widget: list, fields: [
                     {label: Image, name: image, widget: image, required: false},
                   ]}
-                ]}
-              ]}
+              ]},
+              {label: Dance, name: dance, widget: object, collapsed: true, fields: [
+                 {label: Description, name: description, widget: markdown, required: false},
+                 {label: Video, name: video, widget: string, required: false},
+              ]},
           ]}
 # testimonials
           - {label: Testimonials, name: testimonials, widget: object, collapsed: true, fields: [
