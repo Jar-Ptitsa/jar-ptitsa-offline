@@ -4,10 +4,10 @@ header:
   title: Школа русского языка для детей-билингвов и инофонов  «Жар-Птица»
   description: Объявляет дополнительный набор детей и подростков в билингвальные
     группы и группы РКИ на новый учебный сезон 2021-2022.
-  logo: /img/uploads/logo_cropped.jpg
+  image: /img/uploads/logo_cropped.jpg
+  alignImage: left
 reasons:
   title: 7 ПРИЧИН, ПОЧЕМУ РУССКИЙ ЯЗЫК ЛУЧШЕ ИЗУЧАТЬ В "ЖАР-ПТИЦЕ"
-  listType: none
   list:
     - alignImage: right
       title: 1. Давно на рынке
