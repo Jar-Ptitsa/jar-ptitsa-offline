@@ -153,10 +153,11 @@ testimonials:
 plans:
   title: ГОДОВЫЕ ТАРИФЫ НА ОБУЧЕНИЕ В ЖАР-ПТИЦЕ
   list:
-    - title: Пакет 3 часа
-      description: 1000 евро в год
-    - title: Пакет 6 часов
-      description: "1800 евро*год "
+    - title: Пакет полдня
+      description: "1000 евро/год"
+      image: /img/uploads/logo_cropped.jpg
+    - title: Пакет весь день
+      description: "1800 евро/год"
       image: /img/uploads/logo_cropped.jpg
   afterwords: Вы также можете посещать групповые занятия (15 евро/час) или
     заниматься индивидуально (25 евро/час).
@@ -167,14 +168,9 @@ freeLesson:
     принять решение о записи на весь учебный год.
 
 
-    Для этого нужно определиться с днём недели для учёбы и со временем занятий. Вот наши предложения:
-  list:
-    - alignImage: center
-      title: Среда
-      description: 9-12
+    Для этого нужно определиться с днём недели для учёбы и со временем занятий.
 formData:
   title: ЗАПИСАТЬСЯ НА ПРОБНЫЙ УРОК / ЗАДАТЬ ВОПРОС
-  description: Оставить заявку/форма
   formInputs:
     - inputType: text
       inputLabel: Фамилия

@@ -90,22 +90,12 @@ collections:
 # free lesson
           - {label: Free Lesson, name: freeLesson, widget: object, collapsed: true, fields: [
               {label: Image, name: image, widget: image, required: false},
-              {label: "Align Image",  name: alignImage,  widget: "select",   options: ["left", "center", "right"],  required: false },
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: markdown, required: false},
-              {label: Content, name: list, widget: list, fields: [
-                {label: Image, name: image, widget: image, required: false},
-                {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"],  required: false },
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
-              ]}
           ]}
 # form
           - {label: Form Data, name: formData, widget: object, collapsed: true, fields: [
-              {label: Image, name: image, widget: image, required: false},
-              {label: "Align Image",  name: alignImage,  widget: "select",   options: ["left", "center", "right"],  required: false },
               {label: Title, name: title, widget: string},
-              {label: Description, name: description, widget: string, required: false},
               {label: Form Inputs, name: formInputs, widget: list, fields: [
                 {label: Input Label, name: inputLabel, widget: string},
                 {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"], default: ['text'] },
