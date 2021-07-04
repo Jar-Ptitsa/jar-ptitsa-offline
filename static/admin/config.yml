@@ -31,9 +31,9 @@ collections:
           - {label: Reasons, name: reasons, widget: object, collapsed: true, fields: [
               {label: Title, name: title, widget: string},
               {label: List, name: list, widget: list, fields: [
+                {label: Title, name: title, widget: string, required: false},
                 {label: Image, name: image, widget: image, required: false},
                 {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"],  required: false },
-                {label: Title, name: title, widget: string, required: false},
                 {label: Description, name: description, widget: markdown, required: false},
               ]}
           ]}
@@ -44,23 +44,16 @@ collections:
                 {label: Description, name: description, widget: markdown, required: false},
               ]}
           ]}
-# secret
-          - {label: Secret, name: secret, widget: object, collapsed: true, fields: [
-              {label: Image, name: image, widget: image, required: false},
-              {label: "Align Image",  name: alignImage,  widget: "select",   options: ["left", "center", "right"],  required: false },
-              {label: Title, name: title, widget: string},
+# wednesday
+          - {label: Wednesday, name: wednesday, widget: object, collapsed: true, fields: [
               {label: Description, name: description, widget: markdown, required: false},
-              {label: List, name: list, widget: list, fields: [
-                {label: Image, name: image, widget: image, required: false},
-                {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"],  required: false },
+              {label: 'Videos [max 3]', name: list, widget: list, fields: [
                 {label: Title, name: title, widget: string, required: false},
-                {label: Description, name: description, widget: markdown, required: false},
+                {label: VideoID, name: video, widget: string, required: false},
               ]}
           ]}
 # treasure
           - {label: Treasure, name: treasure, widget: object, collapsed: true, fields: [
-              {label: Image, name: image, widget: image, required: false},
-              {label: "Align Image",  name: alignImage,  widget: "select",   options: ["left", "center", "right"],  required: false },
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: markdown, required: false},
               {label: "Type of list",  name: "listType",  widget: "select",   options: ["numbered", "bulleted","none"], default: ['bulleted'] },

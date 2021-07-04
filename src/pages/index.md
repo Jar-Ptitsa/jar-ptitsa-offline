@@ -84,7 +84,7 @@ advantages:
         можно заполнить целый день?"
   image: /img/uploads/teachers-wo.jpg
   alignImage: center
-secret:
+wednesday:
   title: ПОЧЕМУ СРЕДА САМЫЙ ЛЮБИМЫЙ ДЕНЬ?
   description: В первой половине дня мы проводим цикл занятий по эстетическому и
     культурному развитию и приглашаем детей в нашу творческую лабораторию*, в
@@ -95,13 +95,12 @@ secret:
     проводим уроки английского языка. Все занятия адаптированы под каждый
     возраст ребёнка. Эти занятия очень нравятся детям.
   list:
-    - alignImage: center
-      title: First
-      description: youtube YE7VzlLtp-4
+    - title: First
+      video: youtube YE7VzlLtp-4
     - title: Second
-      description: youtube YE7VzlLtp-4
+      video: youtube YE7VzlLtp-4
     - title: Third
-      description: youtube YE7VzlLtp-4
+      video: youtube YE7VzlLtp-4
 treasure:
   title: И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА
   listType: bulleted
