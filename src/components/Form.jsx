@@ -1,6 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby-link';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -30,29 +30,6 @@ const Form = ({ title, formInputs }) => {
       .catch((error) => alert(error));
   };
 
-  const renderInput = ({ inputType, inputLabel }) => {
-    const inputId = uuidv4();
-
-    return (
-      <div className='mb-3' key={uuidv4()}>
-        <label className='form-label' htmlFor={inputId}>
-          {inputLabel}
-        </label>
-        <input
-          className='form-control'
-          type={inputType}
-          id={inputId}
-          onChange={handleChange}
-          required
-        />
-      </div>
-    );
-  };
-
-  const renderInputs = (formInputs) => {
-    return formInputs.map((input) => renderInput({ ...input }));
-  };
-
   return (
     <section className='mb-3'>
       <h2 className='fw-normal'>{title}</h2>
@@ -66,7 +43,58 @@ const Form = ({ title, formInputs }) => {
           data-netlify='true'
           data-netlify-honeypot='bot-field'
           onSubmit={handleSubmit}>
-          {renderInputs(formInputs)}
+          <div className='mb-3'>
+            <label className='form-label' htmlFor='name'>
+              Имя *
+            </label>
+            <input
+              className='form-control'
+              type='text'
+              name='name'
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className='mb-3'>
+            <label className='form-label' htmlFor='surname'>
+              Фамилия *
+            </label>
+            <input
+              className='form-control'
+              type='text'
+              name='surname'
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className='mb-3'>
+            <label className='form-label' htmlFor='email'>
+              Email *
+            </label>
+            <input
+              className='form-control'
+              type='text'
+              name='email'
+              onChange={handleChange}
+              required
+            />
+          </div>
+
+          <div className='mb-3'>
+            <label className='form-label' htmlFor='phone'>
+              Телефон *
+            </label>
+            <input
+              className='form-control'
+              type='text'
+              name='phone'
+              onChange={handleChange}
+              required
+            />
+          </div>
+
           <input type='hidden' name='form-name' value='contact' />
           <input
             type='hidden'
