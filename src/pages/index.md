@@ -95,11 +95,11 @@ wednesday:
     возраст ребёнка. Эти занятия очень нравятся детям.
   list:
     - title: First
-      video: YE7VzlLtp-4
+      video: xxx
     - title: Second
-      video: YE7VzlLtp-4
+      video: xxx
     - title: Third
-      video: YE7VzlLtp-4
+      video: xxx
 treasure:
   title: И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА
   teachers: 
@@ -130,7 +130,7 @@ treasure:
       * КМС России
 
       * Победительница и финалистка международных соревнований
-    video: YE7VzlLtp-4
+    video: xxx
 testimonials:
   title: А ВОТ ЧТО ГОВОРЯТ О НАС РОДИТЕЛИ УЧЕНИКОВ
   description: Дети и родители довольны
@@ -164,20 +164,17 @@ plans:
 freeLesson:
   title: ЛУЧШЕ ОДИН РАЗ УВИДЕТЬ,  ЧЕМ СТО РАЗ УСЛЫШАТЬ
   description: >-
-    поэтому мы предлагаем вам сначала побывать на пробном уроке,  а уж потом
-    принять решение о записи на весь учебный год.
-
-
-    Для этого нужно определиться с днём недели для учёбы и со временем занятий.
+    Поэтому мы предлагаем вам сначала побывать на пробном уроке,  а уж потом
+    принять решение о записи на весь учебный год. Для этого нужно определиться с днём недели для учёбы и со временем занятий.
 formData:
   title: ЗАПИСАТЬСЯ НА ПРОБНЫЙ УРОК / ЗАДАТЬ ВОПРОС
   formInputs:
     - inputType: text
-      inputLabel: Фамилия
+      inputLabel: Имя *
     - inputType: text
-      inputLabel: Имя
+      inputLabel: Фамилия *
     - inputType: email
-      inputLabel: Email
+      inputLabel: Email *
     - inputType: text
-      inputLabel: Телефон
+      inputLabel: Телефон *
 ---

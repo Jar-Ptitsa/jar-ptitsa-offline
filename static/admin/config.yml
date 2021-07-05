@@ -89,7 +89,6 @@ collections:
           ]}
 # free lesson
           - {label: Free Lesson, name: freeLesson, widget: object, collapsed: true, fields: [
-              {label: Image, name: image, widget: image, required: false},
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: markdown, required: false},
           ]}
