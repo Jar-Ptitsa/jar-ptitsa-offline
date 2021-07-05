@@ -8,6 +8,25 @@ const encode = (data) => {
     .join('&');
 };
 
+const renderInputs = (formInputs, handleChange) => {
+  const renderInput = ({ inputType, inputLabel }) => {
+    return (
+      <div className='mb-3'>
+        <label className='form-label'>{inputLabel}</label>
+        <input
+          className='form-control'
+          type={inputType}
+          name={inputLabel}
+          onChange={handleChange}
+          required
+        />
+      </div>
+    );
+  };
+
+  return formInputs.map((input) => renderInput({ ...input }));
+};
+
 const Form = ({ title, formInputs }) => {
   const [state, setState] = React.useState({});
 
@@ -43,58 +62,7 @@ const Form = ({ title, formInputs }) => {
           data-netlify='true'
           data-netlify-honeypot='bot-field'
           onSubmit={handleSubmit}>
-          <div className='mb-3'>
-            <label className='form-label' htmlFor='name'>
-              Имя *
-            </label>
-            <input
-              className='form-control'
-              type='text'
-              name='name'
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className='mb-3'>
-            <label className='form-label' htmlFor='surname'>
-              Фамилия *
-            </label>
-            <input
-              className='form-control'
-              type='text'
-              name='surname'
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className='mb-3'>
-            <label className='form-label' htmlFor='email'>
-              Email *
-            </label>
-            <input
-              className='form-control'
-              type='text'
-              name='email'
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div className='mb-3'>
-            <label className='form-label' htmlFor='phone'>
-              Телефон *
-            </label>
-            <input
-              className='form-control'
-              type='text'
-              name='phone'
-              onChange={handleChange}
-              required
-            />
-          </div>
-
+          {renderInputs(formInputs, handleChange)}
           <input type='hidden' name='form-name' value='contact' />
           <input
             type='hidden'
