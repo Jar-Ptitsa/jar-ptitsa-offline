@@ -2,34 +2,28 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import FormInput from './FormInput';
-import AlignContent from './AlignContent';
-import RenderContent from './RenderContent';
 
-const Form = ({ title, description, formInputs }) => {
+const Form = ({ title, formInputs }) => {
   const renderInputs = (formInputs) => {
     return formInputs.map((input) => <FormInput {...input} key={uuidv4()} />);
   };
 
-  const content = { title, description };
-
   return (
-    <section className='pt-6'>
-      <AlignContent
-        align='center'
-        content={
-          <RenderContent
-            {...content}
-            titleClass='title is-4 has-text-weight-semibold'
-            descriptionClass='block m-1'
-          />
-        }
-      />
+    <section className='mb-3'>
+      <h2 className='fw-normal'>{title}</h2>
 
-      <div className='columns'>
-        <form className='column is-8 is-offset-2' name="contact" method="POST" data-netlify="true">
+      <div className='row'>
+        <form
+          className='col-12 col-sm-8 col-md-6 mx-auto'
+          name='contact'
+          method='POST'
+          action='/thanks/'
+          data-netlify='true'
+          data-netlify-honeypot='bot-field'>
           {renderInputs(formInputs)}
-          <div className='has-text-centered'>
-            <button type='submit' className='button is-success is-large'>
+          <input type='hidden' name='form-name' value='contact' />
+          <div className='text-center'>
+            <button type='submit' className='btn btn-success btn-lg'>
               Отправить
             </button>
           </div>

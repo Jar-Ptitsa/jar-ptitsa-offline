@@ -1,15 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import useSiteMetadata from './SiteMetadata';
 import { withPrefix } from 'gatsby';
 
-// bulma css framework
-import '../../node_modules/bulma/bulma.sass';
+import useSiteMetadata from './SiteMetadata';
+
+// bootstrap and custom scss
+import '../styles/styles.scss';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div>
+    <React.Fragment>
       <Helmet>
         <html lang='en' />
         <title>{title}</title>
@@ -50,10 +51,10 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <div className='m-2'>
-        <div className='container is-max-desktop'>{children}</div>
+      <div className='container mt-2' style={{ maxWidth: '960px' }}>
+        {children}
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

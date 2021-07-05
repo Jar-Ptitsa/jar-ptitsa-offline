@@ -1,39 +1,35 @@
 import React from 'react';
 
-const AlignContent = ({ align, content, image }) => {
-  const hasImage = image && image.props.image;
-
+const AlignContent = ({ align = 'center', leftContent, rightContent }) => {
   if (align === 'center')
     return (
-      <div className='block'>
-        {hasImage && <div className='pb-6'>{image}</div>}
-        {content && <div className='block'>{content}</div>}
-      </div>
+      <React.Fragment>
+        {leftContent && leftContent}
+        {rightContent && rightContent}
+      </React.Fragment>
     );
 
-  if (align === 'right')
+  if (align === 'left') {
+    const rightClass = !leftContent ? 'col offset-sm-4' : 'col';
+
     return (
-      <div className='columns is-align-items-center'>
-        <div className='column'>
-          {content && <div className='block'>{content}</div>}
-        </div>
-        {image && <div className='column is-4'>{image}</div>}
+      <div className='row align-items-center'>
+        {leftContent && <div className='col-sm-4'>{leftContent}</div>}
+        <div className={rightClass}>{rightContent}</div>
       </div>
     );
+  }
 
-  if (align === 'left')
+  if (align === 'right') {
     return (
-      <div className='columns is-align-items-center'>
-        {image && <div className='column is-4'>{image}</div>}
-        <div className='column'>
-          <div className='block'>
-            {content && <div className='block'>{content}</div>}
-          </div>
-        </div>
+      <div className='row align-items-center'>
+        <div className='col-sm-8 order-2 order-sm-1'>{leftContent}</div>
+        {rightContent && (
+          <div className='col-sm-4 order-1 order-sm-2'>{rightContent}</div>
+        )}
       </div>
     );
-
-  return <div></div>;
+  }
 };
 
 export default AlignContent;

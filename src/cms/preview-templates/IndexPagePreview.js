@@ -14,36 +14,52 @@ const IndexPagePreview = ({ entry, getAsset }) => {
       return { [name]: null };
     };
 
+    const dataProcessing = (obj) => {
+      console.log('object in', obj);
+      const newObj = { ...obj };
+
+      if (obj.image) {
+        newObj.image = getAsset(newObj.image);
+      }
+
+      // if (obj.list) {
+      //   newObj.list = obj.list.map((item) => {
+      //     return { ...item, image: getAsset(item.image) };
+      //   });
+      // }
+
+      console.log('object exit', newObj);
+      return newObj;
+    };
+
     return (
       <IndexPageTemplate
         data={{
           ...data,
           header: {
-            ...data.header,
-            ...Object.assign({}, getImage('logo', data.header.logo)),
+            ...dataProcessing(data.header),
+            // ...Object.assign({}, getImage('image', data.header.image)),
           },
           reasons: {
             ...data.reasons,
           },
           advantages: {
             ...data.advantages,
-            ...Object.assign({}, getImage('image', data.advantages.image)),
           },
-          secret: {
-            ...data.secret,
-            ...Object.assign({}, getImage('image', data.secret.image)),
-          },
-          treasure: {
-            ...data.treasure,
-            ...Object.assign({}, getImage('image', data.treasure.image)),
+          // wednesday: {
+          //   ...data.wednesday,
+          // },
+          // treasure: {
+          //   ...dataProcessing(data.treasure),
+          // },
+          testimonials: {
+            ...data.testimonials,
           },
           plans: {
-            ...data.plans,
-            ...Object.assign({}, getImage('image', data.plans.image)),
+            ...dataProcessing(data.plans),
           },
           freeLesson: {
             ...data.freeLesson,
-            ...Object.assign({}, getImage('image', data.freeLesson.image)),
           },
           formData: {
             ...data.formData,

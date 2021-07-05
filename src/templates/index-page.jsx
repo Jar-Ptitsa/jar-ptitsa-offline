@@ -3,8 +3,13 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import Section from '../components/Section';
-import SectionAfterwords from '../components/SectionAfterwords';
+import Reasons from '../components/Reasons';
+import Advantages from '../components/Advantages';
+import Wednesday from '../components/Wednesday';
+import Treasure from '../components/Treasure';
+import Testimonials from '../components/Testimonials';
+import Plans from '../components/Plans';
+import FreeLesson from '../components/FreeLesson';
 import Form from '../components/Form';
 
 export const IndexPageTemplate = ({ data }) => {
@@ -12,8 +17,9 @@ export const IndexPageTemplate = ({ data }) => {
     header,
     reasons,
     advantages,
-    secret,
+    wednesday,
     treasure,
+    testimonials,
     plans,
     freeLesson,
     formData,
@@ -22,12 +28,13 @@ export const IndexPageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <Header {...header} />
-      <Section {...reasons} />
-      <Section {...advantages} />
-      <Section {...secret} listContentType='video' />
-      <Section {...treasure} />
-      <SectionAfterwords {...plans} listContentType='card' />
-      <Section {...freeLesson} />
+      <Reasons {...reasons} />
+      <Advantages {...advantages} />
+      <Wednesday {...wednesday} />
+      <Treasure {...treasure} />
+      <Testimonials {...testimonials} />
+      <Plans {...plans} />
+      <FreeLesson {...freeLesson} />
       <Form {...formData} />
     </React.Fragment>
   );
@@ -45,14 +52,6 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage;
 
-// image {
-//   childImageSharp {
-//     fluid(maxWidth: 2048, quality: 100) {
-//       ...GatsbyImageSharpFluid
-//     }
-//   }
-// }
-
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
@@ -60,7 +59,7 @@ export const pageQuery = graphql`
         header {
           title
           description
-          logo {
+          image {
             childImageSharp {
               fluid(maxWidth: 960, quality: 100) {
                 ...GatsbyImageSharpFluid
@@ -70,11 +69,17 @@ export const pageQuery = graphql`
         }
         reasons {
           title
-          listType
           list {
             title
             description
             alignImage
+            image {
+              childImageSharp {
+                fluid(maxWidth: 960, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
         advantages {
@@ -89,32 +94,54 @@ export const pageQuery = graphql`
           alignImage
           listType
           list {
-            title
             description
-            alignImage
           }
         }
-        secret {
+        wednesday {
           title
           description
           list {
-            alignImage
             title
-            description
+            video
           }
         }
         treasure {
           title
-          list {
-            alignImage
-            title
+          teachers {
             description
+            list {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 320, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+          dance {
+            description
+            video
+          }
+        }
+        testimonials {
+          title
+          description
+          list {
+            author
+            quote
+            image {
+              childImageSharp {
+                fluid(maxWidth: 320, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
         plans {
           title
           list {
-            alignImage
             title
             description
             image {
@@ -130,15 +157,9 @@ export const pageQuery = graphql`
         freeLesson {
           title
           description
-          list {
-            alignImage
-            title
-            description
-          }
         }
         formData {
           title
-          description
           formInputs {
             inputType
             inputLabel
