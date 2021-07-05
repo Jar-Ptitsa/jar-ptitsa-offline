@@ -67,6 +67,7 @@ const Form = ({ title, formInputs }) => {
           <input
             type='hidden'
             name='subject'
+            id='subject'
             value='[JAR-PTITSA LENDING PAGE] New request from'
           />
           <div className='text-center'>
