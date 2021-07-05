@@ -2,7 +2,11 @@ import React from 'react';
 import { navigate } from 'gatsby-link';
 import { v4 as uuidv4 } from 'uuid';
 
-import FormInput from './FormInput';
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
 
 const Form = ({ title, formInputs }) => {
   const [state, setState] = React.useState({});
@@ -26,8 +30,27 @@ const Form = ({ title, formInputs }) => {
       .catch((error) => alert(error));
   };
 
+  const renderInput = ({ inputType, inputLabel }) => {
+    const inputId = uuidv4();
+
+    return (
+      <div className='mb-3' key={uuidv4()}>
+        <label className='form-label' htmlFor={inputId}>
+          {inputLabel}
+        </label>
+        <input
+          className='form-control'
+          type={inputType}
+          id={inputId}
+          onChange={handleChange}
+          required
+        />
+      </div>
+    );
+  };
+
   const renderInputs = (formInputs) => {
-    return formInputs.map((input) => <FormInput {...input} key={uuidv4()} />);
+    return formInputs.map((input) => renderInput({ ...input }));
   };
 
   return (
@@ -45,6 +68,11 @@ const Form = ({ title, formInputs }) => {
           onSubmit={handleSubmit}>
           {renderInputs(formInputs)}
           <input type='hidden' name='form-name' value='contact' />
+          <input
+            type='hidden'
+            name='subject'
+            value='[JAR-PTITSA LENDING PAGE] New request from'
+          />
           <div className='text-center'>
             <button type='submit' className='btn btn-success btn-lg'>
               Отправить
