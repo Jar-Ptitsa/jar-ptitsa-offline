@@ -9,7 +9,7 @@ const FormInput = ({ inputType, inputLabel }) => {
       <label className='form-label' htmlFor={inputId}>
         {inputLabel}
       </label>
-      <input className='form-control' type={inputType} id={inputId} required />
+      <input className='form-control' type={inputType} id={inputId} onChange={handleChange} required />
     </div>
   );
 };
