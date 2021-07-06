@@ -1,5 +1,8 @@
 backend:
+  # production
   name: git-gateway
+  # development
+  # name: github
   repo: Jar-Ptitsa/jar-ptitsa-landing
   branch: main
   commit_messages:
