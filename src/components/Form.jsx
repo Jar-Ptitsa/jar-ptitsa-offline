@@ -41,6 +41,7 @@ const Form = ({ title, formInputs }) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
+        subject: 'New message',
         ...state,
       }),
     })
@@ -57,7 +58,7 @@ const Form = ({ title, formInputs }) => {
           className='col-12 col-sm-8 col-md-6 mx-auto'
           name='contact'
           method='POST'
-          action='/thanks/'
+          action='/thank-you'
           data-netlify='true'
           data-netlify-honeypot='bot-field'
           onSubmit={handleSubmit}>
@@ -66,8 +67,7 @@ const Form = ({ title, formInputs }) => {
           <input
             type='hidden'
             name='subject'
-            id='subject'
-            value='[JAR-PTITSA LENDING PAGE] New request'
+            value='JAR-PTITSA LENDING PAGE - New request'
           />
           <div className='text-center'>
             <button type='submit' className='btn btn-success btn-lg'>
