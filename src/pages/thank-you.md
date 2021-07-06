@@ -1,7 +1,6 @@
 ---
 templateKey: thank-you
 title: Школа русского языка для детей-билингвов и инофонов  «Жар-Птица»
-description: Объявляет дополнительный набор детей и подростков в билингвальные
-группы и группы РКИ на новый учебный сезон 2021-2022.
+description: Try it first
 image: /img/uploads/logo_cropped.jpg
 ---

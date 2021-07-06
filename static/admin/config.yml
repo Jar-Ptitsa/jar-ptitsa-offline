@@ -21,6 +21,90 @@ collections:
         name: "thank-you"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
-            {label: Image, name: image, widget: image},
-            {label: Title, name: title, widget: string},
-            {label: Description, name: description, widget: markdown}
+          - {label: Image, name: image, widget: image},
+          - {label: Title, name: title, widget: string},
+          - {label: Description, name: description, widget: markdown}
+      - file: "src/pages/index.md"
+        label: "Landing Page"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+# header
+          - {label: Header, name: header, widget: object, collapsed: true, fields: [
+              {label: Logo, name: image, widget: image},
+              {label: Title, name: title, widget: string},
+              {label: Description, name: description, widget: markdown}
+          ]}
+# reasons
+          - {label: Reasons, name: reasons, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: List, name: list, widget: list, fields: [
+                {label: Title, name: title, widget: string, required: false},
+                {label: Image, name: image, widget: image, required: false},
+                {label: "Align Image",  name: "alignImage",  widget: "select",   options: ["left", "center", "right"],  required: false },
+                {label: Description, name: description, widget: markdown, required: false},
+              ]}
+          ]}
+# advantages
+          - {label: Advantages, name: advantages, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: List, name: list, widget: list, fields: [
+                {label: Description, name: description, widget: markdown, required: false},
+              ]}
+          ]}
+# wednesday
+          - {label: Wednesday, name: wednesday, widget: object, collapsed: true, fields: [
+              {label: Description, name: description, widget: markdown, required: false},
+              {label: 'Videos [max 3]', name: list, widget: list, fields: [
+                {label: Title, name: title, widget: string, required: false},
+                {label: VideoID, name: video, widget: string, required: false},
+              ]}
+          ]}
+# treasure
+          - {label: Treasure, name: treasure, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Teachers, name: teachers, widget: object, collapsed: true, fields: [
+                 {label: Description, name: description, widget: markdown, required: false},
+                 {label: List, name: list, widget: list, fields: [
+                    {label: Image, name: image, widget: image, required: false},
+                  ]}
+              ]},
+              {label: Dance, name: dance, widget: object, collapsed: true, fields: [
+                 {label: Description, name: description, widget: markdown, required: false},
+                 {label: Video, name: video, widget: string, required: false},
+              ]},
+          ]}
+# testimonials
+          - {label: Testimonials, name: testimonials, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Description, name: description, widget: markdown, required: false},
+              {label: List, name: list, widget: list, fields: [
+                {label: Image, name: image, widget: image, required: false},
+                {label: Author, name: author, widget: string},
+                {label: Quote, name: quote, widget: markdown},
+              ]}
+          ]}
+# plans
+          - {label: Plans, name: plans, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Description, name: description, widget: markdown, required: false},
+              {label: Plans, name: list, widget: list, fields: [
+                {label: Image, name: image, widget: image, required: false},
+                {label: Title, name: title, widget: string},
+                {label: Description, name: description, widget: markdown},
+              ]},
+              {label: Afterwords, name: afterwords, widget: markdown, required: false},
+          ]}
+# free lesson
+          - {label: Free Lesson, name: freeLesson, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Description, name: description, widget: markdown, required: false},
+          ]}
+# form
+          - {label: Form Data, name: formData, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Form Inputs, name: formInputs, widget: list, fields: [
+                {label: Input Label, name: inputLabel, widget: string},
+                {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"], default: ['text'] },
+              ]}
+          ]}
