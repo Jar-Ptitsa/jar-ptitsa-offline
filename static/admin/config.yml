@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: PoMkaNik/zar-ptitsa-landing-v2
+  repo: Jar-Ptitsa/jar-ptitsa-landing
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
