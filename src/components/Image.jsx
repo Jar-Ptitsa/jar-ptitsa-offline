@@ -4,11 +4,16 @@ import Img from 'gatsby-image';
 const Image = ({ image, className = '' }) => {
   if (!image) return null;
 
-  return !!image.childImageSharp ? (
-    <Img fluid={image.childImageSharp.fluid} className={className} alt='' />
-  ) : (
-    <img src={image.url} className={className} alt='' />
-  );
+  if (!!image.childImageSharp) {
+    return (
+      <Img fluid={image.childImageSharp.fluid} className={className} alt='' />
+    );
+  }
+
+  if (!!image && typeof image === 'string') {
+    return <img src={image} className={className} alt='' />;
+    // <img src={image.url} className={className} alt='' />
+  }
 };
 
 export default Image;

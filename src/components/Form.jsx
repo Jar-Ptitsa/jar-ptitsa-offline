@@ -1,6 +1,5 @@
 import React from 'react';
 import { navigate } from 'gatsby-link';
-// import { v4 as uuidv4 } from 'uuid';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -11,7 +10,7 @@ const encode = (data) => {
 const renderInputs = (formInputs, handleChange) => {
   const renderInput = ({ inputType, inputLabel }) => {
     return (
-      <div className='mb-3'>
+      <div className='mb-3' key={inputLabel}>
         <label className='form-label'>{inputLabel}</label>
         <input
           className='form-control'
@@ -68,7 +67,7 @@ const Form = ({ title, formInputs }) => {
             type='hidden'
             name='subject'
             id='subject'
-            value='[JAR-PTITSA LENDING PAGE] New request from'
+            value='[JAR-PTITSA LENDING PAGE] New request'
           />
           <div className='text-center'>
             <button type='submit' className='btn btn-success btn-lg'>

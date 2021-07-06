@@ -21,8 +21,7 @@ collections:
         name: "thank-you"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
-          - {label: Image, name: image, widget: image},
-          - {label: Title, name: title, widget: string},
+          - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
       - file: "src/pages/index.md"
         label: "Landing Page"

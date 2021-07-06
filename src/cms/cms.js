@@ -5,12 +5,14 @@ import CMS from 'netlify-cms-app';
 import styles from '!css-loader!sass-loader!../styles/styles.scss';
 // import templates
 import IndexPagePreview from './preview-templates/IndexPagePreview';
+import ThankYouPagePreview from './preview-templates/ThankYouPagePreview';
 
 // register styles
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
 // register templates
 CMS.registerPreviewTemplate('index', IndexPagePreview);
+CMS.registerPreviewTemplate('thank-you', ThankYouPagePreview);
 
 // additional component in markdown
 // youtube video - from
