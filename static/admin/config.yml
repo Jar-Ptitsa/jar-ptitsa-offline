@@ -100,3 +100,11 @@ collections:
                 {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"], default: ['text'] },
               ]}
           ]}
+      - file: "src/pages/thank-you.md"
+        label: "Thank You Page"
+        name: "thank-you"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
+            {label: Image, name: image, widget: image},
+            {label: Title, name: title, widget: string},
+            {label: Description, name: description, widget: markdown}
