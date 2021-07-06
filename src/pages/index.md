@@ -96,7 +96,7 @@ wednesday:
     возраст ребёнка. Эти занятия очень нравятся детям.
   list:
     - title: First
-      video: Irrp7nyjXoA
+      video: o1Y3XRMDVSM
     - title: Second
       video: 2YD1FpppUEY
 treasure:
