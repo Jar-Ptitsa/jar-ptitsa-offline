@@ -1,25 +1,21 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { v4 as uuid } from 'uuid';
 
 import Image from './Image';
 import VideoDetail from './VideoDetail';
 
-const Treasure = ({ title, teachers, dance }) => {
-  // render teachers photos
-  const renderList = (list) => {
-    return list.map((image) => {
-      return (
-        <div className='col-6 col-sm-4' key={uuid()}>
-          <Image
-            image={image.image}
-            className='img-fluid w-75 mx-auto d-block'
-          />
-        </div>
-      );
-    });
-  };
+// render teachers photos
+const renderList = (list) => {
+  return list.map((image) => {
+    return (
+      <div className='col-6 col-sm-4' key={image.image}>
+        <Image image={image.image} className='img-fluid w-75 mx-auto d-block' />
+      </div>
+    );
+  });
+};
 
+const Treasure = ({ title, teachers, dance }) => {
   return (
     <section>
       <h2 className='fw-normal'>{title}</h2>

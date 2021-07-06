@@ -4,20 +4,20 @@ import { v4 as uuid } from 'uuid';
 
 import Image from './Image';
 
+const renderList = (list) => {
+  return list.map(({ description }) => {
+    return (
+      <li className='my-3' key={uuid()}>
+        <ReactMarkdown className='' children={description} />
+      </li>
+    );
+  });
+};
+
 const Advantages = ({ title, image, list }) => {
   const renderedImage = (
     <Image image={image} className='img-fluid rounded mb-3' />
   );
-
-  const renderList = (list) => {
-    return list.map(({ description }) => {
-      return (
-        <li className='my-3' key={uuid()}>
-          <ReactMarkdown className='' children={description} />
-        </li>
-      );
-    });
-  };
 
   return (
     <section>
