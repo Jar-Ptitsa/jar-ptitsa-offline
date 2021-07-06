@@ -41,7 +41,7 @@ const Form = ({ title, formInputs }) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        subject: 'New message',
+        subject: 'JAR-PTITSA LENDING PAGE - New request',
         ...state,
       }),
     })
