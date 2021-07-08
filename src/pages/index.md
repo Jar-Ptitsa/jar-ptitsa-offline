@@ -99,6 +99,8 @@ wednesday:
       video: o1Y3XRMDVSM
     - title: Приходите к нам учиться
       video: 2YD1FpppUEY
+    - title: Песенка для мамы
+      video: QllxKZo-ARk
 treasure:
   title: И ЭТО ЕЩЁ НЕ ВСЁ! У НАС В ШКОЛЕ ЕСТЬ СОКРОВИЩНИЦА
   teachers:
