@@ -184,4 +184,6 @@ formData:
       inputLabel: Телефон *
     - inputType: text
       inputLabel: Есть вопросы?
+    - inputType: text
+      inputLabel: Согласны ли Вы получать от нас информацию о событиях, скидках и бонусах
 ---
