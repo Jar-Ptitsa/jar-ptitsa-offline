@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import ThankYou from '../components/ThankYou';
+import Layout from '../components/Layout';
 
 export const ThankYouPageTemplate = ({ data }) => {
   return <ThankYou {...data} />;
@@ -10,7 +11,9 @@ export const ThankYouPageTemplate = ({ data }) => {
 const ThankYouPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  return <ThankYouPageTemplate data={frontmatter} />;
+  return (<Layout>
+           <ThankYouPageTemplate data={frontmatter} />
+       </Layout>)
 };
 
 export default ThankYouPage;
