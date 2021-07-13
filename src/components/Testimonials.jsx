@@ -9,7 +9,7 @@ const renderList = (list) => {
       <div className='col-12 col-md-6 mb-3' key={quote.split(' ')[0]}>
         <div className='row align-items-sm-top'>
           <div className='col-12 col-sm-4'>
-            <Image image={image} className='img-fluid w-50 mx-auto d-block' />
+            <Image image={image} className='img-fluid w-50 rounded  mx-auto d-block' />
           </div>
           <div className='col'>
             <figure>

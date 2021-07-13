@@ -9,7 +9,7 @@ const renderList = (list) => {
   return list.map(({ title, description, image, alignImage }) => {
     // prepare content
     const renderImage = (
-      <Image image={image} className='img-fluid rounded w-75 mx-auto d-block' />
+      <Image image={image} className='img-fluid rounded col-sm-10 mx-auto d-block' />
     );
 
     const content = (

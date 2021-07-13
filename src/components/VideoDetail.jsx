@@ -3,12 +3,13 @@ import React from 'react';
 const VideoDetail = ({ videoId, title }) => {
   return (
     <div className='card shadow mb-3'>
-      <div className='ratio ratio-16x9'>
+      <div className='ratio ratio-16x9 '>
         <iframe
           src={`https://www.youtube.com/embed/${videoId}`}
           title='video iframe'
           frameBorder='0'
           allowFullScreen
+          className='rounded'
         />
       </div>
       {title && (

@@ -2,6 +2,7 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 const Image = ({ image, className = '' }) => {
+  console.log(image);
   if (!image) return null;
 
   if (!!image.childImageSharp) {
