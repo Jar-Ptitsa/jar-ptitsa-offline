@@ -3,13 +3,17 @@ import ReactMarkdown from 'react-markdown';
 
 import Image from './Image';
 
-const renderList = (list) => {
+const renderList = (list, getAsset) => {
   return list.map(({ image, author, quote }) => {
     return (
       <div className='col-12 col-md-6 mb-3' key={quote.split(' ')[0]}>
         <div className='row align-items-sm-top'>
           <div className='col-12 col-sm-4'>
-            <Image image={image} className='img-fluid w-50 rounded  mx-auto d-block' />
+            <Image
+              image={image}
+              getAsset={getAsset}
+              className='img-fluid w-50 rounded  mx-auto d-block'
+            />
           </div>
           <div className='col'>
             <figure>
@@ -27,12 +31,12 @@ const renderList = (list) => {
   });
 };
 
-const Testimonials = ({ title, description, list }) => {
+const Testimonials = ({ title, description, list, getAsset = null }) => {
   return (
     <div>
       <h2 className='fw-normal'>{title}</h2>
       <ReactMarkdown className='' children={description} />
-      <div className='row mb-3'>{renderList(list)}</div>
+      <div className='row mb-3'>{renderList(list, getAsset)}</div>
     </div>
   );
 };

@@ -14,9 +14,13 @@ const renderList = (list) => {
   });
 };
 
-const Advantages = ({ title, image, list }) => {
+const Advantages = ({ title, image, list, getAsset = null }) => {
   const renderedImage = (
-    <Image image={image} className='img-fluid rounded mb-3' />
+    <Image
+      image={image}
+      getAsset={getAsset}
+      className='img-fluid rounded mb-3'
+    />
   );
 
   return (

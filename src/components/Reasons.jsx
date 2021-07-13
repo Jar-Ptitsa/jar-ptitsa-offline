@@ -5,11 +5,15 @@ import AlignContent from './AlignContent';
 import Image from './Image';
 
 // list
-const renderList = (list) => {
+const renderList = (list, getAsset) => {
   return list.map(({ title, description, image, alignImage }) => {
     // prepare content
     const renderImage = (
-      <Image image={image} className='img-fluid rounded col-sm-10 mx-auto d-block' />
+      <Image
+        image={image}
+        getAsset={getAsset}
+        className='img-fluid rounded col-sm-10 mx-auto d-block'
+      />
     );
 
     const content = (
@@ -34,11 +38,11 @@ const renderList = (list) => {
   });
 };
 
-const Reasons = ({ title, list }) => {
+const Reasons = ({ title, list, getAsset = null }) => {
   return (
     <section>
       <h2 className='fw-normal'>{title}</h2>
-      <ul className='list-unstyled'>{renderList(list)}</ul>
+      <ul className='list-unstyled'>{renderList(list, getAsset)}</ul>
     </section>
   );
 };

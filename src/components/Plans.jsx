@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 import Image from './Image';
 
-const renderList = (list) => {
+const renderList = (list, getAsset) => {
   return list.map(({ title, description, image }) => {
     return (
       <div className='col-6 col-md-4 mb-3' key={title}>
@@ -11,6 +11,7 @@ const renderList = (list) => {
           {image && (
             <Image
               image={image}
+              getAsset={getAsset}
               className='card-img-top img-fluid d-flex mx-auto w-50 mt-3'
             />
           )}
@@ -24,12 +25,14 @@ const renderList = (list) => {
   });
 };
 
-const Plans = ({ title, description, list, afterwords }) => {
+const Plans = ({ title, description, list, afterwords, getAsset = null }) => {
   return (
     <React.Fragment>
       <h2 className='fw-normal'>{title}</h2>
       {description && <ReactMarkdown className='' children={description} />}
-      <div className='row justify-content-evenly mt-3'>{renderList(list)}</div>
+      <div className='row justify-content-evenly mt-3'>
+        {renderList(list, getAsset)}
+      </div>
       {afterwords && <ReactMarkdown className='' children={afterwords} />}
     </React.Fragment>
   );

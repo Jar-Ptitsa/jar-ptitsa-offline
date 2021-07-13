@@ -5,7 +5,7 @@ import { IndexPageTemplate } from '../../templates/index-page';
 
 // const IndexPagePreview = ({ entry, getAsset }) => {
 
-const IndexPagePreview = ({ entry }) => {
+const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
@@ -15,24 +15,30 @@ const IndexPagePreview = ({ entry }) => {
           // ...data,
           header: {
             ...data.header,
+            getAsset,
           },
           reasons: {
             ...data.reasons,
+            getAsset,
           },
           advantages: {
             ...data.advantages,
+            getAsset,
           },
           wednesday: {
             ...data.wednesday,
           },
           treasure: {
             ...data.treasure,
+            getAsset,
           },
           testimonials: {
             ...data.testimonials,
+            getAsset,
           },
           plans: {
             ...data.plans,
+            getAsset,
           },
           freeLesson: {
             ...data.freeLesson,

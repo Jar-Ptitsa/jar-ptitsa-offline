@@ -3,8 +3,10 @@ import ReactMarkdown from 'react-markdown';
 
 import Image from './Image';
 
-const Header = ({ title, description, image }) => {
-  const renderedImage = <Image image={image} className='img-fluid' />;
+const Header = ({ title, description, image, getAsset = null }) => {
+  const renderedImage = (
+    <Image image={image} getAsset={getAsset} className='img-fluid' />
+  );
 
   return (
     <header>
