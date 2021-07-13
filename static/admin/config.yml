@@ -50,6 +50,7 @@ collections:
 # advantages
           - {label: Advantages, name: advantages, widget: object, collapsed: true, fields: [
               {label: Title, name: title, widget: string},
+              {label: Image, name: image, widget: image, required: false},
               {label: List, name: list, widget: list, fields: [
                 {label: Description, name: description, widget: markdown, required: false},
               ]}
