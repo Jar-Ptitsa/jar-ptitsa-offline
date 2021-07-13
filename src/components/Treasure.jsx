@@ -25,16 +25,18 @@ const renderList = (list, getAsset) => {
 
 const Treasure = ({ title, teachers, dance, getAsset = null }) => {
   return (
-    <section>
-      <h2 className='fw-normal'>{title}</h2>
-      <ReactMarkdown className='' children={teachers.description} />
-      <div className='row mb-3'>{renderList(teachers.list, getAsset)}</div>
-      <div className='row'>
-        <div className='col-md-4 pt-3 order-2 order-md-1'>
-          <VideoDetail videoId={dance.video} />
-        </div>
-        <div className='col order-md-2'>
-          <ReactMarkdown className='' children={dance.description} />
+    <section style={{ backgroundColor: '#f0f0f0' }}>
+      <div className='container py-3' style={{ maxWidth: '960px' }}>
+        <h2 className='fw-normal'>{title}</h2>
+        <ReactMarkdown className='' children={teachers.description} />
+        <div className='row mb-3'>{renderList(teachers.list, getAsset)}</div>
+        <div className='row'>
+          <div className='col-md-4 pt-3 order-2 order-md-1'>
+            <VideoDetail videoId={dance.video} />
+          </div>
+          <div className='col order-md-2'>
+            <ReactMarkdown className='' children={dance.description} />
+          </div>
         </div>
       </div>
     </section>

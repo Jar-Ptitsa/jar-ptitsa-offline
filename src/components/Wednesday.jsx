@@ -20,9 +20,11 @@ const renderList = (list) => {
 const Wednesday = ({ title, description, list }) => {
   return (
     <section>
-      <h2 className='fw-normal'>{title}</h2>
-      <ReactMarkdown className='' children={description} />
-      <div className='row mb-3'>{renderList(list)}</div>
+      <div className='container mt-3' style={{ maxWidth: '960px' }}>
+        <h2 className='fw-normal'>{title}</h2>
+        <ReactMarkdown className='' children={description} />
+        <div className='row mb-3'>{renderList(list)}</div>
+      </div>
     </section>
   );
 };

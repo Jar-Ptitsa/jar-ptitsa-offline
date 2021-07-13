@@ -33,11 +33,13 @@ const renderList = (list, getAsset) => {
 
 const Testimonials = ({ title, description, list, getAsset = null }) => {
   return (
-    <div>
-      <h2 className='fw-normal'>{title}</h2>
-      <ReactMarkdown className='' children={description} />
-      <div className='row mb-3'>{renderList(list, getAsset)}</div>
-    </div>
+    <section>
+      <div className='container pt-3' style={{ maxWidth: '960px' }}>
+        <h2 className='fw-normal'>{title}</h2>
+        <ReactMarkdown className='' children={description} />
+        <div className='row mb-3'>{renderList(list, getAsset)}</div>
+      </div>
+    </section>
   );
 };
 

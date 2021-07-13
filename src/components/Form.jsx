@@ -50,31 +50,34 @@ const Form = ({ title, formInputs }) => {
   };
 
   return (
-    <section className='mb-3'>
-      <h2 className='fw-normal'>{title}</h2>
+    // <section className='mb-3'>
+    <section style={{ backgroundColor: '#e5eae1' }}>
+      <div className='container py-3' style={{ maxWidth: '960px' }}>
+        <h2 className='fw-normal'>{title}</h2>
 
-      <div className='row'>
-        <form
-          className='col-12 col-sm-8 col-md-6 mx-auto'
-          name='contact'
-          method='POST'
-          action='/thank-you'
-          data-netlify='true'
-          data-netlify-honeypot='bot-field'
-          onSubmit={handleSubmit}>
-          {renderInputs(formInputs, handleChange)}
-          <input type='hidden' name='form-name' value='contact' />
-          <input
-            type='hidden'
-            name='subject'
-            value='JAR-PTITSA LENDING PAGE - New request'
-          />
-          <div className='text-center'>
-            <button type='submit' className='btn btn-success btn-lg'>
-              Отправить
-            </button>
-          </div>
-        </form>
+        <div className='row'>
+          <form
+            className='col-12 col-sm-8 col-md-6 mx-auto'
+            name='contact'
+            method='POST'
+            action='/thank-you'
+            data-netlify='true'
+            data-netlify-honeypot='bot-field'
+            onSubmit={handleSubmit}>
+            {renderInputs(formInputs, handleChange)}
+            <input type='hidden' name='form-name' value='contact' />
+            <input
+              type='hidden'
+              name='subject'
+              value='JAR-PTITSA LENDING PAGE - New request'
+            />
+            <div className='text-center'>
+              <button type='submit' className='btn btn-success btn-lg'>
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   );

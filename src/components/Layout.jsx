@@ -51,9 +51,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <div className='container mt-2' style={{ maxWidth: '960px' }}>
-        {children}
-      </div>
+      <div>{children}</div>
     </React.Fragment>
   );
 };

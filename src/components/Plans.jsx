@@ -7,7 +7,7 @@ const renderList = (list, getAsset) => {
   return list.map(({ title, description, image }) => {
     return (
       <div className='col-6 col-md-4 mb-3' key={title}>
-        <div className='card rounded'>
+        <div className='card rounded shadow'>
           {image && (
             <Image
               image={image}
@@ -27,14 +27,16 @@ const renderList = (list, getAsset) => {
 
 const Plans = ({ title, description, list, afterwords, getAsset = null }) => {
   return (
-    <React.Fragment>
-      <h2 className='fw-normal'>{title}</h2>
-      {description && <ReactMarkdown className='' children={description} />}
-      <div className='row justify-content-evenly mt-3'>
-        {renderList(list, getAsset)}
+    <section>
+      <div className='container' style={{ maxWidth: '960px' }}>
+        <h2 className='fw-normal'>{title}</h2>
+        {description && <ReactMarkdown className='' children={description} />}
+        <div className='row justify-content-evenly mt-3'>
+          {renderList(list, getAsset)}
+        </div>
+        {afterwords && <ReactMarkdown className='' children={afterwords} />}
       </div>
-      {afterwords && <ReactMarkdown className='' children={afterwords} />}
-    </React.Fragment>
+    </section>
   );
 };
 

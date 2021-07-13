@@ -24,10 +24,12 @@ const Advantages = ({ title, image, list, getAsset = null }) => {
   );
 
   return (
-    <section>
-      {renderedImage}
-      <h2 className='fw-normal'>{title}</h2>
-      <ul>{renderList(list)}</ul>
+    <section style={{ backgroundColor: '#000', color: '#fff' }}>
+      <div className='container pb-3' style={{ maxWidth: '960px' }}>
+        {renderedImage}
+        <h2 className='fw-normal'>{title}</h2>
+        <ul>{renderList(list)}</ul>
+      </div>
     </section>
   );
 };

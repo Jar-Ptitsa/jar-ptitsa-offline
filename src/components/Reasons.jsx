@@ -40,9 +40,11 @@ const renderList = (list, getAsset) => {
 
 const Reasons = ({ title, list, getAsset = null }) => {
   return (
-    <section>
-      <h2 className='fw-normal'>{title}</h2>
-      <ul className='list-unstyled'>{renderList(list, getAsset)}</ul>
+    <section style={{ backgroundColor: '#f0f0f0' }}>
+      <div className='container py-3' style={{ maxWidth: '960px' }}>
+        <h2 className='fw-normal'>{title}</h2>
+        <ul className='list-unstyled'>{renderList(list, getAsset)}</ul>
+      </div>
     </section>
   );
 };
