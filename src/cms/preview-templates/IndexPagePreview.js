@@ -13,10 +13,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
       <IndexPageTemplate
         data={{
           // ...data,
-          header: {
-            ...data.header,
-            getAsset,
-          },
           reasons: {
             ...data.reasons,
             getAsset,

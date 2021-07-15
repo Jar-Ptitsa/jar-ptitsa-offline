@@ -9,7 +9,7 @@ const renderList = (list, getAsset) => {
   return list.map((image) => {
     const keyId = image.image.childImageSharp
       ? image.image.childImageSharp.fluid.src
-      : image.image; // TODO when getAsset will be involved
+      : image.image.url; // TODO when getAsset will be involved - check
 
     return (
       <div className='col-6 col-sm-4' key={keyId}>

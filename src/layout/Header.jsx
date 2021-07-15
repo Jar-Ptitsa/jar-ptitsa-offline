@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import Image from './Image';
+import Image from '../components/Image';
 
 const Header = ({ title, description, image, getAsset = null }) => {
   const renderedImage = (

@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/Layout';
-import Header from '../components/Header';
+import Layout from '../layout/Layout';
+
 import Reasons from '../components/Reasons';
 import Advantages from '../components/Advantages';
 import Wednesday from '../components/Wednesday';
@@ -14,7 +14,6 @@ import Form from '../components/Form';
 
 export const IndexPageTemplate = ({ data }) => {
   const {
-    header,
     reasons,
     advantages,
     wednesday,
@@ -27,7 +26,6 @@ export const IndexPageTemplate = ({ data }) => {
 
   return (
     <React.Fragment>
-      <Header {...header} />
       <Reasons {...reasons} />
       <Advantages {...advantages} />
       <Wednesday {...wednesday} />
@@ -56,17 +54,6 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        header {
-          title
-          description
-          image {
-            childImageSharp {
-              fluid(maxWidth: 960, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
         reasons {
           title
           list {

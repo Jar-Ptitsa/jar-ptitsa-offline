@@ -25,12 +25,6 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-# header
-          - {label: Header, name: header, widget: object, collapsed: true, fields: [
-              {label: Logo, name: image, widget: image},
-              {label: Title, name: title, widget: string},
-              {label: Description, name: description, widget: markdown}
-          ]}
 # reasons
           - {label: Reasons, name: reasons, widget: object, collapsed: true, fields: [
               {label: Title, name: title, widget: string},
@@ -153,7 +147,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contacts"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
+# 
 # modals
+# 
   - name: "modals"
     label: "Modals"
     files:
@@ -165,3 +161,19 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
+# 
+# layouts
+# 
+  - name: "layout"
+    label: "Layout"
+    files:
+# header
+      - file: "src/layout/header.md"
+        label: "Header"
+        name: "header"
+        fields:
+          - {label: Header, name: header, widget: object, collapsed: true, fields: [
+              {label: Logo, name: image, widget: image},
+              {label: Title, name: title, widget: string},
+              {label: Description, name: description, widget: markdown}
+          ]}

@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import Layout from '../layout/Layout';
 import ThankYou from '../components/ThankYou';
-import Layout from '../components/Layout';
 
 export const EnrollSchoolPageTemplate = ({ data }) => {
   return <ThankYou {...data} />;

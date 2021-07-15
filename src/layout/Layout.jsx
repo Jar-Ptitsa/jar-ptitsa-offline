@@ -1,14 +1,40 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import useSiteMetadata from './SiteMetadata';
+
+import useSiteMetadata from '../components/SiteMetadata';
+import {HeaderLayoutTemplate} from '../templates/header-layout'
+import Navigation from './Navigation'
 
 // bootstrap and custom scss
 import '../styles/styles.scss';
 
 const TemplateWrapper = ({ children }) => {
+  // get header data
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      markdownRemark(frontmatter: { templateKey: { eq: "header-layout" } }) {
+        frontmatter {
+          title
+          description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 960, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const { frontmatter } = data.markdownRemark;
+
   const { title, description } = useSiteMetadata();
+
   return (
     <React.Fragment>
       <Helmet>
@@ -51,7 +77,11 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      <div>{children}</div>
+
+      <HeaderLayoutTemplate data={frontmatter} />
+      <Navigation />
+
+      <React.Fragment>{children}</React.Fragment>
     </React.Fragment>
   );
 };
