@@ -7,18 +7,20 @@ import styles from '!css-loader!sass-loader!../styles/styles.scss';
 
 // import templates
 import IndexPagePreview from './preview-templates/IndexPagePreview';
-import ThankYouPagePreview from './preview-templates/ThankYouPagePreview';
 import ClassesSchedulePagePreview from './preview-templates/ClassesSchedulePagePreview';
 import TeachersGroupsPagePreview from './preview-templates/TeachersGroupsPagePreview';
+import PlansPagePreview from './preview-templates/PlansPagePreview';
+import ThankYouPagePreview from './preview-templates/ThankYouPagePreview';
 
 // register styles
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
 
 // register templates
 CMS.registerPreviewTemplate('index', IndexPagePreview);
-CMS.registerPreviewTemplate('thank-you', ThankYouPagePreview);
 CMS.registerPreviewTemplate('classes-schedule', ClassesSchedulePagePreview);
 CMS.registerPreviewTemplate('teachers-groups', TeachersGroupsPagePreview);
+CMS.registerPreviewTemplate('plans', PlansPagePreview);
+CMS.registerPreviewTemplate('thank-you', ThankYouPagePreview);
 
 // youtube widget
 // additional component in markdown

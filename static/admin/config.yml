@@ -19,29 +19,9 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/classes-schedule.md"
-        label: "Classes and Schedule"
-        name: "classes-schedule"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "classes-schedule"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
-      - file: "src/pages/teachers-groups.md"
-        label: "Teachers and Groups"
-        name: "teachers-groups"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "teachers-groups"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
-      - file: "src/pages/thank-you.md"
-        label: "Thank You Page"
-        name: "thank-you"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+# index page
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Index Page"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
@@ -125,3 +105,35 @@ collections:
                 {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"], default: ['text'] },
               ]}
           ]}
+# teachers-groups page
+      - file: "src/pages/teachers-groups.md"
+        label: "Teachers and Groups"
+        name: "teachers-groups"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "teachers-groups"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+# classes-schedule page
+      - file: "src/pages/classes-schedule.md"
+        label: "Classes and Schedule"
+        name: "classes-schedule"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "classes-schedule"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+# plans page
+      - file: "src/pages/plans.md"
+        label: "Plans"
+        name: "plans"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "plans"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+# thank-you page
+      - file: "src/pages/thank-you.md"
+        label: "Thank You Page"
+        name: "thank-you"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
