@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { ClassesSchedulePageTemplate } from '../../templates/classes-schedule';
 
-const ClassesSchedulePagePreview = ({ entry }) => {
+const ClassesSchedulePagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
@@ -11,6 +11,7 @@ const ClassesSchedulePagePreview = ({ entry }) => {
       <ClassesSchedulePageTemplate
         data={{
           ...data,
+          getAsset
         }}
       />
     );

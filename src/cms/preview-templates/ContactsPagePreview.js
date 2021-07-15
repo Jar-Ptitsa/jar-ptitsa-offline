@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { ContactsPageTemplate } from '../../templates/contacts'
 
-const ContactsPagePreview = ({ entry }) => {
+const ContactsPagePreview = ({ entry,getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
@@ -11,6 +11,7 @@ const ContactsPagePreview = ({ entry }) => {
       <ContactsPageTemplate
         data={{
           ...data,
+          getAsset
         }}
       />
     );

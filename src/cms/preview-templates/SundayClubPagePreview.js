@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { SundayClubPageTemplate } from '../../templates/sunday-club'
 
-const SundayClubPagePreview = ({ entry }) => {
+const SundayClubPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
@@ -11,6 +11,7 @@ const SundayClubPagePreview = ({ entry }) => {
       <SundayClubPageTemplate
         data={{
           ...data,
+          getAsset
         }}
       />
     );

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { EnrollSchoolPageTemplate } from '../../templates/enroll-school'
 
-const EnrollSchoolPagePreview = ({ entry }) => {
+const EnrollSchoolPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
@@ -11,6 +11,7 @@ const EnrollSchoolPagePreview = ({ entry }) => {
       <EnrollSchoolPageTemplate
         data={{
           ...data,
+          getAsset
         }}
       />
     );

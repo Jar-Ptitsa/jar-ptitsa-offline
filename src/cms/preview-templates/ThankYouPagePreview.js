@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { ThankYouPageTemplate } from '../../templates/thank-you';
 
-const ThankYouPagePreview = ({ entry }) => {
+const ThankYouPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
@@ -11,6 +11,7 @@ const ThankYouPagePreview = ({ entry }) => {
       <ThankYouPageTemplate
         data={{
           ...data,
+          getAsset
         }}
       />
     );

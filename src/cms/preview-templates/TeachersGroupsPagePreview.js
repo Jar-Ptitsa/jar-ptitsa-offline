@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {TeachersGroupsPageTemplate} from '../../templates/teachers-groups'
 
-const TeachersGroupsPagePreview = ({ entry }) => {
+const TeachersGroupsPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS();
 
   if (data) {
@@ -11,6 +11,7 @@ const TeachersGroupsPagePreview = ({ entry }) => {
       <TeachersGroupsPageTemplate
         data={{
           ...data,
+          getAsset
         }}
       />
     );
