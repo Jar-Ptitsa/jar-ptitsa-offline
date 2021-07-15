@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import Image from '../components/Image';
+import Navigation from './Navigation';
 
 const Header = ({ title, description, image, getAsset = null }) => {
   const renderedImage = (
@@ -21,6 +22,7 @@ const Header = ({ title, description, image, getAsset = null }) => {
           <ReactMarkdown className='' children={description} />
         </div>
       </div>
+      <Navigation />
     </header>
   );
 };

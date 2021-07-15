@@ -3,19 +3,20 @@ import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
 import { useStaticQuery, graphql } from 'gatsby';
 
-
 import useSiteMetadata from '../components/SiteMetadata';
-import {HeaderLayoutTemplate} from '../templates/header-layout'
-import Navigation from './Navigation'
+import { HeaderLayoutTemplate } from '../templates/header-layout';
+import { FooterLayoutTemplate } from '../templates/footer-layout';
 
 // bootstrap and custom scss
 import '../styles/styles.scss';
 
 const TemplateWrapper = ({ children }) => {
-  // get header data
+  // get data in component due to export query works only for page components
   const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      markdownRemark(frontmatter: { templateKey: { eq: "header-layout" } }) {
+    query HeaderAndFooterQuery {
+      header: markdownRemark(
+        frontmatter: { templateKey: { eq: "header-layout" } }
+      ) {
         frontmatter {
           title
           description
@@ -28,10 +29,30 @@ const TemplateWrapper = ({ children }) => {
           }
         }
       }
+      footer: markdownRemark(
+        frontmatter: { templateKey: { eq: "footer-layout" } }
+      ) {
+        frontmatter {
+          title
+          description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 960, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          address
+          telephones
+          email
+          youtube
+          twitter
+          facebook
+          instagram
+        }
+      }
     }
-  `)
-
-  const { frontmatter } = data.markdownRemark;
+  `);
 
   const { title, description } = useSiteMetadata();
 
@@ -78,10 +99,11 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
 
-      <HeaderLayoutTemplate data={frontmatter} />
-      <Navigation />
+      <HeaderLayoutTemplate data={data.header.frontmatter} />
 
       <React.Fragment>{children}</React.Fragment>
+
+      <FooterLayoutTemplate data={data.footer.frontmatter} />
     </React.Fragment>
   );
 };
