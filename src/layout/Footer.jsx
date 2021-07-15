@@ -102,10 +102,9 @@ const Footer = ({
 
           <div className='col'>
             <button
-              className='d-flex align-items-center justify-content-center justify-content-md-end my-5 my-sm-3 my-md-0'
+              className='d-flex align-items-center justify-content-center justify-content-md-end my-5 my-sm-3 my-md-0 w-100'
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               style={{
-                cursor: 'pointer',
                 border: 'none',
                 padding: '0',
                 backgroundColor: '#000',
