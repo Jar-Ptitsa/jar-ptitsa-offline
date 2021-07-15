@@ -153,6 +153,10 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contacts"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
+# modals
+  - name: "modals"
+    label: "Modals"
+    files:
 # thank-you page
       - file: "src/pages/thank-you.md"
         label: "Thank You Page"
