@@ -19,11 +19,18 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-       - file: "src/pages/classes-schedule.md"
-         label: "Classes and Schedule"
-         name: "classes-schedule"
-         fields:
+      - file: "src/pages/classes-schedule.md"
+        label: "Classes and Schedule"
+        name: "classes-schedule"
+        fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "classes-schedule"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+      - file: "src/pages/teachers-groups.md"
+        label: "Teachers and Groups"
+        name: "teachers-groups"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "teachers-groups"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
       - file: "src/pages/thank-you.md"
