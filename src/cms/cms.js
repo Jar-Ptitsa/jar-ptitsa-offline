@@ -4,7 +4,6 @@ import CMS from 'netlify-cms-app';
 // https://ibywaks.medium.com/how-to-customize-content-preview-on-netlify-cms-with-gridsome-26e23561021
 import styles from '!css-loader!sass-loader!../styles/styles.scss';
 
-
 // import templates
 import IndexPagePreview from './preview-templates/IndexPagePreview';
 import ClassesSchedulePagePreview from './preview-templates/ClassesSchedulePagePreview';
@@ -15,6 +14,7 @@ import EnrollSchoolPagePreview from './preview-templates/EnrollSchoolPagePreview
 import ContactsPagePreview from './preview-templates/ContactsPagePreview';
 // layouts
 import HeaderLayoutPreview from './preview-templates/HeaderLayoutPreview';
+import FooterLayoutPreview from './preview-templates/FooterLayoutPreview';
 
 // modals
 import ThankYouPagePreview from './preview-templates/ThankYouPagePreview';
@@ -32,6 +32,7 @@ CMS.registerPreviewTemplate('enroll-school', EnrollSchoolPagePreview);
 CMS.registerPreviewTemplate('contacts', ContactsPagePreview);
 // layouts
 CMS.registerPreviewTemplate('header', HeaderLayoutPreview);
+CMS.registerPreviewTemplate('footer', FooterLayoutPreview);
 
 // modals
 CMS.registerPreviewTemplate('thank-you', ThankYouPagePreview);
