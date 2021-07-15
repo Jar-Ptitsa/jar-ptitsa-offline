@@ -34,19 +34,17 @@ const TemplateWrapper = ({ children }) => {
       ) {
         frontmatter {
           title
-          description
-          image {
-            childImageSharp {
-              fluid(maxWidth: 960, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
+          address {
+            street
+            city
+            zip
+            country
           }
-          address
-          telephones
+          telephones {
+            phone
+          }
           email
           youtube
-          twitter
           facebook
           instagram
         }
