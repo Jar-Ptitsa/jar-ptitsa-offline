@@ -10,11 +10,8 @@ const HeaderLayoutPreview = ({ entry, getAsset }) => {
     return (
       <HeaderLayoutTemplate
         data={{
-          // ...data,
-          header: {
-            ...data.header,
+            ...data,
             getAsset,
-          },
         }}
       />
     );

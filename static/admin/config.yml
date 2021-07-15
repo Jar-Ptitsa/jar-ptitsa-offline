@@ -172,7 +172,8 @@ collections:
         label: "Header"
         name: "header"
         fields:
-          - {label: Header, name: header, widget: object, collapsed: true, fields: [
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "header-layout"}
+          - {label: Header, name: header, widget: object, collapsed: false, fields: [
               {label: Logo, name: image, widget: image},
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: markdown}
