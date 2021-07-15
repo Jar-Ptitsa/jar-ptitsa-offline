@@ -137,6 +137,14 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sunday-club"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
+# enrollment at school page
+      - file: "src/pages/enroll-school.md"
+        label: "Enroll at School"
+        name: "enroll-school"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "enroll-school"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
 # thank-you page
       - file: "src/pages/thank-you.md"
         label: "Thank You Page"
