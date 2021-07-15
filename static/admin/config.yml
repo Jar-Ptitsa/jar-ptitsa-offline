@@ -129,6 +129,14 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "plans"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
+# sunday-club page
+      - file: "src/pages/sunday-club.md"
+        label: "Sunday Club"
+        name: "sunday-club"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sunday-club"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
 # thank-you page
       - file: "src/pages/thank-you.md"
         label: "Thank You Page"
