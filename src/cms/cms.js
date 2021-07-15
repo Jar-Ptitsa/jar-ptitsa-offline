@@ -12,6 +12,7 @@ import TeachersGroupsPagePreview from './preview-templates/TeachersGroupsPagePre
 import PlansPagePreview from './preview-templates/PlansPagePreview';
 import SundayClubPagePreview from './preview-templates/SundayClubPagePreview';
 import EnrollSchoolPagePreview from './preview-templates/EnrollSchoolPagePreview';
+import ContactsPagePreview from './preview-templates/ContactsPagePreview';
 import ThankYouPagePreview from './preview-templates/ThankYouPagePreview';
 
 // register styles
@@ -24,6 +25,7 @@ CMS.registerPreviewTemplate('teachers-groups', TeachersGroupsPagePreview);
 CMS.registerPreviewTemplate('plans', PlansPagePreview);
 CMS.registerPreviewTemplate('sunday-club', SundayClubPagePreview);
 CMS.registerPreviewTemplate('enroll-school', EnrollSchoolPagePreview);
+CMS.registerPreviewTemplate('contacts', ContactsPagePreview);
 CMS.registerPreviewTemplate('thank-you', ThankYouPagePreview);
 
 // youtube widget
