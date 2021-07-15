@@ -1,13 +1,16 @@
 ---
 templateKey: footer-layout
-image: /img/uploads/logo_cropped.jpg
 title: Жар-Птица
-description: ""
-address: ''
-telephones: ""
+address: ""
+telephones: |-
+  +33 (0)6 29 02 17 85
+
+  +33 (0)6 35 33 81 25
 email: tatianacharte@gmail.com
 youtube: https://www.youtube.com/playlist?list=PLm34UC5-wF9u8NtJesEZqWMYYHT2Z2wwf
-twitter: ''
-facebook: ''
-instagram: ''
+twitter: ""
+facebook: ""
+instagram: ""
+image: /img/uploads/logo_cropped.jpg
+description: ""
 ---
