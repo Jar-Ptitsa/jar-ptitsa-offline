@@ -1,9 +1,9 @@
 backend:
   # production
-  name: git-gateway
+  # name: git-gateway
   # development
-  # name: github
-  repo: Jar-Ptitsa/jar-ptitsa-landing
+  name: github
+  repo: Jar-Ptitsa/jar-ptitsa-offline
   branch: main
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -19,6 +19,13 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+       - file: "src/pages/classes-schedule.md"
+         label: "Classes and Schedule"
+         name: "classes-schedule"
+         fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "classes-schedule"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
       - file: "src/pages/thank-you.md"
         label: "Thank You Page"
         name: "thank-you"

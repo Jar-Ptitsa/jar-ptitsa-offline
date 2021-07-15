@@ -8,6 +8,7 @@ import styles from '!css-loader!sass-loader!../styles/styles.scss';
 // import templates
 import IndexPagePreview from './preview-templates/IndexPagePreview';
 import ThankYouPagePreview from './preview-templates/ThankYouPagePreview';
+import ClassesSchedulePagePreview from './preview-templates/ClassesSchedulePagePreview';
 
 // register styles
 CMS.registerPreviewStyle(styles.toString(), { raw: true });
@@ -15,6 +16,7 @@ CMS.registerPreviewStyle(styles.toString(), { raw: true });
 // register templates
 CMS.registerPreviewTemplate('index', IndexPagePreview);
 CMS.registerPreviewTemplate('thank-you', ThankYouPagePreview);
+CMS.registerPreviewTemplate('classes-schedule', ClassesSchedulePagePreview);
 
 // youtube widget
 // additional component in markdown
