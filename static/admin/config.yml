@@ -182,9 +182,7 @@ collections:
         name: "footer"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "footer-layout"}
-          - {label: Logo, name: image, widget: image}
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown, required: false}
           - {label: Address, name: address, widget: markdown, required: false}
           - {label: Telephones, name: telephones, widget: markdown, required: false}
           - {label: Email, name: email, widget: string, required: false}

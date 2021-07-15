@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Оффлайн Школа Жар-Птица',
-    description: 
+    description:
       'Школа русского языка для билингвов и инофонов. Наша миссия - обучение, развитие и поддержка русского языка и русской культуры во Франции. Мы ведём свою деятельность offline в западном предместье Парижа под Версалем. Работаем как школа дополнительного образования по средам и субботам. Мы - профильная школа, в которой базовый предмет - русский язык',
   },
   plugins: [
@@ -79,7 +79,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
-        develop: true, // Activates purging in npm run develop
+        develop: false, // Activates purging in npm run develop
         purgeOnly: ['styles/'], // applies purging only on the these file/folders
       },
     }, // must be after other CSS plugins

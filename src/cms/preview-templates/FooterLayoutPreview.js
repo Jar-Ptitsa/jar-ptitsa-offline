@@ -10,8 +10,7 @@ const FooterLayoutPreview = ({ entry, getAsset }) => {
     return (
       <FooterLayoutTemplate
         data={{
-            ...data,
-            getAsset,
+          ...data,
         }}
       />
     );
