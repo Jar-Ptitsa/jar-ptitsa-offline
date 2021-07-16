@@ -1,5 +1,9 @@
 ---
 templateKey: classes-schedule
-title: Школа русского языка для детей-билингвов и инофонов  «Жар-Птица»
-description: СПАСИБО
+classes:
+  title: Предметы
+  list: 
+    - image: ''
+      title: Русский язык
+      link: 'sunday-club'
 ---
