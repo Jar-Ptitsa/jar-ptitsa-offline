@@ -29,4 +29,24 @@ classes:
       image: /img/uploads/classes-complex.png
     - title: История искусств
       image: /img/uploads/classes-cult-history.png
+schedule:
+  days:
+    - time-blocks:
+        - time: 9-12
+          classes:
+            - class: Творческая лаборатория
+            - class: Мировая художественная культура
+            - class: Английский язык
+        - time: 12-14
+          classes:
+            - class: Прогулка
+            - class: Обед
+            - class: Тихий час
+        - time: 14-17
+          classes:
+            - class: Русский язык, литература, риторика
+            - class: Комплексные занятия по русскому языку и развитию речи
+            - class: Индивидуальные занятия
+      day: Среда
+  title: Расписание на неделю
 ---
