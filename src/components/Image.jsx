@@ -17,7 +17,6 @@ const Image = ({ image, getAsset, className = '' }) => {
 
   if (!!image && typeof image === 'string') {
     return <img src={image} className={className} alt='' />;
-    // <img src={image.url} className={className} alt='' />
   }
 };
 
