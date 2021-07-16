@@ -32,7 +32,7 @@ classes:
 schedule:
   days:
     - day: Среда
-      time-blocks:
+      time_blocks:
         - time: 9-12
           classes:
             - class: Творческая лаборатория
