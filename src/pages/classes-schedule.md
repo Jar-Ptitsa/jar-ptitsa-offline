@@ -14,7 +14,7 @@ classes:
       image: /img/uploads/classes-engl.png
     - title: Рисование
       image: /img/uploads/classes-izo.png
-    -  title: Театр
+    - title: Театр
       image: /img/uploads/classes-theater.png
     - title: Русская культура
       image: /img/uploads/classes-rus-culture.png
