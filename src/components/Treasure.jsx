@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'gatsby';
 
 import Image from './Image';
 import VideoDetail from './VideoDetail';
@@ -38,6 +39,13 @@ const Treasure = ({ title, teachers, dance, getAsset = null }) => {
             <ReactMarkdown className='' children={dance.description} />
           </div>
         </div>
+      </div>
+      <div className='d-flex justify-content-center pb-3'>
+        <Link
+          to='/teachers-groups'
+          className='btn btn-md btn-outline-secondary'>
+          Подробнее
+        </Link>
       </div>
     </section>
   );

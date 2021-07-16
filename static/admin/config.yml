@@ -75,30 +75,6 @@ collections:
                 {label: Quote, name: quote, widget: markdown},
               ]}
           ]}
-# plans
-          - {label: Plans, name: plans, widget: object, collapsed: true, fields: [
-              {label: Title, name: title, widget: string},
-              {label: Description, name: description, widget: markdown, required: false},
-              {label: Plans, name: list, widget: list, fields: [
-                {label: Image, name: image, widget: image, required: false},
-                {label: Title, name: title, widget: string},
-                {label: Description, name: description, widget: markdown},
-              ]},
-              {label: Afterwords, name: afterwords, widget: markdown, required: false},
-          ]}
-# free lesson
-          - {label: Free Lesson, name: freeLesson, widget: object, collapsed: true, fields: [
-              {label: Title, name: title, widget: string},
-              {label: Description, name: description, widget: markdown, required: false},
-          ]}
-# form
-          - {label: Form Data, name: formData, widget: object, collapsed: true, fields: [
-              {label: Title, name: title, widget: string},
-              {label: Form Inputs, name: formInputs, widget: list, fields: [
-                {label: Input Label, name: inputLabel, widget: string},
-                {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"], default: ['text'] },
-              ]}
-          ]}
 # teachers-groups page
       - file: "src/pages/teachers-groups.md"
         label: "Teachers and Groups"

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'gatsby';
 
 import VideoDetail from './VideoDetail';
 
@@ -24,6 +25,11 @@ const Wednesday = ({ title, description, list }) => {
         <h2 className='fw-normal'>{title}</h2>
         <ReactMarkdown className='' children={description} />
         <div className='row mb-3'>{renderList(list)}</div>
+      </div>
+      <div className='d-flex justify-content-center mb-3'>
+        <Link to='/classes-schedule' className='btn btn-md btn-outline-secondary'>
+          Подробнее
+        </Link>
       </div>
     </section>
   );

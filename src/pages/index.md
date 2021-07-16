@@ -150,35 +150,4 @@ testimonials:
         Радость от того, что вы вместе растем и развиваемся! Долгих тебе лет,
         Жар Птица и наши учителя, удачи и процветания!
       image: /img/uploads/irina-gubareva.png
-plans:
-  title: ГОДОВЫЕ ТАРИФЫ НА ОБУЧЕНИЕ В ЖАР-ПТИЦЕ
-  list:
-    - title: Пакет полдня
-      description: 1000 евро/год
-      image: /img/uploads/logo_cropped.jpg
-    - title: Пакет весь день
-      description: 1800 евро/год
-      image: /img/uploads/logo_cropped.jpg
-  afterwords: Вы также можете посещать групповые занятия (15 евро/час) или
-    заниматься индивидуально (25 евро/час).
-freeLesson:
-  title: ЛУЧШЕ ОДИН РАЗ УВИДЕТЬ,  ЧЕМ СТО РАЗ УСЛЫШАТЬ
-  description: Поэтому мы предлагаем вам сначала побывать на пробном уроке,  а уж
-    потом принять решение о записи на весь учебный год. Для этого нужно
-    определиться с днём недели для учёбы и со временем занятий.
-formData:
-  title: ЗАПИСАТЬСЯ НА ПРОБНЫЙ УРОК / ЗАДАТЬ ВОПРОС
-  formInputs:
-    - inputType: text
-      inputLabel: Имя *
-    - inputType: text
-      inputLabel: Фамилия *
-    - inputType: email
-      inputLabel: Email *
-    - inputType: text
-      inputLabel: Телефон *
-    - inputType: text
-      inputLabel: Есть вопросы?
-    - inputType: text
-      inputLabel: Согласны ли Вы получать от нас информацию о событиях, скидках и бонусах?
 ---

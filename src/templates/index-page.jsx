@@ -8,21 +8,9 @@ import Advantages from '../components/Advantages';
 import Wednesday from '../components/Wednesday';
 import Treasure from '../components/Treasure';
 import Testimonials from '../components/Testimonials';
-import Plans from '../components/Plans';
-import FreeLesson from '../components/FreeLesson';
-import Form from '../components/Form';
 
 export const IndexPageTemplate = ({ data }) => {
-  const {
-    reasons,
-    advantages,
-    wednesday,
-    treasure,
-    testimonials,
-    plans,
-    freeLesson,
-    formData,
-  } = data;
+  const { reasons, advantages, wednesday, treasure, testimonials } = data;
 
   return (
     <React.Fragment>
@@ -31,9 +19,6 @@ export const IndexPageTemplate = ({ data }) => {
       <Wednesday {...wednesday} />
       <Treasure {...treasure} />
       <Testimonials {...testimonials} />
-      <Plans {...plans} />
-      <FreeLesson {...freeLesson} />
-      <Form {...formData} />
     </React.Fragment>
   );
 };
@@ -124,32 +109,6 @@ export const pageQuery = graphql`
                 }
               }
             }
-          }
-        }
-        plans {
-          title
-          list {
-            title
-            description
-            image {
-              childImageSharp {
-                fluid(maxWidth: 320, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          afterwords
-        }
-        freeLesson {
-          title
-          description
-        }
-        formData {
-          title
-          formInputs {
-            inputType
-            inputLabel
           }
         }
       }
