@@ -14,18 +14,24 @@ const Header = ({ title, description, image, getAsset = null }) => {
     <header>
       <div className='container mt-2' style={{ maxWidth: '960px' }}>
         <div className='row'>
-          <div className='col-sm-4'>
-            <Link to='/'>{renderedImage}</Link>
+          <div className='col-12 order-2 order-md-1'>
+            <div className='row'>
+              <div className='col-sm-4'>
+                <Link to='/'>{renderedImage}</Link>
+              </div>
+              <div className='col d-flex align-items-center'>
+                <h1 className='text-center display-5 fw-normal'>{title}</h1>
+              </div>
+            </div>
+            <div>
+              <ReactMarkdown className='' children={description} />
+            </div>
           </div>
-          <div className='col d-flex align-items-center'>
-            <h1 className='text-center display-5 fw-normal'>{title}</h1>
+          <div className='col-12 order-1 order-md-2'>
+            <Navigation />
           </div>
-        </div>
-        <div>
-          <ReactMarkdown className='' children={description} />
         </div>
       </div>
-      <Navigation />
     </header>
   );
 };
