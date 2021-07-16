@@ -26,7 +26,7 @@ classes:
       title: Раннее развитие
       link: sunday-club
     - image: /img/uploads/classes-complex.png
-      title: Комплексные занятия для дошкольников
+      title: Комплексны для дошкольников
     - image: /img/uploads/classes-cult-history.png
       title: История искусств
 ---
