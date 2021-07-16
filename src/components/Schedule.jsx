@@ -53,7 +53,9 @@ const Schedule = ({ schedule }) => {
   return (
     <section>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <h2 className='fw-normal text-center text-sm-start'>{title}</h2>
+        <h2 className='fw-normal text-center text-sm-start text-uppercase'>
+          {title}
+        </h2>
         <div className='row mb-3'>{renderDaysList(days)}</div>
       </div>
     </section>

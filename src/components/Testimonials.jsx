@@ -35,7 +35,7 @@ const Testimonials = ({ title, description, list, getAsset = null }) => {
   return (
     <section>
       <div className='container pt-3' style={{ maxWidth: '960px' }}>
-        <h2 className='fw-normal'>{title}</h2>
+        <h2 className='fw-normal text-center text-sm-start'>{title}</h2>
         <ReactMarkdown className='' children={description} />
         <div className='row mb-3'>{renderList(list, getAsset)}</div>
       </div>

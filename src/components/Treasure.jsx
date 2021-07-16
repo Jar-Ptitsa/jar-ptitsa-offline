@@ -28,7 +28,7 @@ const Treasure = ({ title, teachers, dance, getAsset = null }) => {
   return (
     <section style={{ backgroundColor: '#f0f0f0' }}>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <h2 className='fw-normal'>{title}</h2>
+        <h2 className='fw-normal text-center text-sm-start'>{title}</h2>
         <ReactMarkdown className='' children={teachers.description} />
         <div className='row mb-3'>{renderList(teachers.list, getAsset)}</div>
         <div className='row'>

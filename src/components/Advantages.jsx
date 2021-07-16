@@ -27,7 +27,7 @@ const Advantages = ({ title, image, list, getAsset = null }) => {
     <section style={{ backgroundColor: '#000', color: '#fff' }}>
       <div className='container pb-3' style={{ maxWidth: '960px' }}>
         {renderedImage}
-        <h2 className='fw-normal'>{title}</h2>
+        <h2 className='fw-normal text-center text-sm-start'>{title}</h2>
         <ul>{renderList(list)}</ul>
       </div>
     </section>
