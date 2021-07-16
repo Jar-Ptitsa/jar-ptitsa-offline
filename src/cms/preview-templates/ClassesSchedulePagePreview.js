@@ -11,7 +11,7 @@ const ClassesSchedulePagePreview = ({ entry, getAsset }) => {
       <ClassesSchedulePageTemplate
         data={{
           ...data,
-          getAsset
+          getAsset,
         }}
       />
     );

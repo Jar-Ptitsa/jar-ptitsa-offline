@@ -31,7 +31,8 @@ classes:
       image: /img/uploads/classes-cult-history.png
 schedule:
   days:
-    - time-blocks:
+    - day: Среда
+      time-blocks:
         - time: 9-12
           classes:
             - class: Творческая лаборатория
@@ -47,7 +48,6 @@ schedule:
             - class: Русский язык, литература, риторика
             - class: Комплексные занятия по русскому языку и развитию речи
             - class: Индивидуальные занятия
-      day: Среда
     - day: Суббота
       time-blocks:
         - time: 9-12
