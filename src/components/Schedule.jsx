@@ -33,7 +33,7 @@ const renderDaysList = (list) => {
         : 'col-12 col-sm-9 col-md-6 mx-auto px-3';
 
     return (
-      <div className={`${colClass} mt-3`} key={index}>
+      <div className={`${colClass} mt-2`} key={index}>
         <div className='d-flex flex-column border rounded p-1'>
           <div
             className='d-flex align-items-center justify-content-center p-0 rounded'

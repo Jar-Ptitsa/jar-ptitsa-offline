@@ -4,12 +4,14 @@ import { graphql } from 'gatsby';
 import Layout from '../layout/Layout';
 import Classes from '../components/Classes';
 import Schedule from '../components/Schedule';
+import GoogleCalendar from '../components/GoogleCalendar';
 
 export const ClassesSchedulePageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <Classes {...data} />
       <Schedule {...data} />
+      <GoogleCalendar />
     </React.Fragment>
   );
 };

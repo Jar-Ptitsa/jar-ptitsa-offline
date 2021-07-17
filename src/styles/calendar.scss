@@ -1,0 +1,22 @@
+// colors scheme for events
+$event-bg: #e5eae1;
+$event-color: #000;
+
+.calendar {
+  padding: 0;
+  // height: calc(100vh - 200px);
+}
+
+.rbc-toolbar-label {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.rbc-month-view {
+  border-radius: 0.25rem;
+}
+
+.rbc-header {
+  text-transform: uppercase;
+}
