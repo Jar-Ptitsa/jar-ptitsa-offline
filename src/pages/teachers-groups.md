@@ -30,4 +30,5 @@ groups:
         - image: /img/uploads/hohloma.png
           book_title: Книга 1
           link: http://google.com
+      image: /img/uploads/groups_1.png
 ---
