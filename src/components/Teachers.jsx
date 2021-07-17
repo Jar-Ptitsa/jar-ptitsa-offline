@@ -27,8 +27,9 @@ const renderTeachersList = (list, getAsset) => {
   return list.map((teacher, index) => {
     return (
       <div
-        className='col-11 mx-auto row border rounded shadow mt-2 pt-3'
-        key={index}>
+        className='col-11 mx-auto row border rounded shadow mb-3 pt-3'
+        key={index}
+        style={{ backgroundColor: '#fff' }}>
         <h5 className='fw-bold text-center text-md-start text-uppercase'>
           {teacher.name}
         </h5>
