@@ -15,7 +15,7 @@ const renderTeachersGroupList = (list, getAsset) => {
         <Image
           image={group.image}
           getAsset={getAsset}
-          className='img-fluid col-8 col-sm-4 col-md-8 mx-auto mb-1 mb-sm-0'
+          className='img-fluid col-8 col-sm-5 col-md-8 mx-auto mb-1 mb-sm-0'
         />
         <div className='col text-uppercase text-center'>{group.group_name}</div>
       </Link>
