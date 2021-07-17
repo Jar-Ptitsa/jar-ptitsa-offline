@@ -112,10 +112,39 @@ collections:
         label: "Teachers and Groups"
         name: "teachers-groups"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "teachers-groups"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "teachers-groups"}
+# teachers
+           - {label: Teachers, name: teachers, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Teachers, name: teachers, widget: list, fields: [
+                {label: Full Name, name: name, widget: string},
+                {label: Photo, name: image, widget: image},
+                {label: Status, name: status, widget: string, required: false},
+                {label: Position, name: position, widget: string, required: false},
+                {label: Specialization, name: specialization, widget: string, required: false},
+                {label: Bio, name: bio, widget: markdown},
+                {label: Groups, name: groups, widget: list, fields: [
+                  {label: Group Name, name: group_name, widget: string},
+                  {label: Image, name: image, widget: image},
+                ]}
+              ]}
+           ]}
+# groups
+           - {label: Groups, name: groups, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Groups, name: groups, widget: list, fields: [
+                {label: Group Name, name: group, widget: string},
+                {label: Image, name: image, widget: image},
+                {label: Books, name: books, widget: list, fields: [
+                  {label: Book Title, name: book_title, widget: string},
+                  {label: Image, name: image, widget: image},
+                  {label: Link, name: link, widget: string},
+                ]}
+              ]}
+           ]}
+# 
 # plans page
+# 
       - file: "src/pages/plans.md"
         label: "Plans"
         name: "plans"
