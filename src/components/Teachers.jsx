@@ -40,7 +40,7 @@ const renderTeachersList = (list, getAsset) => {
             className='img-fluid col-8 col-sm-6 col-md-10 mx-auto'
           />
         </div>
-        <div className='col d-flex flex-column flex-sm-row align-items-center'>
+        <div className='col row flex-column flex-sm-row align-items-center m-0 p-0'>
           <div className='col-12 col-sm-6 d-flex flex-column align-items-start  ps-sm-5 ps-md-0'>
             {teacher.status && (
               <div className='d-flex'>
@@ -69,7 +69,7 @@ const renderTeachersList = (list, getAsset) => {
           </div>
           <div className='col-12 col-sm-6 my-3 my-sm-0'>
             <h6 className='text-center'>Классы</h6>
-            <div className='row justify-content-between px-1'>
+            <div className='row justify-content-between px-1 m-0'>
               {renderTeachersGroupList(teacher.groups, getAsset)}
             </div>
           </div>
