@@ -3,9 +3,15 @@ import { graphql } from 'gatsby';
 
 import Layout from '../layout/Layout';
 import Teachers from '../components/Teachers';
+import Groups from '../components/Groups';
 
 export const TeachersGroupsPageTemplate = ({ data }) => {
-  return <Teachers {...data.teachers} />;
+  return (
+    <React.Fragment>
+      <Teachers {...data.teachers} />
+      <Groups {...data.groups} />
+    </React.Fragment>
+  );
 };
 
 const TeachersGroupsPage = ({ data }) => {
@@ -64,6 +70,7 @@ export const pageQuery = graphql`
             }
             books {
               book_title
+              book_authors
               image {
                 childImageSharp {
                   fluid(maxWidth: 320, quality: 100) {
@@ -71,6 +78,7 @@ export const pageQuery = graphql`
                   }
                 }
               }
+              button_label
               link
             }
           }

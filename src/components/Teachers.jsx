@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'gatsby';
-import { AwardFill, KeyFill, PersonBadgeFill } from 'react-bootstrap-icons';
+import { AwardFill, Book, PersonBadgeFill } from 'react-bootstrap-icons';
 
 import Image from './Image';
 
@@ -61,7 +61,7 @@ const renderTeachersList = (list, getAsset) => {
             {teacher.specialization && (
               <div className='d-flex'>
                 <div className='me-2'>
-                  <KeyFill />
+                  <Book />
                 </div>
                 <div>{teacher.specialization}</div>
               </div>
@@ -93,7 +93,6 @@ const Teachers = ({ getAsset = '', ...teachers }) => {
           {renderTeachersList(teachersList, getAsset)}
         </div>
       </div>
-      <div id={`1ый класс`}>12</div>
     </section>
   );
 };
