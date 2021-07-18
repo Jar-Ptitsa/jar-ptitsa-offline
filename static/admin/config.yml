@@ -133,11 +133,13 @@ collections:
            - {label: Groups, name: groups, widget: object, collapsed: true, fields: [
               {label: Title, name: title, widget: string},
               {label: Groups, name: groups, widget: list, fields: [
-                {label: Group Name, name: group, widget: string},
+                {label: Group Name [same as in Teacher], name: group, widget: string},
                 {label: Image, name: image, widget: image},
                 {label: Books, name: books, widget: list, fields: [
                   {label: Book Title, name: book_title, widget: string},
+                  {label: Book Authors, name: book_authors, widget: string},
                   {label: Image, name: image, widget: image},
+                  {label: Button Label, name: button_label, widget: string},
                   {label: Link, name: link, widget: string},
                 ]}
               ]}

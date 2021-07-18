@@ -48,10 +48,70 @@ teachers:
 groups:
   title: Наши классы
   groups:
-    - group: 1ый класс
+    - group: 1-ый класс
       books:
         - image: /img/uploads/hohloma.png
-          book_title: Книга 1
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+      image: /img/uploads/groups_1.png
+    - group: 1-ый класс
+      books:
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
+          link: http://google.com
+        - image: /img/uploads/hohloma.png
+          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и двух рабочих тетрадей. 1 класс
+          book_authors: Дронов, Дорофеева
+          button_label: Скачать
           link: http://google.com
       image: /img/uploads/groups_1.png
 ---
