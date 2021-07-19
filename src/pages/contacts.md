@@ -25,6 +25,7 @@ address:
       country: France
 routes:
   title: Общественный транспорт
+  image: /img/uploads/classes-izo.png
   steps:
     - title: Электрички
       options:

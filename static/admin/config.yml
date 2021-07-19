@@ -170,14 +170,43 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "enroll-school"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
+# 
 # contacts page
+# 
       - file: "src/pages/contacts.md"
         label: "Contacts"
         name: "contacts"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contacts"}
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+          - {label: Email, name: email, widget: string}
+# telephones
+          - {label: Telephones, name: telephones, widget: list, fields: [
+              {label: Tel number, name: phone, widget: string},
+            ]}
+# address
+          - {label: Address Section, name: address, widget: object, collapsed: true, fields: [ 
+              {label: Title, name: title, widget: string},
+              {label: Address, name: address, widget: list, collapsed: true, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Street, name: street, widget: string},
+                {label: City, name: city, widget: string},
+                {label: Zip-code, name: zip, widget: string},
+                {label: Country, name: country, widget: string},
+              ]}
+          ]}
+# routes
+          - {label: Routes Section, name: routes, widget: object, collapsed: true, fields: [ 
+              {label: Title, name: title, widget: string},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Steps, name: steps, widget: list, collapsed: true, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Options, name: options, widget: list, collapsed: true, fields: [
+                  {label: Option, name: option, widget: markdown},
+                ]},
+              ]}
+          ]}
+
 # 
 # modals
 # 
