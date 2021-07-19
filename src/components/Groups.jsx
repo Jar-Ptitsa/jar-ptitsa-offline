@@ -11,7 +11,7 @@ const Groups = ({ getAsset = '', ...groups }) => {
       return (
         <div
           className='col-6 col-md-12 row mx-0 my-2 p-0 align-items-md-center'
-          ke={index}>
+          key={index}>
           <div className='col-8 col-md-4 mx-auto'>
             <Image
               image={book.image}
@@ -41,14 +41,14 @@ const Groups = ({ getAsset = '', ...groups }) => {
       );
     });
   };
-  // <div id={`1ый класс`}>12</div>
 
   const renderGroupsList = (list, getAsset) => {
     return list.map((group, index) => {
       return (
         <div
           className='col-11 mx-auto p-0 row mb-3 border rounded'
-          id={group.group}>
+          id={group.group}
+          key={index}>
           <div
             className='col-12 col-md-3 row m-0 p-0 rounded'
             style={{ backgroundColor: '#E5EAE1' }}>
@@ -82,7 +82,6 @@ const Groups = ({ getAsset = '', ...groups }) => {
         </h2>
         <div className='row'>{renderGroupsList(groupsList, getAsset)}</div>
       </div>
-      <div id={`1ый класс`}>12</div>
     </section>
   );
 };
