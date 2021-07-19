@@ -10,7 +10,7 @@ import { FooterLayoutTemplate } from '../templates/footer-layout';
 // bootstrap and custom scss
 import '../styles/styles.scss';
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, location = '' }) => {
   // get data in component due to export query works only for page components
   const data = useStaticQuery(graphql`
     query HeaderAndFooterQuery {
@@ -106,7 +106,9 @@ const TemplateWrapper = ({ children }) => {
 
       <main>{children}</main>
 
-      <FooterLayoutTemplate data={data.footer.frontmatter} />
+      {location.pathname !== '/contacts' && (
+        <FooterLayoutTemplate data={data.footer.frontmatter} />
+      )}
     </React.Fragment>
   );
 };
