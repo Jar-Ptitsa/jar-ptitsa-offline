@@ -6,23 +6,26 @@ telephones:
   - phone: +33 (0)6 29 02 17 85
   - phone: +33 (0)6 35 33 81 25
 address:
-  title: Адреса
+  title: Наши Адреса
   address:
     - title: Офис
       street: 31 Avenue du Ctre
       city: Montigny-le-Bretonneux
       zip: "78280"
       country: France
+      coords: 48.78497573023895, 2.0456221142433177
     - country: France
       zip: "78280"
       city: Montigny-le-Bretonneux
       street: 6 avenue Erik Satie
       title: Детский сад и начальная школа
+      coords: 48.76394262037385, 2.030581785406726
     - title: Воскресный клуб
-      street: 3 chemin des salitaire
+      street: 3 Chemin des Solitaires
       city: Montigny-le-Bretonneux
       zip: "78280"
       country: France
+      coords: 48.76349172164362, 2.016172810536841
 routes:
   title: Общественный транспорт
   image: /img/uploads/hohloma.png
