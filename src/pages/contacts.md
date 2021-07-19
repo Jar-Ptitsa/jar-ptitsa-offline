@@ -25,7 +25,7 @@ address:
       country: France
 routes:
   title: Общественный транспорт
-  image: /img/uploads/classes-izo.png
+  image: /img/uploads/hohloma.png
   steps:
     - title: Электрички
       options:
