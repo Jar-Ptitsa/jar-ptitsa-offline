@@ -44,7 +44,8 @@ exports.createPages = ({ actions, graphql }) => {
       // 2 -> check if slug in exceptions array => skip further processing
       if (exceptionSlugs.includes(edge.node.fields.slug)) return;
 
-      console.log('slug >>> ', edge.node.fields.slug);
+      // 3 -> check log to confirm correct results
+      // console.log('slug >>> ', edge.node.fields.slug);
 
       createPage({
         path: edge.node.fields.slug,
