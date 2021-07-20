@@ -46,4 +46,6 @@ additional_plans:
       discounts: Клубная карта *
       image: /img/uploads/classes-complex.png
   footnotes: "* описание клубной карты"
+afterwords: Вы также можете посещать групповые занятия (15 евро/час) или
+  заниматься индивидуально (25 евро/час).
 ---
