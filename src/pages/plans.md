@@ -8,7 +8,7 @@ main_plans:
       hours: 8 часов в неделю*30 недель = 240 часов
       price: 1800
       currency: евро
-      discounts: Скидка на второго ребёнка в семье *
+      discounts: Скидка на второго ребёнка в семье*
       description: или два пакета на одного ребёнка
     - image: /img/uploads/logo_cropped.jpg
       title: Полдня
@@ -16,14 +16,14 @@ main_plans:
       hours: 3 часа в неделю*30 недель = 90 часов
       price: 1000
       currency: евро
-      discounts: Скидка на третьего ребёнка в семье *
+      discounts: Скидка на третьего ребёнка в семье*
     - image: /img/uploads/logo_cropped.jpg
       title: Половина пакета
       hours: 1,5 часа в неделю*30 недель = 45 часов
       price: 600
       currency: евро
       discounts: Без скидок
-  footnotes: "* описание скидки на второго ребенка"
+  footnotes: "* описание скидки на второго/третьего ребенка"
   title: Основные тарифы
 additional_plans:
   plans:
@@ -40,10 +40,10 @@ additional_plans:
       currency: евро
       discounts: Без скидок
     - title: Воскресный клуб
-      hours: ""
-      price: ""
-      currency: ""
-      discounts: Клубная карта *
+      hours: 
+      price: 
+      currency: 
+      discounts: Клубная карта*
       image: /img/uploads/classes-complex.png
   footnotes: "* описание клубной карты"
   title: Дополнительные варианты

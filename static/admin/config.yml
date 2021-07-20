@@ -152,9 +152,37 @@ collections:
         name: "plans"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "plans"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+          - {label: Title, name: title, widget: string, required: false}
+          - {label: Main Plans, name: main_plans, widget: object, collapsed: true, fields: [
+            {label: Title, name: title, widget: string, required: false},
+            {label: Plans, name: plans, widget: list, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Description, name: description, widget: string, required: false},
+              {label: Hours, name: hours, widget: string},
+              {label: 'Price [number]', name: price, widget: number},
+              {label: 'Currency [ex. euro]', name: currency, widget: string},
+              {label: Discounts, name: discounts, widget: string, required: false},
+            ]},
+            {label: Footnotes, name: footnotes, widget: string, required: false}
+          ]}
+          - {label: Additional Plans, name: additional_plans, widget: object, collapsed: true, fields: [
+            {label: Title, name: title, widget: string, required: false},
+            {label: Plans, name: plans, widget: list, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Description, name: description, widget: string, required: false},
+              {label: Hours, name: hours, widget: string, required: false},
+              {label: 'Price [number]', name: price, widget: number, required: false},
+              {label: 'Currency [ex. euro]', name: currency, widget: string, required: false},
+              {label: Discounts, name: discounts, widget: string, required: false},
+            ]},
+            {label: Footnotes, name: footnotes, widget: string, required: false}
+          ]}
+          - {label: Afterwords, name: afterwords, widget: string, required: false}
+# 
 # sunday-club page
+# 
       - file: "src/pages/sunday-club.md"
         label: "Sunday Club"
         name: "sunday-club"
@@ -162,7 +190,9 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sunday-club"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
+# 
 # enrollment at school page
+# 
       - file: "src/pages/enroll-school.md"
         label: "Enroll at School"
         name: "enroll-school"
