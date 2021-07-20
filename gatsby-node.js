@@ -33,8 +33,19 @@ exports.createPages = ({ actions, graphql }) => {
 
     const posts = result.data.allMarkdownRemark.edges;
 
+    // remove files (md) that are not pages
+    // like header and footer from layout
+    // 1 -> create exceptions array
+    const exceptionSlugs = ['/header/', '/footer/'];
+
     posts.forEach((edge) => {
       const id = edge.node.id;
+
+      // 2 -> check if slug in exceptions array => skip further processing
+      if (exceptionSlugs.includes(edge.node.fields.slug)) return;
+
+      console.log('slug >>> ', edge.node.fields.slug);
+
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve(
