@@ -189,7 +189,21 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sunday-club"}
           - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+          - {label: Sunday, name: sunday, widget: object, collapsed: true, fields: [
+            {label: Title, name: title, widget: string, required: false},
+            {label: Description, name: description, widget: markdown, required: false},
+            {label: Videos, name: videos, widget: list, required: false, fields: [
+              {label: Title, name: title, widget: string, required: false},
+              {label: Video Id, name: video, widget: string, required: false},
+            ]}
+          ]}
+          - {label: Jar-Ptenchiki, name: jar_ptenchiki, widget: object, collapsed: true, fields: [
+            {label: Title, name: title, widget: string, required: false},
+            {label: Description, name: description, widget: markdown, required: false},
+            {label: 'Photos [best odd num: 3,6,9...]', name: photos, widget: list, required: false, fields: [
+              {label: Image, name: image, widget: image},
+            ]}
+          ]}
 # 
 # enrollment at school page
 # 
