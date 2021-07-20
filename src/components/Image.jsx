@@ -1,7 +1,9 @@
 import React from 'react';
 import Img from 'gatsby-image';
 
-const Image = ({ image, getAsset, className = '', style = '' }) => {
+const Image = ({ image, getAsset, className = '', style }) => {
+  style = style || {};
+
   if (!image) return null;
 
   if (getAsset) {
