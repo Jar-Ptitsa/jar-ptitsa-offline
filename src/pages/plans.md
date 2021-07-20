@@ -1,7 +1,6 @@
 ---
 templateKey: plans
 title: Наши планы и тарифы
-description: СПАСИБО
 main_plans:
   plans:
     - title: Полный день в среду
