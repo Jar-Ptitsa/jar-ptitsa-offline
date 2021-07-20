@@ -25,6 +25,7 @@ main_plans:
       currency: евро
       discounts: Без скидок
   footnotes: "* описание скидки на второго ребенка"
+  title: Основные тарифы
 additional_plans:
   plans:
     - title: Факультативные занятия
@@ -46,6 +47,7 @@ additional_plans:
       discounts: Клубная карта *
       image: /img/uploads/classes-complex.png
   footnotes: "* описание клубной карты"
+  title: Дополнительные варианты
 afterwords: Вы также можете посещать групповые занятия (15 евро/час) или
   заниматься индивидуально (25 евро/час).
 ---
