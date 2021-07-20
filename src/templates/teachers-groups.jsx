@@ -5,21 +5,21 @@ import Layout from '../layout/Layout';
 import Teachers from '../components/Teachers';
 import Groups from '../components/Groups';
 
-export const TeachersGroupsPageTemplate = ({ data }) => {
+export const TeachersGroupsPageTemplate = ({ data, location = '' }) => {
   return (
     <React.Fragment>
-      <Teachers {...data.teachers} />
+      <Teachers teachers={data.teachers} location={location} />
       <Groups {...data.groups} />
     </React.Fragment>
   );
 };
 
-const TeachersGroupsPage = ({ data }) => {
+const TeachersGroupsPage = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <TeachersGroupsPageTemplate data={frontmatter} />
+      <TeachersGroupsPageTemplate data={frontmatter} location={location} />
     </Layout>
   );
 };
