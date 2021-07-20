@@ -40,9 +40,10 @@ additional_plans:
       currency: евро
       discounts: Без скидок
     - title: Воскресный клуб
-      hours: "1111"
-      button_label: 1111
-      currency: "1111"
+      hours: ""
+      button_label: ""
+      currency: ""
       discounts: Клубная карта *
+      image: /img/uploads/classes-complex.png
   footnotes: "* описание клубной карты"
 ---
