@@ -1,8 +1,8 @@
 ---
 templateKey: sunday-club
-title: Школа русского языка для детей-билингвов и инофонов  «Жар-Птица»
-description: СПАСИБО
+title: Наш воскресный клуб
 sunday:
+  title: Что такое воскресный клуб?
   description: >-
     Воскресенье – самый удобный день для семейного отдыха. Мы решили  помочь
     нашим семья организовать этот день по их желанию и на их усмотрение. По
@@ -37,5 +37,4 @@ jar_ptenchiki:
     - image: /img/uploads/ptenchiki-4.jpg
     - image: /img/uploads/ptenchiki-5.jpeg
     - image: /img/uploads/ptenchiki-6.jpeg
-    - image: /img/uploads/ptenchiki-7.jpg
 ---
