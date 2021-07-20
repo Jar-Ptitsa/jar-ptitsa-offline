@@ -80,7 +80,7 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
         develop: false, // Activates purging in npm run develop
-        purgeOnly: ['styles/'], // applies purging only on the these file/folders
+        purgeOnly: [''], // applies purging only on the these file/folders
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
