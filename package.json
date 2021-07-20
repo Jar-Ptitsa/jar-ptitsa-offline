@@ -37,7 +37,6 @@
     "react-helmet": "^6.0.0",
     "react-markdown": "^6.0.2",
     "recompose": "^0.30.0",
-    "superagent": "^6.1.0",
     "uuid": "^7.0.0"
   },
   "keywords": [
