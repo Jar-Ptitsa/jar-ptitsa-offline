@@ -25,4 +25,24 @@ main_plans:
       currency: евро
       discounts: Без скидок
   footnotes: "* описание скидки на второго ребенка"
+additional_plans:
+  plans:
+    - title: Факультативные занятия
+      image: /img/uploads/classes-theater.png
+      hours: 1 час в неделю*30 недель = 30 часов
+      button_label: 450
+      currency: евро
+      discounts: Без скидок
+    - title: Дополнительные занятия в группе
+      image: /img/uploads/classes-engl.png
+      hours: 1 час в неделю * 30 недель = 30 часов
+      button_label: 450
+      currency: евро
+      discounts: Без скидок
+    - title: Воскресный клуб
+      hours: "1111"
+      button_label: 1111
+      currency: "1111"
+      discounts: Клубная карта *
+  footnotes: "* описание клубной карты"
 ---
