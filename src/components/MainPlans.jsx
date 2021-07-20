@@ -13,7 +13,7 @@ const MainPlans = ({ title, main_plans, getAsset }) => {
           key={index + plan.price}>
           <div className='card border-dark text-center'>
             <h5
-              class='card-header d-flex justify-content-center align-items-center'
+              className='card-header d-flex justify-content-center align-items-center'
               style={{ height: '50px' }}>
               <div>{plan.title}</div>
             </h5>
@@ -46,7 +46,7 @@ const MainPlans = ({ title, main_plans, getAsset }) => {
               </div>
             </div>
             <div
-              class='card-footer text-muted d-flex justify-content-center align-items-center'
+              className='card-footer text-muted d-flex justify-content-center align-items-center'
               style={{ height: '50px', fontSize: '1rem' }}>
               {plan.discounts}
             </div>

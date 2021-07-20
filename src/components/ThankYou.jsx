@@ -10,7 +10,7 @@ const ThankYou = ({ title, description, getAsset = null }) => {
         {description && (
           <ReactMarkdown className='lead' children={description} />
         )}
-        <Link to='/' className='btn btn-md btn-outline-success'>
+        <Link to='/enroll-school' className='btn btn-md btn-outline-success'>
           Назад
         </Link>
       </div>
