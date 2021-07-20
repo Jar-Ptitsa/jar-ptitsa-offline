@@ -8,7 +8,7 @@ const encode = (data) => {
 };
 
 const renderInputs = (formInputs, handleChange) => {
-  const renderInput = ({ inputType, inputLabel }) => {
+  const renderInput = ({ inputType, inputLabel, required }) => {
     return (
       <div className='mb-3' key={inputLabel}>
         <label className='form-label'>{inputLabel}</label>
@@ -17,7 +17,7 @@ const renderInputs = (formInputs, handleChange) => {
           type={inputType}
           name={inputLabel}
           onChange={handleChange}
-          required
+          required={required === 'true'}
         />
       </div>
     );
@@ -26,7 +26,8 @@ const renderInputs = (formInputs, handleChange) => {
   return formInputs.map((input) => renderInput({ ...input }));
 };
 
-const Form = ({ title, formInputs }) => {
+const Form = ({ formData }) => {
+  const { title, formInputs } = formData;
   const [state, setState] = React.useState({});
 
   const handleChange = (e) => {
@@ -41,7 +42,7 @@ const Form = ({ title, formInputs }) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        subject: 'JAR-PTITSA LENDING PAGE - New request',
+        subject: 'JAR-PTITSA OFFLINE - New request',
         ...state,
       }),
     })
@@ -50,10 +51,11 @@ const Form = ({ title, formInputs }) => {
   };
 
   return (
-    // <section className='mb-3'>
-    <section style={{ backgroundColor: '#e5eae1' }}>
+    <section>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <h2 className='fw-normal'>{title}</h2>
+        <h2 className='fw-normal text-center text-sm-start text-uppercase'>
+          {title}
+        </h2>
 
         <div className='row'>
           <form

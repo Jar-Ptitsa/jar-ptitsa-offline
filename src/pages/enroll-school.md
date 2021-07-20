@@ -7,7 +7,7 @@ steps:
     - description: Скачать [пакет
         документов](https://docs.google.com/document/d/1CwMmXlHph37Cxtk3hVld-lI0Uga2RrmJ0Ava7tQolL8/edit?usp=sharing)
         для записи в школу
-    - description: Заполнить его и отправить на [адрес школы](/contacts) (электронный
+    - description: Заполнить его и отправить на адрес школы (электронный
         или почтовый)
     - description: Администрация школы свяжется с Вами для обсуждения деталей и
         времени визита

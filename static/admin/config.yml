@@ -212,8 +212,22 @@ collections:
         name: "enroll-school"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "enroll-school"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
+# steps
+          - {label: Enrollment steps, name: steps, widget: object, collapsed: true, fields: [
+            {label: Title, name: title, widget: string},
+            {label: Steps, name: steps, widget: list, fields: [
+              {label: Description, name: description, widget: markdown}
+            ]}
+          ]}
+# form
+          - {label: Form Data, name: formData, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Form Inputs, name: formInputs, widget: list, fields: [
+                {label: Input Label, name: inputLabel, widget: string},
+                {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"]},
+                {label: "Required?",  name: required,  widget: "select",   options: ["true", "false"]},
+              ]}
+          ]}
 # 
 # contacts page
 # 
