@@ -12,8 +12,8 @@ classes:
       image: /img/uploads/classes-ritorika.png
     - title: Английский язык
       image: /img/uploads/classes-engl.png
-    - title: Рисование
-      image: /img/uploads/classes-izo.png
+    - title: Танцы
+      image: /img/uploads/3-танцы.png
     - title: Театр
       image: /img/uploads/classes-theater.png
     - title: Русская культура
