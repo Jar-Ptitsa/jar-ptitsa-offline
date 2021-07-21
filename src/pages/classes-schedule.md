@@ -16,7 +16,7 @@ classes:
       image: /img/uploads/3-танцы.png
     - title: Театр
       image: /img/uploads/classes-theater.png
-    - title: Русская культура
+    - title: Мировая культура
       image: /img/uploads/classes-rus-culture.png
     - title: Музыкальное развитие
       image: /img/uploads/classes-music.png
