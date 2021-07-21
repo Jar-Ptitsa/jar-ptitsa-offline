@@ -23,9 +23,9 @@ classes:
     - title: Творческая лаборатория
       image: /img/uploads/classes-tvor.png
     - title: Раннее развитие
-      image: /img/uploads/classes-ptehchiki.png
+      image: /img/uploads/4-птенчики.png
       link: sunday-club
-    - title: Комплексы для дошкольников
+    - title: Комплексные занятия для дошкольников
       image: /img/uploads/classes-complex.png
     - title: История искусств
       image: /img/uploads/classes-cult-history.png
