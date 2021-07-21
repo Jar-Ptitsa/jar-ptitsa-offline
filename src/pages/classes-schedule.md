@@ -21,12 +21,12 @@ classes:
     - title: Музыкальное развитие
       image: /img/uploads/classes-music.png
     - title: Творческая лаборатория
-      image: /img/uploads/classes-tvor.png
+      image: /img/uploads/2-твор-лаборатория.png
     - title: Раннее развитие
       image: /img/uploads/4-птенчики.png
       link: sunday-club
     - title: Комплексные занятия для дошкольников
-      image: /img/uploads/classes-complex.png
+      image: /img/uploads/1-для-дошколят.png
     - title: История искусств
       image: /img/uploads/classes-cult-history.png
 schedule:
