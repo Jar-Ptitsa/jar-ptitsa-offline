@@ -11,11 +11,11 @@ address:
     - title: Офис
       street: 31 Avenue du Ctre
       city: Montigny-le-Bretonneux
-      zip: "78280"
+      zip: "78180"
       country: France
       coords: 48.78497573023895, 2.0456221142433177
     - country: France
-      zip: "78280"
+      zip: "78180"
       city: Montigny-le-Bretonneux
       street: 6 avenue Erik Satie
       title: Детский сад и начальная школа
@@ -23,7 +23,7 @@ address:
     - title: Воскресный клуб
       street: 3 Chemin des Solitaires
       city: Montigny-le-Bretonneux
-      zip: "78280"
+      zip: "78180"
       country: France
       coords: 48.76349172164362, 2.016172810536841
 routes:
