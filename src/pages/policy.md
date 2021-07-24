@@ -28,6 +28,6 @@ description: >-
      Как с нами связаться
      В случае любых вопросов или сомнений вы можете связаться с нами следующими способами:
      По почте Association franco-russe  LES LIENS - 31 avenue du Centre – 78180 – Montigny le Bretonneux. France
-     По электронной почте: info@jar-ptitsa.com
+     По электронной почте: [info@jar-ptitsa.com](mailto:info@jar-ptitsa.com)
      Пожалуйста укажите в теме письма "Личные данные и конфиденциальность".
 ---
