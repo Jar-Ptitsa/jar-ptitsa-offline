@@ -49,7 +49,7 @@ const GoogleCalendar = () => {
             events={events}
             views={['month']}
             defaultView='month'
-            style={{ height: '80vh' }}
+            style={{ height: '670px' }}
             popup={true}
             messages={translatedCalendarToRus}
           />
