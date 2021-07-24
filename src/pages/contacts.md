@@ -6,8 +6,7 @@ telephones:
   - phone: +33 (0)6 29 02 17 85
   - phone: +33 (0)6 35 33 81 25
 routes:
-  title: Общественный транспорт
-  image: /img/uploads/hohloma.png
+  title: Как добраться до Montigny-le-Bretonneux
   steps:
     - title: Электрички
       options:
@@ -16,10 +15,6 @@ routes:
             Bretonneux)"
         - option: "**Paris-La Défense** - Saint Quentin en Yvelines (Montigny le
             Bretonneux)"
-    - title: Автобусы (SQYBus)
-      options:
-        - option: "**№ 414** - остановка \"Collège St-François d'Assise\""
-        - option: '**№ 419** - остановка "Erik Satie"'
 address:
   title: Наши Адреса
   address:
@@ -40,10 +35,20 @@ address:
       street: 6 avenue Erik Satie
       title: Детский сад и начальная школа
       coords: 48.76394262037385, 2.030581785406726
+      steps:
+        - title: Автобусы (SQYBus)
+          options:
+            - option: "**№ 414** - остановка \"Collège St-François d'Assise\""
+          image: /img/uploads/hohloma.png
     - title: Воскресный клуб
       street: 3 Chemin des Solitaires
       city: Montigny-le-Bretonneux
       zip: "78180"
       country: France
       coords: 48.76349172164362, 2.016172810536841
+      steps:
+        - title: Автобусы (SQYBus)
+          options:
+            - option: "**№ 414** - остановка \"Collège St-François d'Assise\""
+          image: /img/uploads/hohloma.png
 ---

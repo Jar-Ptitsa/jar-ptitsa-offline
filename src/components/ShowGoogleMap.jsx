@@ -13,7 +13,7 @@ const ShowGoogleMap = compose(
   withProps({
     googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&v=3.exp`,
     loadingElement: <div className='rounded' style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `30vh` }} />,
+    containerElement: <div style={{ height: `100%` }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,

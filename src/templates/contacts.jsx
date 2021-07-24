@@ -7,55 +7,30 @@ import Route from '../components/Route';
 import AddressList from '../components/AddressList';
 
 export const ContactsPageTemplate = ({ data }) => {
-  const sectionWrapper = ({ contacts, address, routes }) => {
-    return (
-      <React.Fragment>
-        <section
-          className='d-none d-sm-block'
-          style={{ backgroundColor: '#f0f0f0' }}>
-          <div className='container pb-3' style={{ maxWidth: '960px' }}>
-            <h2 className='fw-normal text-center text-sm-start text-uppercase py-3 mb-0'>
-              {data.title}
-            </h2>
-            <div className='row m-0 p-0'>
-              <div className='col-12 col-sm-6 p-0'>
-                <div className='pb-3'>{contacts}</div>
-                <div>{routes}</div>
-              </div>
-              <div className='col-12 col-sm-6'>{address}</div>
-            </div>
-          </div>
-        </section>
-
-        <section className='d-sm-none'>
-          <div className='container p-0' style={{ maxWidth: '960px' }}>
-            <h2
-              className='fw-normal text-center text-sm-start text-uppercase py-3 mb-0'
-              style={{ backgroundColor: '#f0f0f0' }}>
-              {data.title}
-            </h2>
-            <div className='row m-0 p-0'>
-              <div className='col-12 col-sm-6 p-0'>
-                <div className='pb-3' style={{ backgroundColor: '#f0f0f0' }}>
-                  {contacts}
-                </div>
-              </div>
-              <div className='col-12 col-sm-6 p-0'>{address}</div>
-              <div style={{ backgroundColor: '#E5EAE1' }}>{routes}</div>
-            </div>
-          </div>
-        </section>
-      </React.Fragment>
-    );
-  };
-
   return (
     <React.Fragment>
-      {sectionWrapper({
-        contacts: <Contacts {...data} />,
-        address: <AddressList {...data} />,
-        routes: <Route {...data} />,
-      })}
+      <section style={{ backgroundColor: '#f0f0f0' }}>
+        <div className='container' style={{ maxWidth: '960px' }}>
+          <div className='row m-0 p-0'>
+            <h2 className='col-12 px-0 fw-normal text-center text-sm-start text-uppercase py-3 mb-0'>
+              {data.title}
+            </h2>
+          </div>
+          <div className='col-12 p-0'>
+            <div className='pb-3' style={{ backgroundColor: '#f0f0f0' }}>
+              <Contacts {...data} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className='container pt-3' style={{ maxWidth: '960px' }}>
+          <Route {...data} />
+        </div>
+      </section>
+
+      <AddressList {...data} />
     </React.Fragment>
   );
 };
@@ -90,17 +65,23 @@ export const pageQuery = graphql`
             zip
             country
             coords
+            steps {
+              title
+              options {
+                option
+              }
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 320, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
         }
         routes {
           title
-          image {
-            childImageSharp {
-              fluid(maxWidth: 320, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
           steps {
             title
             options {
