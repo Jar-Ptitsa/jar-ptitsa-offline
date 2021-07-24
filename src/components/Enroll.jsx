@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'gatsby';
 
 const Enroll = ({ steps }) => {
   const { title, steps: stepsList } = steps;
 
-  // linkTarget = ''
-
   const renderList = (list) => {
     return list.map((step, index) => {
+      const isAddress = step.description.search('электронный или почтовый') > 0;
+
       return (
         <div className='row m-0 p-0' key={index + step.description.length}>
           <div className='col-12 d-flex justify-content-start p-0 align-items-center mb-3'>
@@ -16,13 +17,21 @@ const Enroll = ({ steps }) => {
               style={{ minWidth: '32px' }}>
               <div>{index + 1}</div>
             </div>
-            <ReactMarkdown
-              disallowedElements={['p']}
-              unwrapDisallowed={true}
-              linkTarget='_blank'
-              className='m-0 fs-5 flex-shrink-1'
-              children={step.description}
-            />
+            {!isAddress && (
+              <ReactMarkdown
+                disallowedElements={['p']}
+                unwrapDisallowed={true}
+                linkTarget='_blank'
+                className='m-0 fs-5 flex-shrink-1'
+                children={step.description}
+              />
+            )}
+            {isAddress && (
+              <div className='m-0 fs-5 flex-shrink-1'>
+                Заполнить его и отправить на адрес школы (
+                <Link to='/contacts'>электронный или почтовый</Link>)
+              </div>
+            )}
           </div>
         </div>
       );
