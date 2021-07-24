@@ -13,4 +13,5 @@ email: jarptitsa.france@gmail.com
 youtube: https://www.youtube.com/playlist?list=PLm34UC5-wF9u8NtJesEZqWMYYHT2Z2wwf
 facebook: https://www.facebook.com/jarptitsa.france
 instagram: https://www.instagram.com/jar_ptitsa.france/
+cookie: Этот сайт использует cookies. Файлы cookie  важны для корректной работы сайта и статистики посещений.
 ---

@@ -47,6 +47,7 @@ const TemplateWrapper = ({ children, location = '' }) => {
           youtube
           facebook
           instagram
+          cookie
         }
       }
     }

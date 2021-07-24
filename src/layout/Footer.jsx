@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import CookieConsent from 'react-cookie-consent';
 // icons
 // https://www.npmjs.com/package/react-bootstrap-icons
 import {
@@ -11,6 +12,8 @@ import {
   ArrowUpCircleFill,
   PinMapFill,
 } from 'react-bootstrap-icons';
+
+import Subscription from '../components/Subscription';
 
 // import * as Icon from 'react-bootstrap-icons';
 // <Icon.ArrowRight />
@@ -37,6 +40,7 @@ const Footer = ({
   youtube,
   facebook,
   instagram,
+  cookie,
 }) => {
   const { street, city, zip, country } = address;
 
@@ -59,6 +63,8 @@ const Footer = ({
                 <div>{country}</div>
               </div>
             </Link>
+
+            <Subscription className='d-none d-sm-block row p-0 py-3 m-0 ' />
           </div>
           <div className='col-12 col-sm-6 col-md-4'>
             <div className='d-flex justify-content-center justify-content-sm-start align-items-center '>
@@ -113,11 +119,25 @@ const Footer = ({
               <ArrowUpCircleFill className='me-3' size={25} />
               <div className='me-1'>ВВЕРХ</div>
             </button>
+
+            <Subscription className='d-block d-sm-none row p-0 px-4 m-0' />
           </div>
         </div>
-        <div className='text-center mt-0 mt-md-3'>
-          {title} &copy; {new Date().getFullYear()}
+        <div className='text-center mt-3 mt-md-3 d-flex justify-content-between flex-column flex-sm-row'>
+          <div>
+            {title} &copy; {new Date().getFullYear()}
+          </div>
+          <div className='pt-3 pt-sm-0'>
+            <Link to='/policy' className='text-decoration-none link-light '>
+              Политика конфиденциальности
+            </Link>
+          </div>
         </div>
+        <CookieConsent buttonText='Хорошо'>{cookie}</CookieConsent>
+        <CookieConsent buttonText='Принять'>
+          Нажимая на эту кнопку, вы соглашаетесь с нашей политикой
+          конфиденциальности
+        </CookieConsent>
       </div>
     </footer>
   );
