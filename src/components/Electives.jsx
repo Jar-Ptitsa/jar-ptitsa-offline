@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link } from 'gatsby';
 
 import AlignContent from './AlignContent';
 import Image from './Image';
 
-const Children = ({
-  mainDescription,
+const Electives = ({
   title,
   image,
   description,
@@ -23,6 +21,7 @@ const Children = ({
 
   const content = (
     <React.Fragment>
+      {/* <h3 className='fw-normal'>{title}</h3> */}
       <ReactMarkdown className='' children={description} />
     </React.Fragment>
   );
@@ -33,8 +32,7 @@ const Children = ({
   return (
     <section>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <div className='mb-3'>{mainDescription}</div>
-        <h2 className='fw-normal text-center text-sm-start text-uppercase'>
+        <h2 className='fw-normal text-center text-sm-start text-uppercase mb-3'>
           {title}
         </h2>
         <div>
@@ -45,13 +43,8 @@ const Children = ({
           />
         </div>
       </div>
-      <div className='d-flex justify-content-center pb-3'>
-        <Link to='/sunday-club' className='btn btn-md btn-outline-secondary'>
-          Воскресный клуб
-        </Link>
-      </div>
     </section>
   );
 };
 
-export default Children;
+export default Electives;

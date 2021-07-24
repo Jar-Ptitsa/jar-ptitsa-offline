@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link } from 'gatsby';
 
 import AlignContent from './AlignContent';
 import Image from './Image';
 
-const Children = ({
-  mainDescription,
+const Creation = ({
   title,
   image,
   description,
-  alignImage = 'right',
+  alignImage = 'left',
   getAsset = '',
 }) => {
   const renderImage = (
@@ -23,6 +21,7 @@ const Children = ({
 
   const content = (
     <React.Fragment>
+      {/* <h3 className='fw-normal'>{title}</h3> */}
       <ReactMarkdown className='' children={description} />
     </React.Fragment>
   );
@@ -31,10 +30,9 @@ const Children = ({
   const rightContent = alignImage === 'right' ? renderImage : content;
 
   return (
-    <section>
+    <section style={{ backgroundColor: '#F0F0F0' }}>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <div className='mb-3'>{mainDescription}</div>
-        <h2 className='fw-normal text-center text-sm-start text-uppercase'>
+        <h2 className='fw-normal text-center text-sm-start text-uppercase mb-3'>
           {title}
         </h2>
         <div>
@@ -45,13 +43,8 @@ const Children = ({
           />
         </div>
       </div>
-      <div className='d-flex justify-content-center pb-3'>
-        <Link to='/sunday-club' className='btn btn-md btn-outline-secondary'>
-          Воскресный клуб
-        </Link>
-      </div>
     </section>
   );
 };
 
-export default Children;
+export default Creation;

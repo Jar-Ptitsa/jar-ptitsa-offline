@@ -83,6 +83,7 @@ collections:
         name: "classes-schedule"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "classes-schedule"}
+          - {label: Description, name: description, widget: markdown, required: false}
 # classes
           - {label: Classes, name: classes, widget: object, collapsed: true, fields: [
               {label: Title, name: title, widget: string},
@@ -91,6 +92,42 @@ collections:
                 {label: Image, name: image, widget: image},
                 {label: Link, name: link, widget: string, required: false},
               ]}
+          ]}
+# children
+          - {label: Children, name: children, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string, required: false},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Description, name: description, widget: markdown},
+          ]}
+# preschooler
+          - {label: Preschooler, name: preschooler, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string, required: false},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Description, name: description, widget: markdown},
+              {label: By Age, name: by_age, widget: list, fields: [
+                {label: Age, name: age, widget: string},
+                {label: Classes Blocks, name: classes_blocks, widget: list, fields: [
+                  {label: Class Name, name: class, widget: string},
+                ]}
+              ]}
+          ]}
+# schoolboy
+          - {label: Schoolboy, name: schoolboy, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string, required: false},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Description, name: description, widget: markdown},
+          ]}
+# creation
+          - {label: Creation, name: creation, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string, required: false},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Description, name: description, widget: markdown},
+          ]}
+# electives
+          - {label: Electives, name: electives, widget: object, collapsed: true, fields: [
+              {label: Title, name: title, widget: string, required: false},
+              {label: Image, name: image, widget: image, required: false},
+              {label: Description, name: description, widget: markdown},
           ]}
 # schedule
           - {label: Schedule, name: schedule, widget: object, collapsed: true, fields: [
@@ -252,6 +289,13 @@ collections:
                 {label: Zip-code, name: zip, widget: string},
                 {label: Country, name: country, widget: string},
                 {label: Coords, name: coords, widget: string},
+                {label: Steps, name: steps, widget: list, required: false, collapsed: true, fields: [
+                  {label: Title, name: title, widget: string, required: false},
+                  {label: Image, name: image, widget: image, required: false},
+                  {label: Options, name: options, widget: list, required: false, collapsed: true, fields: [
+                    {label: Option, name: option, widget: markdown, required: false},
+                  ]},
+                ]}
               ]}
           ]}
 # routes
@@ -265,7 +309,6 @@ collections:
                 ]},
               ]}
           ]}
-
 # 
 # modals
 # 
@@ -278,6 +321,14 @@ collections:
         name: "thank-you"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thank-you"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+# policy page
+      - file: "src/pages/policy.md"
+        label: "Policy Page"
+        name: "policy"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "policy"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
 # 

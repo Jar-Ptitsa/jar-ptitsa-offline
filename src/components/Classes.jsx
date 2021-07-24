@@ -33,7 +33,7 @@ const renderList = (list, getAsset) => {
   });
 };
 
-const Classes = ({ classes, getAsset = '' }) => {
+const Classes = ({ description, classes, getAsset = '' }) => {
   const { title, list } = classes;
 
   return (
