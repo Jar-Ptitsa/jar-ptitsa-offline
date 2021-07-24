@@ -14,7 +14,8 @@ address:
       zip: "78180"
       country: France
       coords: 48.78497573023895, 2.0456221142433177
-      steps: []
+      steps: 
+        - image: /img/uploads/hohloma.png
     - country: France
       zip: "78180"
       city: Montigny-le-Bretonneux
