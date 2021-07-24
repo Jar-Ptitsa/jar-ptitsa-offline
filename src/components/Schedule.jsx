@@ -35,7 +35,7 @@ const renderDaysList = (list) => {
     return (
       <div className={`${colClass} mt-2`} key={index}>
         <div
-          className='d-flex flex-column rounded p-1'
+          className='d-flex flex-column rounded p-1 h-100'
           style={{ border: '4px solid #E5EAE1' }}>
           <div
             className='d-flex align-items-center justify-content-center p-0 rounded'

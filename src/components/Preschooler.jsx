@@ -33,7 +33,7 @@ const Preschooler = ({
 
       return (
         <div className={`${colClass} mt-2`} key={index}>
-          <div className='d-flex flex-column border border-dark rounded p-1'>
+          <div className='d-flex flex-column border border-dark rounded p-1 h-100'>
             <div
               className='d-flex align-items-center justify-content-center p-0 rounded'
               style={{ backgroundColor: '#000000', height: '40px' }}>
