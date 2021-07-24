@@ -44,7 +44,7 @@ const Treasure = ({ title, teachers, dance, getAsset = null }) => {
         <Link
           to='/teachers-groups'
           className='btn btn-md btn-outline-secondary'>
-          Подробнее
+          В Учительскую
         </Link>
       </div>
     </section>
