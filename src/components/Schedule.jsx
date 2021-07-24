@@ -34,7 +34,9 @@ const renderDaysList = (list) => {
 
     return (
       <div className={`${colClass} mt-2`} key={index}>
-        <div className='d-flex flex-column border rounded p-1'>
+        <div
+          className='d-flex flex-column rounded p-1'
+          style={{ border: '4px solid #E5EAE1' }}>
           <div
             className='d-flex align-items-center justify-content-center p-0 rounded'
             style={{ backgroundColor: '#E5EAE1', height: '40px' }}>
@@ -51,7 +53,7 @@ const Schedule = ({ schedule }) => {
   const { title, days } = schedule;
 
   return (
-    <section>
+    <section style={{ backgroundColor: '#F0F0F0' }}>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
         <h2 className='fw-normal text-center text-sm-start text-uppercase'>
           {title}
