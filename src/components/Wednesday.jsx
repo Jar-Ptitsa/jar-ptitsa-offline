@@ -30,7 +30,7 @@ const Wednesday = ({ title, description, list }) => {
         <Link
           to='/classes-schedule'
           className='btn btn-md btn-outline-secondary'>
-          Подробнее
+          В Учительскую
         </Link>
       </div>
     </section>
