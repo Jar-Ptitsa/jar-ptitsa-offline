@@ -47,14 +47,14 @@ const Subscription = ({ className }) => {
         <input type='hidden' name='form-name' value='subscription' />
         <input type='hidden' name='subject' />
 
-        <div class='input-group mb-3'>
+        <div className='input-group mb-3'>
           <input
             type='text'
-            class='form-control'
+            className='form-control'
             placeholder='Email'
             onChange={handleChange}
           />
-          <button class='btn btn-outline-secondary' type='submit'>
+          <button className='btn btn-outline-secondary' type='submit'>
             <ArrowRight />
           </button>
         </div>
