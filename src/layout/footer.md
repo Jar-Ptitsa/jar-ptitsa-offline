@@ -2,9 +2,9 @@
 templateKey: footer-layout
 title: Жар-Птица
 address:
-  street: 31 Avenue du Ctre
+  street: 31 Avenue du Centre
   city: Montigny-le-Bretonneux
-  zip: 78280
+  zip: 78180
   country: France
 telephones:
   - phone: +33 (0)6 29 02 17 85
