@@ -8,6 +8,7 @@ import Advantages from '../components/Advantages';
 import Wednesday from '../components/Wednesday';
 import Treasure from '../components/Treasure';
 import Testimonials from '../components/Testimonials';
+import Links from '../components/Links';
 
 export const IndexPageTemplate = ({ data }) => {
   const { reasons, advantages, wednesday, treasure, testimonials } = data;
@@ -19,6 +20,7 @@ export const IndexPageTemplate = ({ data }) => {
       <Wednesday {...wednesday} />
       <Treasure {...treasure} />
       <Testimonials {...testimonials} />
+      <Links />
     </React.Fragment>
   );
 };
