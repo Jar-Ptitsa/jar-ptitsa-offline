@@ -29,6 +29,10 @@ classes:
       image: /img/uploads/1-для-дошколят.png
     - title: История искусств
       image: /img/uploads/classes-cult-history.png
+children: 
+  title: Малыши
+  image: /img/uploads/classes-engl.png
+  description: Для малышей мы создали группу раннего развития «Жар-птенчики» со специально разработанной программой. Об этой программе подробно в разделе «Воскресный клуб»
 schedule:
   days:
     - day: Среда
