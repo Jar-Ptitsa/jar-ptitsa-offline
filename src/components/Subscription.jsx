@@ -52,7 +52,9 @@ const Subscription = ({ className }) => {
             type='text'
             className='form-control'
             placeholder='Email'
+            name='email'
             onChange={handleChange}
+            required={true}
           />
           <button className='btn btn-outline-secondary' type='submit'>
             <ArrowRight />
