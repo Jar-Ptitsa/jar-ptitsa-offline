@@ -19,7 +19,7 @@ address:
   title: Наши Адреса
   address:
     - title: Офис
-      street: 31 Avenue du Ctre
+      street: 31 Avenue du Centre
       city: Montigny-le-Bretonneux
       zip: "78180"
       country: France
