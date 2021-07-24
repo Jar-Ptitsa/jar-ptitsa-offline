@@ -7,7 +7,7 @@ import Children from '../components/Children';
 import Preschooler from '../components/Preschooler';
 import Schoolboy from '../components/Schoolboy';
 import Creation from '../components/Creation';
-import Electives from '../components/electives';
+import Electives from '../components/Electives';
 
 import Schedule from '../components/Schedule';
 import GoogleCalendar from '../components/GoogleCalendar';
