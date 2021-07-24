@@ -5,16 +5,6 @@ email: jarptitsa.france@gmail.com
 telephones:
   - phone: +33 (0)6 29 02 17 85
   - phone: +33 (0)6 35 33 81 25
-routes:
-  title: Как добраться до Montigny-le-Bretonneux
-  steps:
-    - title: Электрички
-      options:
-        - option: "**RER C**"
-        - option: "**Paris-Montparnasse** - Saint Quentin en Yvelines. (Montigny le
-            Bretonneux)"
-        - option: "**Paris-La Défense** - Saint Quentin en Yvelines (Montigny le
-            Bretonneux)"
 address:
   title: Наши Адреса
   address:
@@ -24,11 +14,7 @@ address:
       zip: "78180"
       country: France
       coords: 48.78497573023895, 2.0456221142433177
-      steps:
-        - title: Автобусы (SQYBus)
-          options:
-            - option: "**№ 414** - остановка \"Collège St-François d'Assise\""
-          image: /img/uploads/hohloma.png
+      steps: []
     - country: France
       zip: "78180"
       city: Montigny-le-Bretonneux
@@ -51,4 +37,14 @@ address:
           options:
             - option: "**№ 414** - остановка \"Collège St-François d'Assise\""
           image: /img/uploads/hohloma.png
+routes:
+  title: Как добраться до Montigny-le-Bretonneux
+  steps:
+    - title: Электрички
+      options:
+        - option: "**RER C**"
+        - option: "**Paris-Montparnasse** - Saint Quentin en Yvelines. (Montigny le
+            Bretonneux)"
+        - option: "**Paris-La Défense** - Saint Quentin en Yvelines (Montigny le
+            Bretonneux)"
 ---
