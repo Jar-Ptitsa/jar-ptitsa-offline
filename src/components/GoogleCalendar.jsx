@@ -36,6 +36,12 @@ const GoogleCalendar = () => {
     getEvents((events) => setEvents(events));
   }, []);
 
+  const timeZoneChange = (event) => {
+    const newEnd = new Date(event.end);
+    newEnd.setHours(newEnd.getHours() - 3);
+    return newEnd;
+  };
+
   return (
     <section>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
@@ -45,8 +51,8 @@ const GoogleCalendar = () => {
         <div className='calendar pt-2'>
           <Calendar
             localizer={localizer}
-            // culture='ru-Ru'
             events={events}
+            endAccessor={timeZoneChange}
             views={['month']}
             defaultView='month'
             style={{ height: '670px' }}
