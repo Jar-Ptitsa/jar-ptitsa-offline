@@ -25,7 +25,9 @@ const Route = ({ routes }) => {
         <React.Fragment key={index + step.title}>
           <div className='col-12 p-0 mb-3'>
             <h5 className='m-0 mb-3'>{step.title}</h5>
-            <ul className='col m-0 ms-1 px-3'>{renderOptions(step.options)}</ul>
+            <ul className='col m-0 ms-1 px-3'>
+              {step.options && renderOptions(step.options)}
+            </ul>
           </div>
         </React.Fragment>
       );
@@ -35,7 +37,7 @@ const Route = ({ routes }) => {
   return (
     <div className='row p-0 m-0'>
       <h4 className='col-12 text-center text-sm-start mb-3 p-0'>{title}</h4>
-      {renderList(steps)}
+      {steps && renderList(steps)}
     </div>
   );
 };

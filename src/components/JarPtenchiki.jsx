@@ -6,19 +6,15 @@ import Image from './Image';
 const JarPtenchiki = ({ jar_ptenchiki, getAsset }) => {
   const { title, description, photos } = jar_ptenchiki;
 
-  // render teachers photos
+  // render photos
   const renderList = (list, getAsset) => {
-    return list.map((image) => {
-      const keyId = image.image.childImageSharp
-        ? image.image.childImageSharp.fluid.src
-        : image.image.url;
-
+    return list.map((image, index) => {
       const style = { height: '200px', objectFit: 'cover' };
 
       return (
         <div
           className='col-6 col-sm-4 p-2 d-flex justify-content-center align-items-center'
-          key={keyId}>
+          key={index}>
           <Image
             image={image.image}
             getAsset={getAsset}
@@ -37,7 +33,9 @@ const JarPtenchiki = ({ jar_ptenchiki, getAsset }) => {
           {title}
         </h3>
         <ReactMarkdown className='' children={description} />
-        <div className='row m-0 mb-3'>{renderList(photos, getAsset)}</div>
+        <div className='row m-0 mb-3'>
+          {photos && renderList(photos, getAsset)}
+        </div>
       </div>
     </section>
   );

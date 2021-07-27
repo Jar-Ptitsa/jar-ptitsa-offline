@@ -7,6 +7,8 @@ const Enroll = ({ steps }) => {
 
   const renderList = (list) => {
     return list.map((step, index) => {
+      if (!step.description) return null;
+
       const isAddress = step.description.search('электронный или почтовый') > 0;
 
       return (

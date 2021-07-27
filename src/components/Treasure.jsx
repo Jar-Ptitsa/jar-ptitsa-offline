@@ -7,13 +7,9 @@ import VideoDetail from './VideoDetail';
 
 // render teachers photos
 const renderList = (list, getAsset) => {
-  return list.map((image) => {
-    const keyId = image.image.childImageSharp
-      ? image.image.childImageSharp.fluid.src
-      : image.image.url;
-
+  return list.map((image, index) => {
     return (
-      <div className='col-6 col-sm-4' key={keyId}>
+      <div className='col-6 col-sm-4' key={index}>
         <Image
           image={image.image}
           getAsset={getAsset}

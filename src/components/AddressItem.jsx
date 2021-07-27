@@ -14,6 +14,9 @@ const AddressItem = ({
   steps,
   getAsset = '',
 }) => {
+  if (!steps || !street || !title || !city || !zip || !country || !coords)
+    return null;
+
   const latLngObj = (coords) => {
     const coordsArr = coords.split(', ');
     return {

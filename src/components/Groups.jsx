@@ -67,7 +67,7 @@ const Groups = ({ getAsset = '', ...groups }) => {
             <h4 className='text-uppercase text-center mt-2'>
               Портфель школьника
             </h4>
-            {renderBooks(group.books, getAsset)}
+            {group.books && renderBooks(group.books, getAsset)}
           </div>
         </div>
       );

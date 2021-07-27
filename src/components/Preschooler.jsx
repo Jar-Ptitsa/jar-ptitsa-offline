@@ -41,7 +41,7 @@ const Preschooler = ({
             </div>
             <div className='d-flex border-top' key={index}>
               <div className='col'>
-                {renderClassesList(item.classes_blocks)}
+                {item.classes_blocks && renderClassesList(item.classes_blocks)}
               </div>
             </div>
           </div>

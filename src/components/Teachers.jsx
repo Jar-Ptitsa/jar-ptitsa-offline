@@ -75,7 +75,8 @@ const Teachers = ({ getAsset = '', location, teachers }) => {
             <div className='col-12 col-sm-6 my-3 my-sm-0'>
               <h6 className='text-center'>Классы</h6>
               <div className='row justify-content-between px-1 m-0'>
-                {renderTeachersGroupList(teacher.groups, getAsset)}
+                {teacher.groups &&
+                  renderTeachersGroupList(teacher.groups, getAsset)}
               </div>
             </div>
           </div>

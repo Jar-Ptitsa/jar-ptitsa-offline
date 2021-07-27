@@ -19,7 +19,9 @@ const renderTimeBlocksList = (list) => {
         <div className='col-3 d-flex align-items-center justify-content-center'>
           <div className='fs-4 fw-bold'>{item.time}</div>
         </div>
-        <div className='col'>{renderClassesList(item.classes)}</div>
+        <div className='col'>
+          {item.classes && renderClassesList(item.classes)}
+        </div>
       </div>
     );
   });
@@ -42,7 +44,7 @@ const renderDaysList = (list) => {
             style={{ backgroundColor: '#E5EAE1', height: '40px' }}>
             <h4 className='fw-bold'>{item.day}</h4>
           </div>
-          {renderTimeBlocksList(item.time_blocks)}
+          {item.time_blocks && renderTimeBlocksList(item.time_blocks)}
         </div>
       </div>
     );

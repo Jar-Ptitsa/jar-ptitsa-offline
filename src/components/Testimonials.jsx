@@ -5,6 +5,7 @@ import Image from './Image';
 
 const renderList = (list, getAsset) => {
   return list.map(({ image, author, quote }) => {
+    if (!author || !quote) return null;
     return (
       <div className='col-12 col-md-6 mb-3' key={quote.split(' ')[0]}>
         <div className='row align-items-sm-top'>
