@@ -1,5 +1,5 @@
 ---
-youtube: https://www.youtube.com/playlist?list=PLm34UC5-wF9u8NtJesEZqWMYYHT2Z2wwf
+youtube: https://www.youtube.com/channel/UCZXRXFkkgxdIMHL5HnG4OnQ
 cookie: Этот сайт использует cookies. Файлы cookie  важны для корректной работы
   сайта и статистики посещений.
 templateKey: footer-layout
