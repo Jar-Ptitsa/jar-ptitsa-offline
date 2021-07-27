@@ -19,9 +19,9 @@ teachers:
         пропустить в ребенке все лучшее, что в нем есть, и дать импульс к
         самосовершенствованию через развитие творчества."'
       groups:
-        - group_name: 4-ый класс
+        - group_name: 4 класс
           image: /img/uploads/hohloma.png
-        - group_name: 7-ой класс
+        - group_name: 7 класс
           image: /img/uploads/hohloma.png
     - name: Шеянова Светлана Сергеевна
       image: /img/uploads/3.png
@@ -41,9 +41,9 @@ teachers:
         работала в частномуниверситете. С сентября 2018 года преподаёт русский
         язык в Школе "Жар-Птица" и английский язык в Вальдорфской школе.
       groups:
-        - group_name: 2-ый класс
+        - group_name: 2 класс
           image: /img/uploads/hohloma.png
-        - group_name: 6-ой класс
+        - group_name: 6 класс
           image: /img/uploads/hohloma.png
     - name: Авагян Галина Николаевна
       image: /img/uploads/5.png
@@ -70,11 +70,11 @@ teachers:
 
            Мы должны создать максимально комфортную эмоциональную, эстетическую, благоприятную среду для развития наших детей. А музыка  ─ это мир радостных эмоций, чувственных переживаний и безграничной фантазии!
       groups:
-        - group_name: младшая группа детского сада
+        - group_name: младшая группа д/сада
           image: /img/uploads/1-для-дошколят.png
-        - group_name: средняя группа детского сада
+        - group_name: средняя группа д/сада
           image: /img/uploads/1-для-дошколят.png
-        - group_name: старшая группа детского сада
+        - group_name: старшая группа д/сада
           image: /img/uploads/1-для-дошколят.png
     - name: Гаева Марина Ивановна
       image: /img/uploads/4.png
@@ -102,11 +102,11 @@ teachers:
         также чем-то похожа на магию, ведь каждый ребёнок маленький волшебник,
         ведь в его глазах возможно всё.
       groups:
-        - group_name: младшая группа в цикле "Мир человека"
+        - group_name: 1 группа в цикле "Мир человека"
           image: /img/uploads/2-твор-лаборатория.png
-        - group_name: средняя группа в цикле "Мир человека"
+        - group_name: 2 группа в цикле "Мир человека"
           image: /img/uploads/2-твор-лаборатория.png
-        - group_name: старшая группа в цикле "Мир человека"
+        - group_name: 3 группа в цикле "Мир человека"
           image: /img/uploads/2-твор-лаборатория.png
     - name: Пономарёва Анастасия Сергеевна
       image: /img/uploads/6.png
@@ -200,7 +200,7 @@ teachers:
 groups:
   title: Наши классы
   groups:
-    - group: 4-ый класс
+    - group: 4 класс
       books:
         - image: /img/uploads/sharedscreenshot-3-4klass.jpg
           book_title: "Русский язык. 3 класс. "
@@ -223,42 +223,16 @@ groups:
           button_label: Скачать
           link: https://atmos-sfera.ru/ryimk/sites/default/files/%D0%A0%D0%B0%D0%B1_%D0%A2%D0%B5%D1%82_N2_3%D0%BA%D0%BB.pdf
       image: /img/uploads/hohloma.png
-    - group: 7-ой класс
+    - group: 7 класс
       books:
         - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
+          book_title: Русский язык. 5 класс. Часть 2
+          book_authors: Т.А. Ладыженская, М.Т. Баранов, Л.А. Тростенцова
           button_label: Скачать
           link: http://google.com
         - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
+          book_title: Литература. 5 класс. Часть 2
+          book_authors: В.Я. Коровина, В.П. Журавлёв, В.И. Коровин
           button_label: Скачать
           link: http://google.com
       image: /img/uploads/hohloma.png
