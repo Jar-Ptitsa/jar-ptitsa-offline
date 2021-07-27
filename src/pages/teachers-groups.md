@@ -200,7 +200,30 @@ teachers:
 groups:
   title: Наши классы
   groups:
-    - group: 1-ый класс
+    - group: 4-ый класс
+      books:
+        - image: /img/uploads/sharedscreenshot-3-4klass.jpg
+          book_title: "Русский язык. 3 класс. "
+          book_authors: В.В. Дронов, И.В. Мальцева, В.П. Синячкин, Е.А.Хамраева, Г.В. Хруслов
+          button_label: Скачать
+          link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
+        - image: /img/uploads/sharedscreenshot-34klass-chtenie.jpg
+          book_title: "Чтение и развитие речи. 3 класс "
+          book_authors: В.В. Дронов, И.В. Мальцева, В.П. Синячкин, Е.А.Хамраева, Г.В. Хруслов
+          button_label: Скачать
+          link: https://atmos-sfera.ru/ryimk/sites/default/files/%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5-3%D0%BA%D0%BB%20%281%29.pdf
+        - image: /img/uploads/sharedscreenshot-rabtetrad-3klass.jpg
+          book_title: Рабочая тетрадь № 1. 3 класс
+          book_authors: В.В. Дронов, И.В. Мальцева, В.П. Синячкин, Е.А.Хамраева, Г.В. Хруслов
+          button_label: Скачать
+          link: https://atmos-sfera.ru/ryimk/sites/default/files/%D0%A0%D0%B0%D0%B1_%D0%A2%D0%B5%D1%82_N1_3%D0%BA%D0%BB.pdf
+        - image: /img/uploads/sharedscreenshot-rabtet-2.3klass.jpg
+          book_title: Рабочая тетрадь № 2, 3 класс
+          book_authors: В.В. Дронов, И.В. Мальцева, В.П. Синячкин, Е.А.Хамраева, Г.В. Хруслов
+          button_label: Скачать
+          link: https://atmos-sfera.ru/ryimk/sites/default/files/%D0%A0%D0%B0%D0%B1_%D0%A2%D0%B5%D1%82_N2_3%D0%BA%D0%BB.pdf
+      image: /img/uploads/hohloma.png
+    - group: 7-ой класс
       books:
         - image: /img/uploads/hohloma.png
           book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
@@ -238,44 +261,5 @@ groups:
           book_authors: Дронов, Дорофеева
           button_label: Скачать
           link: http://google.com
-      image: /img/uploads/groups_1.png
-    - group: 1-ый класс
-      books:
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-        - image: /img/uploads/hohloma.png
-          book_title: Русский язык и чтение для зарубежных школ. Набор из двух учебников и
-            двух рабочих тетрадей. 1 класс
-          book_authors: Дронов, Дорофеева
-          button_label: Скачать
-          link: http://google.com
-      image: /img/uploads/groups_1.png
+      image: /img/uploads/hohloma.png
 ---
