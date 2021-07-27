@@ -74,6 +74,9 @@ teachers:
           image: /img/uploads/hohloma.png
         - group_name: 6-ой класс
           image: /img/uploads/hohloma.png
+    - name: "1212"
+      image: /img/uploads/20210721_120651.jpg
+      bio: "1313113"
   title: Наши учителя
 groups:
   title: Наши классы
