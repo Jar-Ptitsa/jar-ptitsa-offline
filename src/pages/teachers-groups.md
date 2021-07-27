@@ -187,7 +187,7 @@ teachers:
       groups:
         - group_name: театральный класс
           image: /img/uploads/classes-cult-history.png
-    - name: Паласио Ирина
+    - name: Паласиос Ирина
       image: /img/uploads/irina-palacios.png
       status: организатор досуга
       position: флорист
