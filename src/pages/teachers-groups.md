@@ -230,10 +230,34 @@ groups:
           book_authors: Т.А. Ладыженская, М.Т. Баранов, Л.А. Тростенцова
           button_label: Скачать
           link: http://google.com
-        - image: /img/uploads/hohloma.png
+        - image: /img/uploads/sharedscreenshot-5-literature.jpg
           book_title: Литература. 5 класс. Часть 2
           book_authors: В.Я. Коровина, В.П. Журавлёв, В.И. Коровин
           button_label: Скачать
           link: http://google.com
+      image: /img/uploads/sharedscreenshot-5-russe.jpg
+    - group: 2 класс
       image: /img/uploads/hohloma.png
+      books:
+        - book_title: длэдллэлдлэллд
+          book_authors: длэлэлэдлэлдлэджлдэлэлэлд
+          image: /img/uploads/classes-engl.png
+          button_label: ссылка
+          link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
+    - group: 6 класс
+      image: /img/uploads/hohloma.png
+      books:
+        - book_title: зщнхенщзушщеек
+          book_authors: зузуузузузуззузузузууз
+          image: /img/uploads/classes-lit.png
+          button_label: Скачать
+          link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
+    - group: Английский язык
+      image: /img/uploads/hohloma.png
+      books:
+        - book_title: Enjoy-english-2 /рабочая тетрадь
+          book_authors: М.З. Биболетова, О.А. Денисенко, Н.Н. Трубанева
+          image: /img/uploads/sharedscreenshot-enjoy-englishe-2.jpg
+          button_label: Скачать
+          link: enjoy-english-2_-rabochaja-tet ... oletova-m_z_-i-dr_2015-64s.pdf
 ---
