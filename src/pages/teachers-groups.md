@@ -19,10 +19,10 @@ teachers:
         пропустить в ребенке все лучшее, что в нем есть, и дать импульс к
         самосовершенствованию через развитие творчества."'
       groups:
-        - group_name: 4 класс
-          image: /img/uploads/hohloma.png
-        - group_name: 7 класс
-          image: /img/uploads/hohloma.png
+        - group_name: 3-4 класс
+          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
+        - group_name: 6-7 класс
+          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
     - name: Шеянова Светлана Сергеевна
       image: /img/uploads/3.png
       status: Лингвист
@@ -41,10 +41,10 @@ teachers:
         работала в частномуниверситете. С сентября 2018 года преподаёт русский
         язык в Школе "Жар-Птица" и английский язык в Вальдорфской школе.
       groups:
-        - group_name: 2 класс
-          image: /img/uploads/hohloma.png
-        - group_name: 6 класс
-          image: /img/uploads/hohloma.png
+        - group_name: 1-2 класс
+          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
+        - group_name: 5-6 класс
+          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
     - name: Авагян Галина Николаевна
       image: /img/uploads/5.png
       status: Педагог
@@ -225,7 +225,7 @@ groups:
       image: /img/uploads/hohloma.png
     - group: 7 класс
       books:
-        - image: /img/uploads/hohloma.png
+        - image: /img/uploads/sharedscreenshot-5-russe.jpg
           book_title: Русский язык. 5 класс. Часть 2
           book_authors: Т.А. Ладыженская, М.Т. Баранов, Л.А. Тростенцова
           button_label: Скачать
@@ -235,21 +235,26 @@ groups:
           book_authors: В.Я. Коровина, В.П. Журавлёв, В.И. Коровин
           button_label: Скачать
           link: http://google.com
-      image: /img/uploads/sharedscreenshot-5-russe.jpg
-    - group: 2 класс
       image: /img/uploads/hohloma.png
+    - group: 2 класс
+      image: /img/uploads/sharedscreenshot-1klass-icone.jpg
       books:
-        - book_title: длэдллэлдлэллд
-          book_authors: длэлэлэдлэлдлэджлдэлэлэлд
-          image: /img/uploads/classes-engl.png
+        - book_title: Русский язык. 2 класс
+          book_authors: В.В. Дронов и др.
+          image: /img/uploads/whatsapp-image-2021-07-29-at-12.41.13.jpeg
           button_label: ссылка
+          link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
+        - book_title: Чтение и развитие речи. 2 класс
+          book_authors: В. В. Дронов и др.
+          image: /img/uploads/whatsapp-image-2021-07-29-at-12.41.12.jpeg
+          button_label: Ссылка
           link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
     - group: 6 класс
       image: /img/uploads/hohloma.png
       books:
-        - book_title: зщнхенщзушщеек
-          book_authors: зузуузузузуззузузузууз
-          image: /img/uploads/classes-lit.png
+        - book_title: К пятёрке шаг за шагом
+          book_authors: Л.А. Ахременкова
+          image: /img/uploads/whatsapp-image-2021-07-29-at-12.43.56.jpeg
           button_label: Скачать
           link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
     - group: Английский язык
