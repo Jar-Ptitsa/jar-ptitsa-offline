@@ -70,11 +70,9 @@ teachers:
 
            Мы должны создать максимально комфортную эмоциональную, эстетическую, благоприятную среду для развития наших детей. А музыка  ─ это мир радостных эмоций, чувственных переживаний и безграничной фантазии!
       groups:
-        - group_name: младшая группа д/сада
+        - group_name: 1 группа детского сада
           image: /img/uploads/1-для-дошколят.png
-        - group_name: средняя группа д/сада
-          image: /img/uploads/1-для-дошколят.png
-        - group_name: старшая группа д/сада
+        - group_name: 2 группа детского сада
           image: /img/uploads/1-для-дошколят.png
     - name: Гаева Марина Ивановна
       image: /img/uploads/4.png
@@ -243,12 +241,12 @@ groups:
           book_authors: В.В. Дронов и др.
           image: /img/uploads/whatsapp-image-2021-07-29-at-12.41.13.jpeg
           button_label: ссылка
-          link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
+          link: http://google.com
         - book_title: Чтение и развитие речи. 2 класс
           book_authors: В. В. Дронов и др.
           image: /img/uploads/whatsapp-image-2021-07-29-at-12.41.12.jpeg
           button_label: Ссылка
-          link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
+          link: http://google.com
     - group: 6 класс
       image: /img/uploads/hohloma.png
       books:
@@ -256,7 +254,7 @@ groups:
           book_authors: Л.А. Ахременкова
           image: /img/uploads/whatsapp-image-2021-07-29-at-12.43.56.jpeg
           button_label: Скачать
-          link: https://atmos-sfera.ru/ryimk/sites/default/files/rya-3_1-176.pdf
+          link: http://google.com
     - group: Английский язык
       image: /img/uploads/hohloma.png
       books:
@@ -265,4 +263,35 @@ groups:
           image: /img/uploads/sharedscreenshot-enjoy-englishe-2.jpg
           button_label: Скачать
           link: enjoy-english-2_-rabochaja-tet ... oletova-m_z_-i-dr_2015-64s.pdf
+    - group: 1 группа детского сада
+      image: /img/uploads/1-для-дошколят.png
+      books:
+        - book_title: Игралочка. Математика для детей 3-4 года
+          book_authors: Л.Г. Петерсон, Е. Е. Кочемасова
+          image: /img/uploads/sharedscreenshot-igralochka-1.jpg
+          button_label: Скачать
+          link: https://fileskachat.com/file/29582_0dfe593a46fe562298ee00ae73d99bdd.html
+        - book_title: Я учусь считать. 3-4 года
+          book_authors: О.Н. Крылова
+          image: /img/uploads/sharedscreenshot-obouchalochka-3-4.jpg
+          button_label: Скачать
+          link: https://fileskachat.com/file/54398_402c43802414a15ae61d00e0d992a30e.html
+        - book_title: Мои первые прописи. 3-4 года
+          book_authors: "Е. Ф. Бортникова "
+          image: /img/uploads/sharedscreenshot-propissi-3-4.jpg
+          button_label: Скачать
+          link: https://fileskachat.com/file/58873_733203f8e2a423859f8b2a3bfacf3d9a.html
+    - group: 2 группа детского сада
+      image: /img/uploads/1-для-дошколят.png
+      books:
+        - book_title: Я учусь считать. 4-5 лет
+          book_authors: О.Н. Крылова
+          image: /img/uploads/sharedscreenshot-obouchalka-4-5.jpg
+          button_label: Скачать
+          link: https://fileskachat.com/file/48401_59935f84bb1f9258f6a6c6c1a2558c5d.html
+        - book_title: Мои первые прописи. 4-5 лет
+          book_authors: Е.Ф. Бортникова
+          image: /img/uploads/sharedscreenshot-propissi-4-5.jpg
+          button_label: Скачать
+          link: https://fileskachat.com/file/58874_0e186c69a9a1350d7b919a2d0fe66b33.html
 ---
