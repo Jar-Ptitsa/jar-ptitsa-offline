@@ -20,9 +20,9 @@ teachers:
         самосовершенствованию через развитие творчества."'
       groups:
         - group_name: 3-4 класс
-          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
+          image: /img/uploads/hohloma.png
         - group_name: 6-7 класс
-          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
+          image: /img/uploads/hohloma.png
     - name: Шеянова Светлана Сергеевна
       image: /img/uploads/3.png
       status: Лингвист
@@ -42,9 +42,9 @@ teachers:
         язык в Школе "Жар-Птица" и английский язык в Вальдорфской школе.
       groups:
         - group_name: 1-2 класс
-          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
+          image: /img/uploads/hohloma.png
         - group_name: 5-6 класс
-          image: /img/uploads/sharedscreenshot-1klass-icone.jpg
+          image: /img/uploads/hohloma.png
     - name: Авагян Галина Николаевна
       image: /img/uploads/5.png
       status: Педагог
@@ -100,11 +100,11 @@ teachers:
         также чем-то похожа на магию, ведь каждый ребёнок маленький волшебник,
         ведь в его глазах возможно всё.
       groups:
-        - group_name: 1 группа в цикле "Мир человека"
+        - group_name: Младшая группа в цикле "Мир человека"
           image: /img/uploads/2-твор-лаборатория.png
-        - group_name: 2 группа в цикле "Мир человека"
+        - group_name: Средняя группа в цикле "Мир человека"
           image: /img/uploads/2-твор-лаборатория.png
-        - group_name: 3 группа в цикле "Мир человека"
+        - group_name: Старшая группа в цикле "Мир человека"
           image: /img/uploads/2-твор-лаборатория.png
     - name: Пономарёва Анастасия Сергеевна
       image: /img/uploads/6.png
@@ -130,7 +130,7 @@ teachers:
 
         «Для меня большое счастье заниматься любимым делом, делиться знаниями с подрастающим поколением, прививать трудолюбие и любовь к искусству», — подчёркивает Анастасия.
       groups:
-        - group_name: "младшая танцевальная группа "
+        - group_name: "младшая группа "
           image: /img/uploads/3-танцы.png
     - name: Ведищева Елена Анатольевна
       image: /img/uploads/photo_cv.jpg
@@ -152,13 +152,13 @@ teachers:
       status: Педагог-психолог, лингвист
       position: Педагог-психолог
       groups:
-        - group_name: Группа раннего развития "Жар-Птенчики"
+        - group_name: Группа  "Жар-Птенчики"
           image: /img/uploads/4-птенчики.png
     - name: Шартэ Татьяна Юрьевна
       image: /img/uploads/1.png
       status: "директор "
       position: режиссёр, педагог театральных дисциплин
-      specialization: Преподаватель театра
+      specialization: Руководитель театральной студии "Жар-Птица"
       bio: С отличием закончила Челябинскую Государственную Академию культуры и
         искусств, получив диплом режиссёра театрализованных постановок. В
         течение 10 лет работала на телевидении. Начала трудовую карьеру с
@@ -183,13 +183,13 @@ teachers:
         французов. В 2010 году я учредила и возглавила школу русского языка
         «Жар-Птица».
       groups:
-        - group_name: театральный класс
+        - group_name: театральная студия
           image: /img/uploads/classes-cult-history.png
     - name: Паласиос Ирина
       image: /img/uploads/irina-palacios.png
-      status: организатор досуга
-      position: флорист
-      specialization: руководитель студии "Fleurs de vie"
+      status: Создатель и руководитель ателье "Le Fancy déco"
+      position: " флорист, организатор мероприятий"
+      specialization: Приглашённый специалист в воскресном клубе "Жар-Птица"
       bio: Училась и работала в Москве.
       groups:
         - group_name: Студия "Fleurs de vie"
@@ -235,7 +235,7 @@ groups:
           link: http://google.com
       image: /img/uploads/hohloma.png
     - group: 2 класс
-      image: /img/uploads/sharedscreenshot-1klass-icone.jpg
+      image: /img/uploads/hohloma.png
       books:
         - book_title: Русский язык. 2 класс
           book_authors: В.В. Дронов и др.
