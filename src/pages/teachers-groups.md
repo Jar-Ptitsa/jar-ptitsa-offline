@@ -20,9 +20,9 @@ teachers:
         самосовершенствованию через развитие творчества."'
       groups:
         - group_name: 3-4 класс
-          image: /img/uploads/hohloma.png
+          image: /img/uploads/sharedscreenshot-3-klass.jpg
         - group_name: 6-7 класс
-          image: /img/uploads/hohloma.png
+          image: /img/uploads/sharedscreenshot-6-klass.jpg
     - name: Шеянова Светлана Сергеевна
       image: /img/uploads/3.png
       status: Лингвист
@@ -42,9 +42,9 @@ teachers:
         язык в Школе "Жар-Птица" и английский язык в Вальдорфской школе.
       groups:
         - group_name: 1-2 класс
-          image: /img/uploads/hohloma.png
+          image: /img/uploads/sharedscreenshot-1klass.jpg
         - group_name: 5-6 класс
-          image: /img/uploads/hohloma.png
+          image: /img/uploads/sharedscreenshot-5-klass.jpg
     - name: Авагян Галина Николаевна
       image: /img/uploads/5.png
       status: Педагог
@@ -220,7 +220,7 @@ groups:
           book_authors: В.В. Дронов, И.В. Мальцева, В.П. Синячкин, Е.А.Хамраева, Г.В. Хруслов
           button_label: Скачать
           link: https://atmos-sfera.ru/ryimk/sites/default/files/%D0%A0%D0%B0%D0%B1_%D0%A2%D0%B5%D1%82_N2_3%D0%BA%D0%BB.pdf
-      image: /img/uploads/hohloma.png
+      image: /img/uploads/sharedscreenshot-4-klass.jpg
     - group: 7 класс
       books:
         - image: /img/uploads/sharedscreenshot-5-russe.jpg
@@ -233,9 +233,9 @@ groups:
           book_authors: В.Я. Коровина, В.П. Журавлёв, В.И. Коровин
           button_label: Скачать
           link: http://google.com
-      image: /img/uploads/hohloma.png
+      image: /img/uploads/sharedscreenshot-7klass.jpg
     - group: 2 класс
-      image: /img/uploads/hohloma.png
+      image: /img/uploads/sharedscreenshot-2-klass.jpg
       books:
         - book_title: Русский язык. 2 класс
           book_authors: В.В. Дронов и др.
@@ -248,7 +248,7 @@ groups:
           button_label: Ссылка
           link: http://google.com
     - group: 6 класс
-      image: /img/uploads/hohloma.png
+      image: /img/uploads/sharedscreenshot-6-klass.jpg
       books:
         - book_title: К пятёрке шаг за шагом
           book_authors: Л.А. Ахременкова
