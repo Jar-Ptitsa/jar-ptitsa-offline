@@ -12,7 +12,7 @@ address:
 telephones:
   - phone: +33 (0)6 29 02 17 85
   - phone: +33 (0)6 35 33 81 25
-email: info@.jar-ptitsa.com
+email: info@jar-ptitsa.com
 facebook: https://www.facebook.com/jarptitsa.france
 instagram: https://www.instagram.com/jar_ptitsa_ecole_russe/
 ---
