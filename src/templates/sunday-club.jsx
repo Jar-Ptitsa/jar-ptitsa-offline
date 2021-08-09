@@ -4,12 +4,14 @@ import { graphql } from 'gatsby';
 import Layout from '../layout/Layout';
 import Sunday from '../components/Sunday';
 import JarPtenchiki from '../components/JarPtenchiki';
+import SundayClubLinks from '../components/SundayClubLinks';
 
 export const SundayClubPageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <Sunday {...data} />
       <JarPtenchiki {...data} />
+      <SundayClubLinks />
     </React.Fragment>
   );
 };

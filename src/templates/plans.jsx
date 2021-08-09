@@ -4,12 +4,14 @@ import { graphql } from 'gatsby';
 import Layout from '../layout/Layout';
 import MainPlans from '../components/MainPlans';
 import AdditionalPlans from '../components/AdditionalPlans';
+import PlanLinks from '../components/PlansLinks';
 
 export const PlansPageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <MainPlans {...data} />
       <AdditionalPlans {...data} />
+      <PlanLinks />
     </React.Fragment>
   );
 };

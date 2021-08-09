@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../layout/Layout';
 import Policy from '../components/Policy';
 
-export const PlansPageTemplate = ({ data }) => {
+export const PolicyPageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <Policy {...data} />
@@ -12,17 +12,17 @@ export const PlansPageTemplate = ({ data }) => {
   );
 };
 
-const PlansPage = ({ data }) => {
+const PolicyPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <PlansPageTemplate data={frontmatter} />
+      <PolicyPageTemplate data={frontmatter} />
     </Layout>
   );
 };
 
-export default PlansPage;
+export default PolicyPage;
 
 export const pageQuery = graphql`
   query PolicyPageTemplate {
