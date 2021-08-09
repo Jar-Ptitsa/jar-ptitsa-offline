@@ -273,6 +273,20 @@ collections:
         name: "contacts"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contacts"}
+# school principal opening speech
+          - {label: Principal, name: principal, widget: object, collapsed: true, fields: [ 
+              {label: Image, name: image, widget: image},
+              {label: Description, name: description, widget: markdown},
+              {label: Form, name: contactForm, widget: object, collapsed: true, fields: [
+                {label: Title, name: title, widget: string, required: false},
+                {label: Form Inputs, name: formInputs, widget: list, fields: [
+                  {label: Input Label, name: inputLabel, widget: string},
+                  {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"]},
+                  {label: "Required?",  name: required,  widget: "select",   options: ["true", "false"]},
+                ]}
+              ]}
+            ]}
+# contacts details
           - {label: Title, name: title, widget: string}
           - {label: Email, name: email, widget: string}
 # telephones
@@ -329,6 +343,14 @@ collections:
         name: "policy"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "policy"}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+# school-rules page
+      - file: "src/pages/school-rules.md"
+        label: "School Rules Page"
+        name: "school-rules"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "school-rules"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: markdown}
 # 
