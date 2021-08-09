@@ -26,7 +26,7 @@ const renderInputs = (formInputs, handleChange) => {
   return formInputs.map((input) => renderInput({ ...input }));
 };
 
-const Form = ({ formData }) => {
+const Form = ({ formData, className }) => {
   const { title, formInputs } = formData;
   const [state, setState] = React.useState({});
 
@@ -59,7 +59,7 @@ const Form = ({ formData }) => {
 
         <div className='row'>
           <form
-            className='col-12 col-sm-8 col-md-6 mx-auto'
+            className={className}
             name='contact'
             method='POST'
             action='/thank-you'

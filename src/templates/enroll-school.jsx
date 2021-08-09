@@ -9,7 +9,7 @@ export const EnrollSchoolPageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <Enroll {...data} />
-      <Form {...data} />
+      <Form {...data} className='col-12 col-sm-8 col-md-6 mx-auto' />
     </React.Fragment>
   );
 };
