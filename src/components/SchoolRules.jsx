@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link } from 'gatsby';
 
 const SchoolRules = ({ title, description }) => {
   return (
@@ -12,11 +11,6 @@ const SchoolRules = ({ title, description }) => {
         <div>
           <ReactMarkdown className='' children={description} />
         </div>
-        {/* <div className='d-flex justify-content-center'>
-          <Link to='/' className='btn btn-md btn-success'>
-            Я СОГЛАСЕН
-          </Link>
-        </div> */}
       </div>
     </section>
   );
