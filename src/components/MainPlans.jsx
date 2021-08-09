@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Image from './Image';
 
@@ -67,7 +68,12 @@ const MainPlans = ({ title, main_plans, getAsset }) => {
             {plansTitle}
           </h3>
           {renderPlansList(plans, getAsset)}
-          <div className='col-12 text-center text-sm-start'>{footnotes}</div>
+          <div className='col-12 text-center text-sm-start'>{footnotes} </div>
+          <div className='d-flex justify-content-center'>
+            <Link to='/contacts' className='btn btn-md btn-secondary mt-2'>
+              В дирекцию
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -87,6 +87,11 @@ const MainPlans = ({ additional_plans, afterwords, getAsset }) => {
           </h3>
           {renderPlansList(plans, getAsset)}
           <div className='col-12 text-center text-sm-start'>{footnotes}</div>
+          <div className='d-flex justify-content-center'>
+            <Link to='/contacts' className='btn btn-md btn-secondary mt-2'>
+              В дирекцию
+            </Link>
+          </div>
         </div>
         <p>{afterwords}</p>
       </div>
