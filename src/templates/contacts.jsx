@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../layout/Layout';
+import DirectorForm from '../components/DirectorForm';
 import Contacts from '../components/Contacts';
 import Route from '../components/Route';
 import AddressList from '../components/AddressList';
@@ -12,12 +13,24 @@ export const ContactsPageTemplate = ({ data }) => {
       <section style={{ backgroundColor: '#f0f0f0' }}>
         <div className='container' style={{ maxWidth: '960px' }}>
           <div className='row m-0 p-0'>
+            <div className='col-12 p-0'>
+              <div className='py-3' style={{ backgroundColor: '#f0f0f0' }}>
+                <DirectorForm {...data} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className='container' style={{ maxWidth: '960px' }}>
+          <div className='row m-0 p-0'>
             <h2 className='col-12 px-0 fw-normal text-center text-sm-start text-uppercase py-3 mb-0'>
               {data.title}
             </h2>
           </div>
           <div className='col-12 p-0'>
-            <div className='pb-3' style={{ backgroundColor: '#f0f0f0' }}>
+            <div className='pb-3'>
               <Contacts {...data} />
             </div>
           </div>
@@ -51,6 +64,23 @@ export const pageQuery = graphql`
   query ContactsPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "contacts" } }) {
       frontmatter {
+        principal {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 320, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          description
+          contactForm {
+            formInputs {
+              inputType
+              inputLabel
+              required
+            }
+          }
+        }
         title
         email
         telephones {
