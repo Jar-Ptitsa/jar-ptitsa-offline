@@ -1,5 +1,21 @@
 ---
 templateKey: contacts
+principal:
+  image: /img/uploads/1.png
+  description: Дорогие друзья, если у вас есть вопросы к руководству школы, а
+    также пожелания, предложения или замечания, я и члены бюро с готовностью
+    ответят вам лично, в письменном виде или по телефону.
+  contactForm:
+    formInputs:
+      - inputLabel: Задать вопрос
+        inputType: text
+        required: "false"
+      - inputLabel: Взять рандеву
+        inputType: text
+        required: "false"
+      - inputLabel: Посетить бесплатный пробный урок
+        inputType: text
+        required: "false"
 title: Адреса и контакты
 email: jarptitsa.france@gmail.com
 telephones:
@@ -14,7 +30,7 @@ address:
       zip: "78180"
       country: France
       coords: 48.78497573023895, 2.0456221142433177
-      steps: 
+      steps:
         - image: /img/uploads/hohloma.png
     - country: France
       zip: "78180"
