@@ -26,7 +26,7 @@ const renderInputs = (formInputs, handleChange) => {
   return formInputs.map((input) => renderInput({ ...input }));
 };
 
-const Form = ({ formData, className }) => {
+const Form = ({ formData, className, formName, formSubject }) => {
   const { title, formInputs } = formData;
   const [state, setState] = React.useState({});
 
@@ -42,7 +42,7 @@ const Form = ({ formData, className }) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        subject: 'JAR-PTITSA OFFLINE - New request',
+        subject: { formSubject },
         ...state,
       }),
     })
@@ -53,14 +53,16 @@ const Form = ({ formData, className }) => {
   return (
     <section style={{ backgroundColor: '#f0f0f0' }}>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <h2 className='fw-normal text-center text-sm-start text-uppercase'>
-          {title}
-        </h2>
+        {title && (
+          <h2 className='fw-normal text-center text-sm-start text-uppercase'>
+            {title}
+          </h2>
+        )}
 
         <div className='row'>
           <form
             className={className}
-            name='contact'
+            name={formName}
             method='POST'
             action='/thank-you'
             data-netlify='true'
