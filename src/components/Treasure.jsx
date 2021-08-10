@@ -2,23 +2,8 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'gatsby';
 
-import Image from './Image';
 import VideoDetail from './VideoDetail';
-
-// render teachers photos
-const renderList = (list, getAsset) => {
-  return list.map((image, index) => {
-    return (
-      <div className='col-6 col-sm-4' key={index}>
-        <Image
-          image={image.image}
-          getAsset={getAsset}
-          className='img-fluid w-75 mx-auto d-block'
-        />
-      </div>
-    );
-  });
-};
+import TeachersGallery from './TeachersGallery';
 
 const Treasure = ({ title, teachers, dance, getAsset = null }) => {
   return (
@@ -26,7 +11,7 @@ const Treasure = ({ title, teachers, dance, getAsset = null }) => {
       <div className='container py-3' style={{ maxWidth: '960px' }}>
         <h2 className='fw-normal text-center text-sm-start'>{title}</h2>
         <ReactMarkdown className='' children={teachers.description} />
-        <div className='row mb-3'>{renderList(teachers.list, getAsset)}</div>
+        <TeachersGallery teachers={teachers} getAsset={getAsset} className='col-6 col-sm-4' />
         <div className='row'>
           <div className='col-md-4 pt-3 order-2 order-md-1'>
             <VideoDetail videoId={dance.video} />

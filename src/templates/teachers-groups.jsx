@@ -2,12 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../layout/Layout';
+import TeachersGallery from '../components/TeachersGallery';
 import Teachers from '../components/Teachers';
 import Groups from '../components/Groups';
 
 export const TeachersGroupsPageTemplate = ({ data, location = '' }) => {
   return (
     <React.Fragment>
+      <TeachersGallery teachers={data.teachers} className='col-6 col-sm-3' />
       <Teachers teachers={data.teachers} location={location} />
       <Groups {...data.groups} />
     </React.Fragment>
@@ -32,7 +34,7 @@ export const pageQuery = graphql`
       frontmatter {
         teachers {
           title
-          teachers {
+          list {
             name
             image {
               childImageSharp {
@@ -81,6 +83,7 @@ export const pageQuery = graphql`
               button_label
               link
             }
+            other_items
           }
         }
       }
