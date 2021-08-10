@@ -42,7 +42,7 @@ const Form = ({ formData, className, formName, formSubject }) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        subject: { formSubject },
+        subject: formSubject,
         ...state,
       }),
     })
@@ -70,11 +70,7 @@ const Form = ({ formData, className, formName, formSubject }) => {
             onSubmit={handleSubmit}>
             {renderInputs(formInputs, handleChange)}
             <input type='hidden' name='form-name' value='contact' />
-            <input
-              type='hidden'
-              name='subject'
-              value='JAR-PTITSA LENDING PAGE - New request'
-            />
+            <input type='hidden' name='subject' value={formSubject} />
             <div className='text-center'>
               <button type='submit' className='btn btn-success btn-lg'>
                 Отправить

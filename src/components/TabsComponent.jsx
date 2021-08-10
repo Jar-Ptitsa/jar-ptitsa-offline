@@ -5,8 +5,6 @@ import 'react-tabs/style/react-tabs.css';
 import Form from './Form';
 
 const TabsComponent = ({ tabsContent }) => {
-  console.log(tabsContent);
-
   const tabLabels = tabsContent.map((tab) => tab.tab_label);
 
   const renderTabsLabels = (list) => {
@@ -30,11 +28,35 @@ const TabsComponent = ({ tabsContent }) => {
     });
   };
 
+  const renderHiddenHTMLFormsForNetlify = (list) => {
+    return list.map((tabContent, index) => {
+      return (
+        <Form
+          key={index}
+          formData={tabContent}
+          formName={tabContent.form_name}
+          formSubject={`JAR-PTITSA OFFLINE - ${tabContent.form_name}`}
+          className='col-sm-8 col-md-12 mx-auto'
+        />
+      );
+    });
+  };
+
   return (
-    <Tabs>
-      <TabList>{renderTabsLabels(tabLabels)}</TabList>
-      {renderTabContent(tabsContent)}
-    </Tabs>
+    <React.Fragment>
+      <Tabs>
+        <TabList>{renderTabsLabels(tabLabels)}</TabList>
+        {renderTabContent(tabsContent)}
+      </Tabs>
+      <div
+        style={{
+          visibility: 'hidden',
+          maxWidth: '1px',
+          maxHeight: '1px',
+        }}>
+        {renderHiddenHTMLFormsForNetlify(tabsContent)}
+      </div>
+    </React.Fragment>
   );
 };
 

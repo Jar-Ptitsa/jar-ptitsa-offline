@@ -23,7 +23,7 @@ principal:
           inputType: text
           required: "true"
     - tab_label: Пробный урок
-      form_name: free lesson
+      form_name: free_lesson
       formInputs:
         - inputLabel: Имя
           inputType: text
