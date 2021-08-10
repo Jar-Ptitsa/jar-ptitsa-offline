@@ -51,7 +51,7 @@ const Form = ({ formData, className }) => {
   };
 
   return (
-    <section>
+    <section style={{ backgroundColor: '#f0f0f0' }}>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
         <h2 className='fw-normal text-center text-sm-start text-uppercase'>
           {title}

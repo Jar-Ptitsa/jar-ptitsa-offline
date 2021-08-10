@@ -47,7 +47,7 @@ const Enroll = ({ steps }) => {
   };
 
   return (
-    <section style={{ backgroundColor: '#f0f0f0' }}>
+    <section>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
         <h2 className='fw-normal text-center text-sm-start text-uppercase'>
           {title}
