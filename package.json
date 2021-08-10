@@ -37,6 +37,7 @@
     "react-google-maps": "^9.4.5",
     "react-helmet": "^6.0.0",
     "react-markdown": "^6.0.2",
+    "react-tabs": "^3.2.2",
     "recompose": "^0.30.0",
     "uuid": "^7.0.0"
   },

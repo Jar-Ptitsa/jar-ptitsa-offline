@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../layout/Layout';
-import DirectorForm from '../components/DirectorForm';
+import ContactDirector from '../components/ContactDirector';
 import Contacts from '../components/Contacts';
 import Route from '../components/Route';
 import AddressList from '../components/AddressList';
@@ -15,7 +15,7 @@ export const ContactsPageTemplate = ({ data }) => {
           <div className='row m-0 p-0'>
             <div className='col-12 p-0'>
               <div className='py-3' style={{ backgroundColor: '#f0f0f0' }}>
-                <DirectorForm {...data} />
+                <ContactDirector {...data} />
               </div>
             </div>
           </div>
@@ -73,7 +73,10 @@ export const pageQuery = graphql`
             }
           }
           description
-          contactForm {
+          signature
+          tabs {
+            tab_label
+            form_name
             formInputs {
               inputType
               inputLabel

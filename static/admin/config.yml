@@ -280,12 +280,14 @@ collections:
         name: "contacts"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contacts"}
-# school principal opening speech
+# school principal form
           - {label: Principal, name: principal, widget: object, collapsed: true, fields: [ 
               {label: Image, name: image, widget: image},
               {label: Description, name: description, widget: markdown},
-              {label: Form, name: contactForm, widget: object, collapsed: true, fields: [
-                {label: Title, name: title, widget: string, required: false},
+              {label: Signature, name: signature, widget: string},
+              {label: Tabs, name: tabs, widget: list, collapsed: true, fields: [
+                {label: Tab label, name: tab_label, widget: string},
+                {label: 'Form Name [tech]', name: form_name, widget: string},
                 {label: Form Inputs, name: formInputs, widget: list, fields: [
                   {label: Input Label, name: inputLabel, widget: string},
                   {label: "Input Type",  name: "inputType",  widget: "select",   options: ["text", "phone", "email"]},

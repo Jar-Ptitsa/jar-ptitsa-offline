@@ -5,17 +5,44 @@ principal:
   description: Дорогие друзья, если у вас есть вопросы к руководству школы, а
     также пожелания, предложения или замечания, я и члены бюро с готовностью
     ответят вам лично, в письменном виде или по телефону.
-  contactForm:
-    formInputs:
-      - inputLabel: Задать вопрос
-        inputType: text
-        required: "false"
-      - inputLabel: Взять рандеву
-        inputType: text
-        required: "false"
-      - inputLabel: Посетить бесплатный пробный урок
-        inputType: text
-        required: "false"
+  signature: Татьяна Шартэ, директор
+  tabs:
+    - tab_label: Задать вопрос
+      form_name: question
+      formInputs:
+        - inputLabel: Имя
+          inputType: text
+          required: "true"
+        - inputLabel: Телефон
+          inputType: phone
+          required: "true"
+        - inputLabel: Email
+          inputType: enail
+          required: "true"
+        - inputLabel: Ваш вопрос
+          inputType: text
+          required: "true"
+    - tab_label: Пробный урок
+      form_name: free lesson
+      formInputs:
+        - inputLabel: Имя
+          inputType: text
+          required: "true"
+        - inputLabel: Телефон
+          inputType: phone
+          required: "true"
+        - inputLabel: Email
+          inputType: enail
+          required: "true"
+    - tab_label: Обратный звонок
+      form_name: callback
+      formInputs:
+        - inputLabel: Имя
+          inputType: text
+          required: "true"
+        - inputLabel: Телефон
+          inputType: phone
+          required: "true"
 title: Адреса и контакты
 email: jarptitsa.france@gmail.com
 telephones:
