@@ -135,8 +135,8 @@ const Footer = ({
         </div>
         <CookieConsent buttonText='Хорошо'>{cookie}</CookieConsent>
         <CookieConsent buttonText='Принять'>
-          Нажимая на эту кнопку, вы соглашаетесь с нашей политикой
-          конфиденциальности
+          Нажимая на эту кнопку, вы соглашаетесь с нашей{' '}
+          <Link to='/policy'>политикой конфиденциальности</Link>
         </CookieConsent>
       </div>
     </footer>
