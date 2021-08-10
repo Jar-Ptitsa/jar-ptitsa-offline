@@ -1,29 +1,29 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link } from 'gatsby';
 import { AwardFill, Book, PersonBadgeFill } from 'react-bootstrap-icons';
 
 import Image from './Image';
 
-const Teachers = ({ getAsset = '', location, teachers }) => {
-  const { title, teachers: teachersList } = teachers;
-
+const Teachers = ({ getAsset = '', teachers }) => {
   const renderTeachersGroupList = (list, getAsset) => {
+    const isOneElement = list.length === 1;
+
+    const groupsStyles = isOneElement ? 'col-6 offset-3' : 'col-6';
+
     return list.map((group, index) => {
       return (
-        <Link
-          to={`${location.pathname}#${group.group_name}`}
-          className='col-6 border rounded p-1 text-decoration-none row flex-column flex-sm-row flex-md-column'
+        <div
+          className={`${groupsStyles} border rounded p-1 text-decoration-none row flex-column flex-sm-row flex-md-column`}
           key={index}>
           <Image
             image={group.image}
             getAsset={getAsset}
-            className='img-fluid col-8 col-sm-5 col-md-8 mx-auto mb-1 mb-sm-0'
+            className='img-fluid col-8 col-sm-5 col-md-8 mx-auto mb-1 mb-sm-0 w-100'
           />
           <div className='col text-uppercase text-center'>
             {group.group_name}
           </div>
-        </Link>
+        </div>
       );
     });
   };
@@ -87,13 +87,10 @@ const Teachers = ({ getAsset = '', location, teachers }) => {
   };
 
   return (
-    <section style={{ backgroundColor: '#f0f0f0' }}>
+    <section>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <h2 className='fw-normal text-center text-sm-start text-uppercase'>
-          {title}
-        </h2>
         <div className='row mb-3'>
-          {renderTeachersList(teachersList, getAsset)}
+          {renderTeachersList(teachers.list, getAsset)}
         </div>
       </div>
     </section>

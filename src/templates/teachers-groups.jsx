@@ -6,11 +6,11 @@ import TeachersGallery from '../components/TeachersGallery';
 import Teachers from '../components/Teachers';
 import Groups from '../components/Groups';
 
-export const TeachersGroupsPageTemplate = ({ data, location = '' }) => {
+export const TeachersGroupsPageTemplate = ({ data }) => {
   return (
     <React.Fragment>
       <TeachersGallery teachers={data.teachers} className='col-6 col-sm-3' />
-      <Teachers teachers={data.teachers} location={location} />
+      <Teachers teachers={data.teachers} />
       <Groups {...data.groups} />
     </React.Fragment>
   );
@@ -21,7 +21,7 @@ const TeachersGroupsPage = ({ data, location }) => {
 
   return (
     <Layout>
-      <TeachersGroupsPageTemplate data={frontmatter} location={location} />
+      <TeachersGroupsPageTemplate data={frontmatter} />
     </Layout>
   );
 };
