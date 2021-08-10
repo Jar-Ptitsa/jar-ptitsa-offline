@@ -10,6 +10,7 @@ const Enroll = ({ steps }) => {
       if (!step.description) return null;
 
       const isAddress = step.description.search('электронный или почтовый') > 0;
+      const isSchoolRules = step.description.search('правилами школы') > 0;
 
       return (
         <div className='row m-0 p-0' key={index + step.description.length}>
@@ -19,7 +20,7 @@ const Enroll = ({ steps }) => {
               style={{ minWidth: '32px' }}>
               <div>{index + 1}</div>
             </div>
-            {!isAddress && (
+            {!isAddress && !isSchoolRules && (
               <ReactMarkdown
                 disallowedElements={['p']}
                 unwrapDisallowed={true}
@@ -32,6 +33,11 @@ const Enroll = ({ steps }) => {
               <div className='m-0 fs-5 flex-shrink-1'>
                 Заполнить его и отправить на адрес школы (
                 <Link to='/contacts'>электронный или почтовый</Link>)
+              </div>
+            )}
+            {isSchoolRules && (
+              <div className='m-0 fs-5 flex-shrink-1'>
+                Ознакомиться с <Link to='/school-rules'>правилами школы</Link>
               </div>
             )}
           </div>

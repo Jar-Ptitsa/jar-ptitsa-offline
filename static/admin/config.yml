@@ -150,10 +150,10 @@ collections:
         name: "teachers-groups"
         fields:
            - {label: "Template Key", name: "templateKey", widget: "hidden", default: "teachers-groups"}
-# teachers
+# teachers cards
            - {label: Teachers, name: teachers, widget: object, collapsed: true, fields: [
               {label: Title, name: title, widget: string},
-              {label: Teachers, name: teachers, widget: list, fields: [
+              {label: Teachers, name: list, widget: list, fields: [
                 {label: Full Name, name: name, widget: string},
                 {label: Photo, name: image, widget: image},
                 {label: Status, name: status, widget: string, required: false},
@@ -178,7 +178,8 @@ collections:
                   {label: Image, name: image, widget: image},
                   {label: Button Label, name: button_label, widget: string},
                   {label: Link, name: link, widget: string},
-                ]}
+                ]},
+                {label: Other items, name: other_items, widget: string},
               ]}
            ]}
 # 
@@ -249,6 +250,12 @@ collections:
         name: "enroll-school"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "enroll-school"}
+# school principal opening speech
+          - {label: Principal, name: principal, widget: object, collapsed: true, fields: [ 
+              {label: Image, name: image, widget: image},
+              {label: Title, name: title, widget: string},
+              {label: Description, name: description, widget: markdown},
+            ]}
 # steps
           - {label: Enrollment steps, name: steps, widget: object, collapsed: true, fields: [
             {label: Title, name: title, widget: string},
