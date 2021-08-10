@@ -1,7 +1,7 @@
 ---
 templateKey: teachers-groups
 teachers:
-  teachers:
+  list:
     - name: Комоликова Оксана Ярославна
       image: /img/uploads/2.png
       status: заместитель директора по учебной работе
@@ -221,6 +221,7 @@ groups:
           button_label: Скачать
           link: https://atmos-sfera.ru/ryimk/sites/default/files/%D0%A0%D0%B0%D0%B1_%D0%A2%D0%B5%D1%82_N2_3%D0%BA%D0%BB.pdf
       image: /img/uploads/sharedscreenshot-4-klass.jpg
+      other_items: тетради, ручки, карандаши, линейка
     - group: 7 класс
       books:
         - image: /img/uploads/sharedscreenshot-5-russe.jpg
@@ -234,6 +235,7 @@ groups:
           button_label: Скачать
           link: http://google.com
       image: /img/uploads/sharedscreenshot-7klass.jpg
+      other_items: тетради, ручки, карандаши, линейка
     - group: 2 класс
       image: /img/uploads/sharedscreenshot-2-klass.jpg
       books:
@@ -247,6 +249,7 @@ groups:
           image: /img/uploads/whatsapp-image-2021-07-29-at-12.41.12.jpeg
           button_label: Ссылка
           link: http://google.com
+      other_items: тетради, ручки, карандаши, линейка
     - group: 6 класс
       image: /img/uploads/sharedscreenshot-6-klass.jpg
       books:
@@ -255,6 +258,7 @@ groups:
           image: /img/uploads/whatsapp-image-2021-07-29-at-12.43.56.jpeg
           button_label: Скачать
           link: http://google.com
+      other_items: тетради, ручки, карандаши, линейка
     - group: Английский язык
       image: /img/uploads/hohloma.png
       books:
@@ -263,6 +267,7 @@ groups:
           image: /img/uploads/sharedscreenshot-enjoy-englishe-2.jpg
           button_label: Скачать
           link: enjoy-english-2_-rabochaja-tet ... oletova-m_z_-i-dr_2015-64s.pdf
+      other_items: тетради, ручки, карандаши, линейка
     - group: 1 группа детского сада
       image: /img/uploads/1-для-дошколят.png
       books:
@@ -281,6 +286,7 @@ groups:
           image: /img/uploads/sharedscreenshot-propissi-3-4.jpg
           button_label: Скачать
           link: https://fileskachat.com/file/58873_733203f8e2a423859f8b2a3bfacf3d9a.html
+      other_items: тетради, ручки, карандаши, линейка
     - group: 2 группа детского сада
       image: /img/uploads/1-для-дошколят.png
       books:
@@ -294,4 +300,5 @@ groups:
           image: /img/uploads/sharedscreenshot-propissi-4-5.jpg
           button_label: Скачать
           link: https://fileskachat.com/file/58874_0e186c69a9a1350d7b919a2d0fe66b33.html
+      other_items: тетради, ручки, карандаши, линейка
 ---
