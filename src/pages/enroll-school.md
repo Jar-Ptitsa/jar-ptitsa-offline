@@ -4,6 +4,7 @@ steps:
   title: Что необходимо для записи в школу?
   steps:
     - description: Заполнить регистрационную форму ниже
+    - description: Ознакомиться с правилами школы
     - description: Скачать [пакет
         документов](https://docs.google.com/document/d/1CwMmXlHph37Cxtk3hVld-lI0Uga2RrmJ0Ava7tQolL8/edit?usp=sharing)
         для записи в школу
