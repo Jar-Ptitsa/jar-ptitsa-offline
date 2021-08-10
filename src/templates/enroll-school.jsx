@@ -11,7 +11,12 @@ export const EnrollSchoolPageTemplate = ({ data }) => {
     <React.Fragment>
       <DirectorSpeech {...data} />
       <Enroll {...data} />
-      <Form {...data} className='col-12 col-sm-8 col-md-6 mx-auto' />
+      <Form
+        formData={data.formData}
+        formName='contact'
+        formSubject='JAR-PTITSA OFFLINE - New request'
+        className='col-12 col-sm-8 col-md-6 mx-auto'
+      />
     </React.Fragment>
   );
 };
@@ -33,7 +38,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "enroll-school" } }) {
       frontmatter {
         principal {
-          title
+          signature
           description
           image {
             childImageSharp {

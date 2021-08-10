@@ -4,14 +4,11 @@ import ReactMarkdown from 'react-markdown';
 import Image from './Image';
 
 const DirectorSpeech = ({ principal, getAsset = '' }) => {
-  const { image, description, title } = principal;
+  const { image, description, signature } = principal;
 
   return (
     <section style={{ backgroundColor: '#f0f0f0' }}>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
-        <h2 className='fw-normal text-center text-sm-start text-uppercase'>
-          {title}
-        </h2>
         <div className='row m-0 p-0 align-items-center'>
           <div className='col-sm-4'>
             <Image
@@ -21,7 +18,14 @@ const DirectorSpeech = ({ principal, getAsset = '' }) => {
             />
           </div>
           <div className='col mt-3 mt-sm-0'>
-            <ReactMarkdown className='' children={description} />
+            <figure>
+              <blockquote className='blockquote'>
+                <ReactMarkdown className='' children={description} />
+              </blockquote>
+              <figcaption className='blockquote-footer text-end'>
+                <cite title={signature}>{signature}</cite>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
