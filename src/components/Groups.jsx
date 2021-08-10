@@ -68,6 +68,10 @@ const Groups = ({ getAsset = '', ...groups }) => {
               Портфель школьника
             </h4>
             {group.books && renderBooks(group.books, getAsset)}
+            <h6 className='text-uppercase text-center mt-2'>
+              Также потребуется:
+            </h6>
+            <div>{group.other_items}</div>
           </div>
         </div>
       );
