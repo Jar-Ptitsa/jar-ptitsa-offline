@@ -232,7 +232,10 @@ groups:
           button_label: Скачать
           link: https://atmos-sfera.ru/ryimk/sites/default/files/%D0%A0%D0%B0%D0%B1_%D0%A2%D0%B5%D1%82_N2_3%D0%BA%D0%BB.pdf
       image: /img/uploads/sharedscreenshot-4-klass.jpg
-      other_items: тетради, ручки, карандаши, линейка
+      other_items: набор Дронова учебник - рабочая тетрадь - книга для чтения + нужно
+        иметь чистую тетрадь (любую, лучше разлинованную в клетку или линейку),
+        ручку, карандаш + цветные карандаши или фломастеры для подчёркиваний и
+        выделений, как минимум красный, синий и зелёный
     - group: 7 класс
       books:
         - image: /img/uploads/sharedscreenshot-5-russe.jpg
@@ -260,7 +263,10 @@ groups:
           image: /img/uploads/whatsapp-image-2021-07-29-at-12.41.12.jpeg
           button_label: Ссылка
           link: http://google.com
-      other_items: тетради, ручки, карандаши, линейка
+      other_items: набор Дронова учебник - рабочая тетрадь - книга для чтения + нужно
+        иметь чистую тетрадь (любую, лучше разлинованную в клетку или линейку),
+        ручку, карандаш + цветные карандаши или фломастеры для подчёркиваний и
+        выделений, как минимум красный, синий и зелёный
     - group: 6 класс
       image: /img/uploads/sharedscreenshot-6-klass.jpg
       books:
@@ -277,8 +283,10 @@ groups:
           book_authors: М.З. Биболетова, О.А. Денисенко, Н.Н. Трубанева
           image: /img/uploads/sharedscreenshot-enjoy-englishe-2.jpg
           button_label: Скачать
-          link: https://xp4stm90bvzr.frontroute.org/s11/7/1/3/2/1-7132.pdf
-      other_items: тетради, ручки, карандаши, линейка
+          link: https://drive.google.com/file/d/1KLNItpJKf4QMd4SfZxyCK7VCpvmpAZeT/view?usp=sharing
+      other_items: 'краски, кисточки, белая бумага, цветная бумага, фломастеры,
+        карандаши. Для английского тонкую тетрадь, а также распечатки тетради
+        "Enjoy-english-2" '
     - group: 1 группа детского сада
       image: /img/uploads/1-для-дошколят.png
       books:
@@ -297,7 +305,9 @@ groups:
           image: /img/uploads/sharedscreenshot-propissi-3-4.jpg
           button_label: Скачать
           link: https://fileskachat.com/file/58873_733203f8e2a423859f8b2a3bfacf3d9a.html
-      other_items: тетради, ручки, карандаши, линейка
+      other_items: Простые карандаши мягкиe hb , клей, ластик, набор цветной бумаги,
+        тетрадь для письма, альбом для рисования, пенал со школьными
+        принадлежностями, папку для бумаг формата А4
     - group: 2 группа детского сада
       image: /img/uploads/1-для-дошколят.png
       books:
@@ -311,5 +321,10 @@ groups:
           image: /img/uploads/sharedscreenshot-propissi-4-5.jpg
           button_label: Скачать
           link: https://fileskachat.com/file/58874_0e186c69a9a1350d7b919a2d0fe66b33.html
-      other_items: тетради, ручки, карандаши, линейка
+      other_items: Простые карандаши мягкиe hb , клей, ластик, набор цветной бумаги,
+        тетрадь для письма, альбом для рисования, пенал со школьными
+        принадлежностями, папку для бумаг формата А4
+    - group: Мир человека
+      image: /img/uploads/pngwing.com-1-.png
+      other_items: карандаши, фломастеры, белая бумага, краски, пластилин и цветная бумага
 ---
