@@ -277,7 +277,7 @@ groups:
           book_authors: М.З. Биболетова, О.А. Денисенко, Н.Н. Трубанева
           image: /img/uploads/sharedscreenshot-enjoy-englishe-2.jpg
           button_label: Скачать
-          link: enjoy-english-2_-rabochaja-tet ... oletova-m_z_-i-dr_2015-64s.pdf
+          link: https://xp4stm90bvzr.frontroute.org/s11/7/1/3/2/1-7132.pdf
       other_items: тетради, ручки, карандаши, линейка
     - group: 1 группа детского сада
       image: /img/uploads/1-для-дошколят.png
