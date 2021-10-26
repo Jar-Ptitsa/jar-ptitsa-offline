@@ -120,7 +120,7 @@ teachers:
         - group_name: Старшая группа в д/с
           image: /img/uploads/1-для-дошколят.png
     - name: Елизавета Шевченко
-      image: /img/uploads/elizaveta-chevschenko.jpeg
+      image: /img/uploads/elisaveta.jpg
       status: Филолог-лингвист
       position: педагог
       specialization: учитель начальных классов, преподаватель цикла "Мир человека"
@@ -162,12 +162,12 @@ teachers:
       status: Педагог-лингвист, детский гид-конферансье
       position: Историк, специалист по истории искусств
       specialization: Преподаватель цикла "Мир человека"
-      image: /img/uploads/img_5664_1-visage.jpg
+      image: /img/uploads/ludmila.png
       groups:
         - group_name: история, история искусств
           image: /img/uploads/classes-complex.png
     - name: Анастасия Белосевич
-      image: /img/uploads/anastasia_belosseviche.jpeg
+      image: /img/uploads/anastasia.jpg
       bio: «Закончила филологический факультет МГУ им. М.В. Ломоносова. Ещё во время
         учёбы начала работать репетитором, готовила школьников к ОГЭ и ЕГЭ. По
         окончании университета переехала во Францию и в течение года преподавала
@@ -201,7 +201,7 @@ teachers:
       status: филолог
       position: преподаватель русского языка
       specialization: учитель РЯ и РКИ онлайн
-      image: /img/uploads/ekaterina_koschkina.jpg
+      image: /img/uploads/ekaterina.jpg
       groups:
         - group_name: онлайн
           image: /img/uploads/sharedscreenshot-6-klass.jpg
