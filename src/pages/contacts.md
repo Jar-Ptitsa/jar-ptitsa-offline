@@ -68,7 +68,7 @@ address:
       steps:
         - title: Автобусы (SQYBus)
           options:
-            - option: "**№ 414** - остановка \"Collège St-François d'Assise\""
+            - option: '**№ 419** - остановка "Erik Satie"'
           image: /img/uploads/hohloma.png
     - title: Воскресный клуб
       street: 3 Chemin des Solitaires
