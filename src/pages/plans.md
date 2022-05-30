@@ -32,13 +32,13 @@ additional_plans:
     - title: Факультативные занятия
       image: /img/uploads/classes-theater.png
       hours: 1 час в неделю*30 недель = 30 часов
-      price: 450
+      price: 400
       currency: евро
       discounts: Без скидок
     - title: Дополнительные занятия в группе
       image: /img/uploads/classes-engl.png
       hours: 1 час в неделю * 30 недель = 30 часов
-      price: 450
+      price: 400
       currency: евро
       discounts: Без скидок
     - title: Воскресный клуб
