@@ -50,6 +50,7 @@ const Form = ({ formData, className, formName, formSubject }) => {
       .catch((error) => alert(error));
   };
 
+  // TODO remove all unrelated html and return only form itself
   return (
     <section style={{ backgroundColor: '#f0f0f0' }}>
       <div className='container py-3' style={{ maxWidth: '960px' }}>
