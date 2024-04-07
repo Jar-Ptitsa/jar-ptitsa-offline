@@ -1,11 +1,9 @@
 import axios from 'axios';
-import { API_KEY } from '../config';
 
-const CALENDAR_ID = 'sc3ec17dmrb689vp57jb27sq34@group.calendar.google.com';
 const maxResults = 2000;
-let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?maxResults=${maxResults}&timeZone=GMT&key=${API_KEY}`;
+let url = `https://www.googleapis.com/calendar/v3/calendars/${process.env.GATSBY_GOOGLE_CALENDAR_ID}/events?maxResults=${maxResults}&timeZone=GMT&key=${process.env.GATSBY_GOOGLE_API_KEY}`;
 
-export function getEvents(callback) {
+export function getEvents (callback) {
   axios
     .get(url)
     .then((resp) => {

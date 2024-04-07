@@ -4,6 +4,7 @@
   "version": "1.1.3",
   "author": "Austin Green",
   "dependencies": {
+    "@vis.gl/react-google-maps": "^0.8.3",
     "bootstrap": "^5.3.3",
     "bulma": "^0.9.0",
     "gatsby": "^4.0.0",
@@ -31,11 +32,9 @@
     "react-bootstrap-icons": "^1.11.3",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^17.0.0",
-    "react-google-maps": "^9.4.5",
     "react-helmet": "^6.0.0",
     "react-markdown": "8.0.7",
     "react-tabs": "3.2.2",
-    "recompose": "^0.30.0",
     "sass": "^1.43.2",
     "uuid": "^8.0.0"
   },

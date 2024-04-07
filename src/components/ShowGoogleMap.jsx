@@ -1,27 +1,17 @@
 import React from 'react';
-import { compose, withProps } from 'recompose';
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker,
-} from 'react-google-maps';
 
-import { API_KEY } from '../config';
+import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
 
-const ShowGoogleMap = compose(
-  withProps({
-    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&v=3.exp`,
-    loadingElement: <div className='rounded' style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `100%` }} />,
-    mapElement: <div style={{ height: `100%` }} />,
-  }),
-  withScriptjs,
-  withGoogleMap,
-)((props) => (
-  <GoogleMap defaultZoom={17} defaultCenter={props.coords}>
-    <Marker position={props.coords} />
-  </GoogleMap>
-));
+const ShowGoogleMap = (props) => (
+  <APIProvider apiKey={process.env.GATSBY_GOOGLE_API_KEY}>
+    <Map
+      style={{ height: '100%' }}
+      defaultCenter={props.coords}
+      defaultZoom={17}
+    >
+      <Marker position={props.coords} />F
+    </Map>
+  </APIProvider>
+);
 
 export default ShowGoogleMap;
